@@ -1,1 +1,0 @@
-This is the main file containing docs for the SmartMatrix Library
