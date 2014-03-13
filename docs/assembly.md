@@ -26,6 +26,29 @@ Decide how you want to connect power to the display:
 
 Solder pieces in order, solder one or two pins and check for seated connector before continuing
 
+resistors and diode first
+
+If soldering female headers - do those first
+tack two legs (not on power/gnd side) and then inspect for even placement, then solder remaining pins
+
+shrouded header is next
+- approx same height as female
+- if no female headers, use this as platform
+- solder pin 2 and diagonal opposite (none are ground)
+
+expansion header next
+
+solder matrixpower next  possible to rest on shrouded/female/expansion header
+
+solder external power connector:
+rest board on top of connector, then apply solder to outside pad, just enough to hold it in place
+inspect, then flip over and solder rest of pads
+be sure to reflow outside pad
+
+
+
+
+
 TODO: Decide on order based on various heights and easiest to solder 
 
 - 4-pin power before teensy
