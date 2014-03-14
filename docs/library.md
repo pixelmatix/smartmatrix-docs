@@ -1,20 +1,24 @@
 # SmartMatrix Library
 
-### Library Overview
-The SmartMatrix library is designed to make it easy to display graphics and scrolling text on an RGB 16x32 or 32x32 display.  The library stores a buffer and convenient graphics functions to draw to the buffer, with double buffering to update the drawing in a clean manner.  Scrolling text can be displayed above the graphics layer, and the library takes care of moving the scrolling text in the background.  The library uses the DMA module in the Teensy 3 to refresh the display at a high frame rate and high color-depth with minimal CPU usage.  When CPU is required to refresh the display, it is done in the background as a low-priority interrupt.
+## Library Overview
+The SmartMatrix Library is designed to make it easy to display graphics and scrolling text on an RGB 16x32 or 32x32 display.  The library stores a buffer and convenient graphics functions to draw to the buffer, with double buffering to update the drawing in a clean manner.  Scrolling text can be displayed above the graphics layer, and the library takes care of moving the scrolling text in the background.  The library uses the DMA module in the Teensy 3 to refresh the display at a high frame rate and high color-depth with minimal CPU usage.  When CPU is required to refresh the display, it is done in the background as a low-priority interrupt.
 
 
-### Overview of interaction
-#### Init
+## Overview of interaction
+
+### Init
+
 Before using the library, add a SmartMatrix object to your sketch:
+```
 SmartMatrix matrix;
+```
 
 Initialize the library:
 ```
 matrix.begin()
 ```
 
-#### Simple Drawing
+### Simple Drawing
 The library is capable of driving displays with 24-bit color, so color data is stored in a rgb24 object, with 8-bits for each color:
 ```
 typedef struct rgb24 {
@@ -30,7 +34,7 @@ You can define a color that you may use repeatedly during drawing like this:
 rgb24 myColor = {0xff, 0xff, 0xff}; // white
 ```
 
-Or set individual colors directly.
+Or set primary colors directly:
 
 ```
 rgb24 myColor;
@@ -39,7 +43,7 @@ myColor.green = 0;
 myColor.blue = 0;
 ```
 
-All drawing functions take an rgb24 color as an argument.  You can reference a color you set previously, or define the color as part of the function call.
+All drawing functions take an `rgb24` color as an argument.  You can reference a color you set previously, or define the color as part of the function call.
 ```
 rgb24 myColor = {0xff, 0xff, 0xff}; // white
 drawPixel(0,0,myColor);
@@ -48,25 +52,25 @@ drawPixel(0,0,myColor);
 drawPixel(0,0, {0xff, 0, 0});
 ```
 
-The SmartMatrix drawing functions are very similar to the functions used by the Adafruit Graphics Library, with a few differences explained below.  Adafruit has an excellent reference that applies to the SmartMatrix library here:  
+Drawing functions update a virtual screen that is not used for refreshing the display until the `swapBuffer()` method is called.  The `swapBuffer()` method waits until the next full screen refresh, then swaps the temporary drawing buffer with the refresh buffer.
+```
+matrix.swapBuffer();
+```
+
+The SmartMatrix drawing functions are very similar to the functions used by the Adafruit Graphics Library, with a few differences explained below.  Adafruit has an excellent reference on library functions that mostly applies to the SmartMatrix Library:  
 [Adafruit Graphics Library - Adafruit Learning System](http://learn.adafruit.com/adafruit-gfx-graphics-library/graphics-primitives)
 
-Differences from Adafruit's Graphics Library
+**SmartMatrix Library differences from Adafruit Graphics Library**
 
 - Color is set using type `rgb24` not `uint16_t`
-- Additional functions for filled shapes to draw an outline around the shape
-- Advanced character drawing functions using `print()` have not been implemented yet, but are planned to be implemented
-- Multiple font options
-- Font scale is not available as instead there are several font sizes
-- TODO: Check order of arguments
-
-TODO: Now that we know how to draw to the screen, let's do a simple drawing:
-
-Don't forget the matrix.swapBuffer() call at the end
+- Added additional functions for filled shapes that draws an outline around the shape
+- Added multiple font size options for drawing characters and scrolling text
+- Scaling the fonts is not available as it is better to use a large size font directly
+- Not yet implemented: Advanced character drawing functions using `print()`
 
 
-#### Scrolling Text on top
-It's popular to use these displays for a scrolling text marquee, and the SmartMatrix library makes it easy to add this to your display.  Just configure how you want the text to be displayed, then call scrollText() with the text you want and how many time you want it to scroll across the screen.  
+### Scrolling Text
+It's popular to use these displays for a scrolling text marquee, and the SmartMatrix Library makes it easy to add this to your display.  Just configure how you want the text to be displayed, then call `scrollText()` with the text to display and the number of times you want it to scroll across the screen.  The text scrolls on top of the main drawing buffer without modifying it, so you can continue drawing to the screen behind the text.
 
 ```
     matrix.setScrollMode(SCROLLMODE_WRAP);
@@ -83,21 +87,21 @@ It's popular to use these displays for a scrolling text marquee, and the SmartMa
     matrix.scrollText("Bounce Forever", -1);
 ```
 
-#### Configuration
+### Configuration
 There are several options that can be configured in the library.
 
 **Rotation**  
 To rotate the display in a multiple of 90 degrees, use `setRotation(rotationDegrees rotation)`;
 
 ```
-matrix.setRotation(ROTATION_180);
+matrix.setRotation(rotation180);
 ```
 It's best to do this early before drawing anything to the display.  Data drawn to the buffer is not rotated, so if you need to rotate in the middle of your program, do this:
 
 ```
 matrix.fillScreen({0,0,0,}); // fill with black
 matrix.swapBuffer();
-matrix.setRotation(ROTATION_90); // rotate to 90 degree position
+matrix.setRotation(rotation90); // rotate to 90 degree position
 // now draw your screen again
 ```
 
@@ -112,7 +116,7 @@ For example draw a white border around the screen (this example works with all r
 matrix.drawRectangle(0,0, matrix.getScreenHeight()-1, matrix.getScreenWidth()-1, {0xff, 0xff, 0xff});
 ```
 
-LED displays can be very bright, and sometimes you want to dim the display.  The SmartMatrix library makes this easy without losing color-depth while dimming
+LED displays can be very bright, and sometimes you want to dim the display.  The SmartMatrix Library makes this easy without losing color-depth while dimming
 ```
 void setBrightness(uint8_t brightness);
 
@@ -120,19 +124,22 @@ matrix.setBrightness(255); // max brightness
 matrix.setBrightness(25); // 10% brightness, for a dark room
 ```
 
-The human eye perceives color in a non-linear way, so displays use color compensation to convert a linear brightness value to a value that will look closer to the brightness...
+**Color Correction**
 
-In order to do color correction within the 24-bit color capable with this hardware, applying color correction will limit the color range.  There is an option to enable and disable color correction:
+TBD color correction explanation
+
+In order to do color correction within the 24-bit color capable with this hardware, applying color correction will limit the color range. (e.g. adding or subtracting a small value to a color's brightness may have no effect on the brightness of the LED.)  There is an option to enable and disable color correction:
 
 ```
 void setColorCorrection(colorCorrectionModes mode);
-
+```
+```
 e.g.
 rgb24 fullRed = {0xff, 0, 0};
 rgb24 halfRed = {0xff/2, 0, 0};
 rgb24 quarterRed = {0xff/4, 0, 0};
 
-matrix.setColorCorrection(CCMODE_NONE);
+matrix.setColorCorrection(ccNone);
 matrix.drawRectangle(0,0, matrix.getScreenHeight(), matrix.getScreenWidth()/3, fullRed);
 matrix.drawRectangle(matrix.getScreenWidth()/3,0, matrix.getScreenHeight(), matrix.getScreenWidth()/3, halfRed);
 matrix.drawRectangle(matrix.getScreenWidth()/3*2,0, matrix.getScreenHeight(), matrix.getScreenWidth()/3, quarterRed);
@@ -143,11 +150,9 @@ The red rectangle on the left is twice as bright as the one in the middle, and f
 
 Add this to the code to try it again with color correction enabled:
 ```
-matrix.setColorCorrection(CCMODE_NONE);
+matrix.setColorCorrection(cc24);
 matrix.swapBuffer();
 ```
-
-TODO: swapBuffer with no arguments does copy
 
 ### Interrupt Details
 The low-priority interrupt...
