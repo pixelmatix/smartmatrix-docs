@@ -165,38 +165,37 @@ The low-priority interrupt...
 calculations to get CPU usage
 
 
-## Functions
-
-### Initialization
-SmartMatrix();
-void init();
-
-### Drawing Functions
-
-### Scrolling Text
-
-### Configuration
-
 ## Library Files
 ### Main Header - SmartMatrix.h
+This header holds the SmartMatrix class definition, and various structs and enums needed for the user to interact with the SmartMatrix library.
 
-### Fonts - move to folder?
+The hardware-specific `MatrixHardware_*.h` file is included here.  To select a different hardware configuration for the library, change the `#include "MatrixHardware_*.h` to the file that describes your hardware.
+
+### Fonts
+Fonts are stored as bitmaps that are linked to the firmware.  To make a new font, start with an existing font in [BDF format](http://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format).  The fonts that come with the SmartMatrix library were sourced from Apple's [public domain fonts](http://www.opensource.apple.com/source/X11fonts/X11fonts-14/font-misc-misc/font-misc-misc-1.1.2/).  To convert to a C source file, use the [bdf2c](http://sourceforge.net/projects/bdf2c/) utility.
+
+MatrixFont.cpp provides methods for looking up individual characters in a bitmap font.
+
+TODO: add full instructions on converting the font, and the manual .c file manipulation needed to include the font bitmap file in the library.
 
 ### Hardware Specific
-All hardware-specific code and definitions are kept in two files: SmartMatrix.cpp and MatrixHardware.h
+All hardware-specific code and definitions are kept in two files: SmartMatrix.cpp and MatrixHardware_*.h
 
 SmartMatrix.c is specific to the Freescale Kinetis MK20DX microcontroller used in the Teensy 3.0 and 3.1.  The code takes care of initializing the hardware, updating display data buffers in the background, and setting up DMA to move the data to the display.
 
-SmartMatrix.h holds definitions that may change depending on the size and configuration of the display that is attached to the microcontroller, or may change depending on the pins used to connect the microcontroller to the display.  There are options to change the refresh rate, color depth, and number of rows that are buffered that may be changed to modify the amount of resources (CPU cycles and RAM) required to refresh the display.  If the application affects the DMA module, by using DMA for another purpose or changing the CPU clock for example, there are delays that can be adjusted to compensate.
+Only one of the the MatrixHardware_*.h files should be included by the project.  Each header holds definitions that may change depending on the size and configuration of the display that is attached to the microcontroller, or may change depending on the pins used to connect the microcontroller to the display.  There are options to change the refresh rate, color depth, and number of rows that are buffered that may be changed to modify the amount of resources (CPU cycles and RAM) required to refresh the display.  If the application affects the DMA module, by using DMA for another purpose or changing the CPU clock for example, there are delays that can be adjusted to compensate.
 
 ### Drawing
+MatrixBackground.cpp holds the code for drawing to the virtual screen.
 
 ### Color
+MatrixColor.cpp holds the code to work with rgb24 values, and the code and lookup tables to do color conversion.
 
 ### Configuration
+MatrixConfig.cpp provides methods for setting options like screen rotation and brightness.
 
 ### Scrolling Text
-
+MatrixForeground.cpp has the code that implements the scrolling text layer.
 
 
 
