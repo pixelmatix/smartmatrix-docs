@@ -63,11 +63,15 @@ The SmartMatrix drawing functions are very similar to the functions used by the 
 **SmartMatrix Library differences from Adafruit Graphics Library**
 
 - Color is set using type `rgb24` not `uint16_t`
+- TODO: Check order of arguments
+
+TODO: Now that we know how to draw to the screen, let's do a simple drawing:
 - Added additional functions for filled shapes that draws an outline around the shape
 - Added multiple font size options for drawing characters and scrolling text
 - Scaling the fonts is not available as it is better to use a large size font directly
 - Not yet implemented: Advanced character drawing functions using `print()`
 
+Don't forget the matrix.swapBuffer() call at the end
 
 ### Scrolling Text
 It's popular to use these displays for a scrolling text marquee, and the SmartMatrix Library makes it easy to add this to your display.  Just configure how you want the text to be displayed, then call `scrollText()` with the text to display and the number of times you want it to scroll across the screen.  The text scrolls on top of the main drawing buffer without modifying it, so you can continue drawing to the screen behind the text.
@@ -153,6 +157,8 @@ Add this to the code to try it again with color correction enabled:
 matrix.setColorCorrection(cc24);
 matrix.swapBuffer();
 ```
+
+TODO: swapBuffer with no arguments does copy
 
 ### Interrupt Details
 The low-priority interrupt...
