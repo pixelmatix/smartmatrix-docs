@@ -1,10 +1,10 @@
 # SmartMatrix Library
 
 ## Library Overview
-The SmartMatrix Library is designed to make it easy to display graphics and scrolling text on an RGB 16x32 or 32x32 display.  The library stores a buffer and convenient graphics functions to draw to the buffer, with double buffering to update the drawing in a clean manner.  Scrolling text can be displayed above the graphics layer, and the library takes care of moving the scrolling text in the background.  The library uses the DMA module in the Teensy 3 to refresh the display at a high frame rate and high color-depth with minimal CPU usage.  When CPU is required to refresh the display, it is done in the background as a low-priority interrupt.
+The SmartMatrix Library is designed to make it easy to display graphics and scrolling text on an RGB 16x32 or 32x32 display.  The library stores a buffer and convenient graphics functions to draw to the buffer, with double buffering to update the drawing in a clean manner.  The library supports scrolling text above the graphics layer, and takes care of updating the scrolling text in the background without modifying the drawing buffer.  The library uses the DMA module in the Teensy 3 to refresh the display at a high frame rate and high color-depth with minimal CPU usage.  When CPU is required to refresh the display, it is run in the background as a low-priority interrupt.
 
 
-## Overview of interaction
+## How to Use the Library
 
 ### Init
 
@@ -13,7 +13,7 @@ Before using the library, add a SmartMatrix object to your sketch:
 SmartMatrix matrix;
 ```
 
-Initialize the library:
+Then, initialize the library inside `setup()`:
 ```
 matrix.begin()
 ```
@@ -52,7 +52,7 @@ drawPixel(0,0,myColor);
 drawPixel(0,0, {0xff, 0, 0});
 ```
 
-Drawing functions update a virtual screen that is not used for refreshing the display until the `swapBuffer()` method is called.  The `swapBuffer()` method waits until the next full screen refresh, then swaps the temporary drawing buffer with the refresh buffer.
+Drawing functions update a virtual screen that is not used for refreshing the display until the `swapBuffer()` method is called.  The `swapBuffer()` method waits until the next full screen refresh, then swaps the drawing buffer with the refresh buffer to display on the new graphics on the screen.
 ```
 matrix.swapBuffer();
 ```
@@ -60,21 +60,16 @@ matrix.swapBuffer();
 The SmartMatrix drawing functions are very similar to the functions used by the Adafruit Graphics Library, with a few differences explained below.  Adafruit has an excellent reference on library functions that mostly applies to the SmartMatrix Library:  
 [Adafruit Graphics Library - Adafruit Learning System](http://learn.adafruit.com/adafruit-gfx-graphics-library/graphics-primitives)
 
-**SmartMatrix Library differences from Adafruit Graphics Library**
+SmartMatrix Library differences from Adafruit Graphics Library:
 
 - Color is set using type `rgb24` not `uint16_t`
-- TODO: Check order of arguments
-
-TODO: Now that we know how to draw to the screen, let's do a simple drawing:
-- Added additional functions for filled shapes that draws an outline around the shape
-- Added multiple font size options for drawing characters and scrolling text
+- Additional functions are available for filled shapes with an outline around the shape
+- Multiple font size options are available for drawing characters and scrolling text
 - Scaling the fonts is not available as it is better to use a large size font directly
 - Not yet implemented: Advanced character drawing functions using `print()`
 
-Don't forget the matrix.swapBuffer() call at the end
-
 ### Scrolling Text
-It's popular to use these displays for a scrolling text marquee, and the SmartMatrix Library makes it easy to add this to your display.  Just configure how you want the text to be displayed, then call `scrollText()` with the text to display and the number of times you want it to scroll across the screen.  The text scrolls on top of the main drawing buffer without modifying it, so you can continue drawing to the screen behind the text.
+It's popular to use LED matrix displays for a scrolling text marquee, and the SmartMatrix Library makes this easy to do.  Just configure how you want the text to be displayed, then call `scrollText()` with the text to display and the number of times you want it to scroll across the screen.  The text scrolls on top of the main drawing buffer without modifying it, so you can continue drawing to the screen behind the text.
 
 ```
     matrix.setScrollMode(SCROLLMODE_WRAP);
@@ -103,7 +98,7 @@ matrix.setRotation(rotation180);
 It's best to do this early before drawing anything to the display.  Data drawn to the buffer is not rotated, so if you need to rotate in the middle of your program, do this:
 
 ```
-matrix.fillScreen({0,0,0,}); // fill with black
+matrix.fillScreen({0,0,0,}); // clear screen by filling with black
 matrix.swapBuffer();
 matrix.setRotation(rotation90); // rotate to 90 degree position
 // now draw your screen again
@@ -132,7 +127,7 @@ matrix.setBrightness(25); // 10% brightness, for a dark room
 
 TBD color correction explanation
 
-In order to do color correction within the 24-bit color capable with this hardware, applying color correction will limit the color range. (e.g. adding or subtracting a small value to a color's brightness may have no effect on the brightness of the LED.)  There is an option to enable and disable color correction:
+There is an option to enable and disable color correction:
 
 ```
 void setColorCorrection(colorCorrectionModes mode);
@@ -155,15 +150,7 @@ The red rectangle on the left is twice as bright as the one in the middle, and f
 Add this to the code to try it again with color correction enabled:
 ```
 matrix.setColorCorrection(cc24);
-matrix.swapBuffer();
 ```
-
-TODO: swapBuffer with no arguments does copy
-
-### Interrupt Details
-The low-priority interrupt...
-calculations to get CPU usage
-
 
 ## Library Files
 ### Main Header - SmartMatrix.h
@@ -179,23 +166,20 @@ MatrixFont.cpp provides methods for looking up individual characters in a bitmap
 TODO: add full instructions on converting the font, and the manual .c file manipulation needed to include the font bitmap file in the library.
 
 ### Hardware Specific
-All hardware-specific code and definitions are kept in two files: SmartMatrix.cpp and MatrixHardware_*.h
+All hardware-specific code and definitions are kept in two files: SmartMatrix.cpp and MatrixHardware_*.h.
 
-SmartMatrix.c is specific to the Freescale Kinetis MK20DX microcontroller used in the Teensy 3.0 and 3.1.  The code takes care of initializing the hardware, updating display data buffers in the background, and setting up DMA to move the data to the display.
+SmartMatrix.cpp is specific to the Freescale Kinetis MK20DX microcontroller used in the Teensy 3.0 and 3.1.  The code takes care of initializing the hardware, updating display data buffers in the background, and setting up DMA to move the data to the display.  The code is written to be flexible to slight variations in hardware, which are set in the MatrixHardware_*.h header file.
 
 Only one of the the MatrixHardware_*.h files should be included by the project.  Each header holds definitions that may change depending on the size and configuration of the display that is attached to the microcontroller, or may change depending on the pins used to connect the microcontroller to the display.  There are options to change the refresh rate, color depth, and number of rows that are buffered that may be changed to modify the amount of resources (CPU cycles and RAM) required to refresh the display.  If the application affects the DMA module, by using DMA for another purpose or changing the CPU clock for example, there are delays that can be adjusted to compensate.
 
 ### Drawing
 MatrixBackground.cpp holds the code for drawing to the virtual screen.
 
+### Scrolling Text
+MatrixForeground.cpp has the code that implements the scrolling text layer.
+
 ### Color
 MatrixColor.cpp holds the code to work with rgb24 values, and the code and lookup tables to do color conversion.
 
 ### Configuration
 MatrixConfig.cpp provides methods for setting options like screen rotation and brightness.
-
-### Scrolling Text
-MatrixForeground.cpp has the code that implements the scrolling text layer.
-
-
-

@@ -4,7 +4,13 @@
 The SmartMatrix Shield is designed to make it easy to connect the Teensy 3.1 to common types of RGB LED matrix display panels.  The SmartMatrix Library takes care of refreshing the LED driver circuitry on the display and provides an interface to draw to a virtual screen, and scroll text on top of the drawing.
 > ![SmartMatrix Shield](photos/ProtoIsometric.JPG)
 
-> ![Display Variations (Front)](photos/DisplayVariationsFront.JPG)
+The supported RGB matrix display panels are designed to be used in large scale video advertising screens, and come in different sizes and pixel pitches, with driver circuitry built into the board.  The panels require an external controller to refresh the display.  
+
+> ![Display Variations (Front)](photos/DisplayVariationsFront.JPG)  
+> 6mm pitch 16x32, 5mm pitch 32x32, 6mm pitch 32x32
+
+There doesn't seem to be an official standard for these displays, but they usually have the same pinout for connecting to a controller board.  To power the displays requires a separate connection, either two screw terminals, or a 4-pin 0.156" spacing connector.
+
 > ![Display Variations (Back)](photos/DisplayVariationsBack.JPG)
 
 There are many suppliers of RGB displays with this pinout.  The SmartMatrix Library supports driving 16x32 displays with 1/8 scan, and 32x32 displays with 1/16 scan.  Popular sources for these displays in the Maker Community are Adafruit and Sparkfun, links below.  
@@ -14,7 +20,7 @@ There are many suppliers of RGB displays with this pinout.  The SmartMatrix Libr
 [Sparkfun 16x32 Panel](https://www.sparkfun.com/products/12583)  
 [Sparkfun 32x32 Panel](https://www.sparkfun.com/products/12584)  
 <br/>
-The SmartMatrix Library and SmartMatrix Shield has been tested with an Adafruit 16x32 Display purchased in November 2013.  The Library and Shield _should_ work with the Adafruit Medium 32x32 display and the displays from Sparkfun, but it will probably not work with the Adafruit Small 32x32 display which has two input connectors.
+The SmartMatrix Library and SmartMatrix Shield has been tested with an Adafruit 16x32 Display purchased in November 2013.  The Library and Shield _should_ work with the Adafruit Medium 32x32 display and the displays from Sparkfun, but it will likely not work with the Adafruit Small 32x32 display which has two input connectors.
 
 > ![Display Pinout](photos/DisplayPinout.JPG)
 
@@ -33,3 +39,5 @@ Make sure you have a supported version of the Arduino IDE and Teensyduino add-on
 * [Teensyduino](http://www.pjrc.com/teensy/td_download.html) - only version 1.17
 
 Before continuing, use the blink example in the Arduino IDE to verify you can compile and run a sketch on your Teensy 3.1.
+
+TODO: add instructions on installation of library, and running example sketch
