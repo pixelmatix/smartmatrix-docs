@@ -52,9 +52,9 @@ drawPixel(0,0,myColor);
 drawPixel(0,0, {0xff, 0, 0});
 ```
 
-Drawing functions update a virtual screen that is not used for refreshing the display until the `swapBuffer()` method is called.  The `swapBuffer()` method waits until the next full screen refresh, then swaps the drawing buffer with the refresh buffer to display on the new graphics on the screen.
+Drawing functions update a virtual screen that is not used for refreshing the display until the `swapBuffers()` method is called.  The `swapBuffers()` method waits until the next full screen refresh, then swaps the drawing buffer with the refresh buffer to display on the new graphics on the screen.
 ```
-matrix.swapBuffer();
+matrix.swapBuffers();
 ```
 
 The SmartMatrix drawing functions are very similar to the functions used by the Adafruit Graphics Library, with a few differences explained below.  Adafruit has an excellent reference on library functions that mostly applies to the SmartMatrix Library:  
@@ -86,6 +86,26 @@ It's popular to use LED matrix displays for a scrolling text marquee, and the Sm
     matrix.scrollText("Bounce Forever", -1);
 ```
 
+Check the status of your scrolling text by using `getScrollStatus()`, which returns a positive number indicating the number of loops left if running, -1 indicating the scrolling will run forever, or zero indicating scrolling is complete.
+
+```
+    matrix.scrollText("Display this message twice", 2);
+    
+    // wait for scrolling to finish
+    while(matrix.scrollText());
+    
+    matrix.scrollText("Then display this message once", 1);
+```
+
+You can stop the scrolling text at any time by using `stopScrollText()`.
+
+```
+    matrix.scrollText("Scroll this text forever", -1);
+
+    delay(1000);
+    matrix.stopScrollText();
+```
+
 ### Configuration
 There are several options that can be configured in the library.
 
@@ -99,7 +119,7 @@ It's best to do this early before drawing anything to the display.  Data drawn t
 
 ```
 matrix.fillScreen({0,0,0,}); // clear screen by filling with black
-matrix.swapBuffer();
+matrix.swapBuffers();
 matrix.setRotation(rotation90); // rotate to 90 degree position
 // now draw your screen again
 ```
@@ -142,7 +162,7 @@ matrix.setColorCorrection(ccNone);
 matrix.drawRectangle(0,0, matrix.getScreenHeight(), matrix.getScreenWidth()/3, fullRed);
 matrix.drawRectangle(matrix.getScreenWidth()/3,0, matrix.getScreenHeight(), matrix.getScreenWidth()/3, halfRed);
 matrix.drawRectangle(matrix.getScreenWidth()/3*2,0, matrix.getScreenHeight(), matrix.getScreenWidth()/3, quarterRed);
-matrix.swapBuffer();
+matrix.swapBuffers();
 ```
 
 The red rectangle on the left is twice as bright as the one in the middle, and four times as bright as the one on the right, but it doesn't look that way to our eyes.
