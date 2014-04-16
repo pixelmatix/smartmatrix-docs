@@ -7,13 +7,13 @@ The SmartMatrix Library is an Arduino library written specifically for the Teens
 ### Large RGB LED Matrix Display Panels
 The supported RGB matrix display panels are designed to be used in large scale video advertising screens, and come in different sizes and pixel pitches, with driver circuitry built into the board.  The panels require an external controller to refresh the display.
 
-> ![Display Variations (Front)](photos/DisplayVariationsFront.JPG)  
+> ![Display Variations (Front)](photos/DisplayVariationsFront.jpg)  
 > 6mm pitch 16x32, 5mm pitch 32x32, 6mm pitch 32x32
 
 There doesn't seem to be an official standard for these displays, but they usually have the same 2x8 connector and pinout for connecting to a controller board.  Power is supplied to the displays through a separate connection: either two screw terminals, or a 4-pin 0.156" spacing connector.
 
-> ![Display Variations (Back)](photos/DisplayVariationsBack.JPG)
-> ![Display Pinout](photos/DisplayPinout.JPG)
+> ![Display Variations (Back)](photos/DisplayVariationsBack.jpg)
+> ![Display Pinout](photos/DisplayPinout.jpg)
 
 There are many suppliers of RGB displays with this pinout.  The SmartMatrix Library supports driving 16x32 displays with 1/8 scan, and 32x32 displays with 1/16 scan.  Popular sources for these displays in the Maker Community are Adafruit and Sparkfun, links below.  
 <br/>
@@ -28,14 +28,14 @@ The displays are also available directly from suppliers in China using [Aliexpre
 
 ### Connecting Teensy and Display
 The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external power supply to the display and Teensy, and brings out the Teensy's free signals to a convenient header.
-> ![SmartMatrix Shield](photos/ProtoIsometric.JPG)
+> ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 
 The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield included two connectors for power, to match the two main types of power cables included with these displays.
 
 See more details on the shield here: SmartMatrix Shield
 
 A Teensy 3.1 can also be connected to the display panel using individual wires.  Follow the wiring for the 13 signals between J1 and U1 in the [SmartMatrix Shield schematic](https://github.com/pixelmatix/SmartMatrix/raw/master/hardware/SmartMatrixShield_V1_sch.pdf), as well as ground.  Make sure to connect the LATCH signal to both pins on the Teensy, as well as the display connector.
-> ![Manual Wiring](photos/TeensyManualWiring.JPG)
+> ![Manual Wiring](photos/TeensyManualWiring.jpg)
 
 
 ### Software and Teensy Setup
