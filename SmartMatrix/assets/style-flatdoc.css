@@ -95,6 +95,7 @@ td {
 }
 a img {
   border: none;
+  vertical-align: middle;
 }
 html,
 body {
@@ -594,7 +595,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 .header li a {
   font-size: 0.88em;
   color: #9090aa;
-  display: block;
 }
 .header li a:hover {
   color: #3a3a44;
@@ -618,12 +618,12 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   .header li {
     border-left: solid 1px rgba(255,255,255,0.5);
     border-right: solid 1px #dfe2e7;
+    padding: 0 15px;
   }
   .header li:last-child {
     border-right: 0;
   }
   .header li a {
-    padding: 0 15px;
   }
 }
 @media (max-width: 480px) /* Mobile */ {
@@ -686,6 +686,12 @@ a.big.button:hover:visited {
   .menubar {
     display: none;
   }
+
+  /* set to width of .right section plus a little extra to avoid overlap */
+  .left {
+    margin-right: 220px;
+  }
+
 }
 @media (min-width: 768px) /* Desktop */ {
   .content-root {
