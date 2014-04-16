@@ -1,4 +1,4 @@
-# Getting Started
+# Overview
 
 ### Introduction
 The SmartMatrix Library is an Arduino library written specifically for the Teensy 3.1 microcontroller development system.  Using the powerful DMA hardware built into the Teensy 3's microcontroller, the library takes care of refreshing the LED driver circuitry on the display with 24-bits of color depth, and provides an interface to draw to a virtual screen and scroll text on top of the drawing.

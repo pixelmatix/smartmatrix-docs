@@ -1,4 +1,4 @@
-# SmartMatrix Shield Reference
+# SmartMatrix Shield
 
 ### Overview
 
