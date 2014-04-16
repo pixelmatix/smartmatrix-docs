@@ -118,7 +118,7 @@ matrix.setRotation(rotation180);
 It's best to do this early before drawing anything to the display.  Data drawn to the buffer is not rotated, so if you need to rotate in the middle of your program, do this:
 
 ```
-matrix.fillScreen({0,0,0,}); // clear screen by filling with black
+matrix.fillScreen({0,0,0}); // clear screen by filling with black
 matrix.swapBuffers();
 matrix.setRotation(rotation90); // rotate to 90 degree position
 // now draw your screen again
