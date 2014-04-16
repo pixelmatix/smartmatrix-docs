@@ -627,9 +627,9 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 480px) /* Mobile */ {
-  .right {
+/*  .right {
     display: none;
-  }
+  }*/
 }
 .menubar {
   -webkit-font-smoothing: antialiased;
