@@ -566,6 +566,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 .header .left {
   float: left;
+  margin-left: 15px;
 }
 .header .right {
   text-align: right;
@@ -630,9 +631,12 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 480px) /* Mobile */ {
-/*  .right {
-    display: none;
-  }*/
+  .header .right {
+    position:absolute;
+  }
+  .header .left {
+    margin-left: 0px;
+  }
 }
 .menubar {
   -webkit-font-smoothing: antialiased;
