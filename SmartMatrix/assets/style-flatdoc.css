@@ -569,7 +569,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 .header .right {
   text-align: right;
-  position: absolute;
+  float: right;
   right: 15px;
   top: 15px;
 }
@@ -689,12 +689,6 @@ a.big.button:hover:visited {
   .menubar {
     display: none;
   }
-
-  /* set to width of .right section plus a little extra to avoid overlap */
-  .left {
-    margin-right: 220px;
-  }
-
 }
 @media (min-width: 768px) /* Desktop */ {
   .content-root {
