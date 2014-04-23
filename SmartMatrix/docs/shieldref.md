@@ -7,7 +7,7 @@ The [Teensy 3.1 specs](https://www.pjrc.com/teensy/teensy31.html) are the best s
 The shield uses 13 IO pins to drive the display, which are not brought out to the expansion header on the bottom of the shield.  The crossed off signals in the diagram are the pins used by the shield for driving the matrix display, and the remaining Teensy pins are brought out to the expansion header.
 > ![Teensy Pinout](photos/TeensyPinout.png)
 > [View Large PDF](photos/SmartMatrixShieldTeensyPinout.pdf)  
-> Source http://www.pjrc.com/teensy/pinout.html
+> Original Source http://www.pjrc.com/teensy/pinout.html
 
 The current draw from the 5V (Vext) pin is limited to 500mA (assuming a 4A power supply is connected to the shield), as the display draws up to 3.5A.
 
