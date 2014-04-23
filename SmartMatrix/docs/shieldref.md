@@ -1,6 +1,6 @@
 # SmartMatrix Shield
 
-## Shield Reference (Datasheet)
+## Specs
 
 The [Teensy 3.1 specs](https://www.pjrc.com/teensy/teensy31.html) are the best source for general info on the capabilities of the Teensy 3.1 when used in the shield.  Changes from the Teensy 3.1 specs are listed below:
 
@@ -189,5 +189,6 @@ Take a look at all the solder joints and make sure none were skipped, or have in
 
 If you have a multimeter, do a continuity test between the 5V and GND pads, as a short there could be particularly bad.
 
-## Bringing Up Shield
+## Testing Shield
 
+Instructions coming soon...
