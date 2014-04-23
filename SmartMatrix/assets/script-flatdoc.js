@@ -62,6 +62,7 @@
 
     $window
       .on('resize.sidestick', function() {
+        $sidebar.removeClass('fixed');
         elTop = $sidebar.offset().top;
         $window.trigger('scroll.sidestick');
       })
@@ -252,7 +253,7 @@
 // This binds a listener on window resizing to automatically scale down the
 // child (`> img` in this example) just so that enough of it will be visible in
 // the viewport of the container.
-// 
+//
 // This assumes that the container has `position: relative` (or any 'position',
 // really), and `overflow: hidden`.
 
