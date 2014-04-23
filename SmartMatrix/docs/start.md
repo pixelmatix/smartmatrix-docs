@@ -32,7 +32,8 @@ The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible L
 
 The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield included two connectors for power, to match the two main types of power cables included with these displays.
 
-See more details on the shield here: SmartMatrix Shield
+See more details on the shield here:  
+[SmartMatrix Shield](shieldref.html)
 
 A Teensy 3.1 can also be connected to the display panel using individual wires.  Follow the wiring for the 13 signals between J1 and U1 in the [SmartMatrix Shield schematic](https://github.com/pixelmatix/SmartMatrix/raw/master/hardware/SmartMatrixShield_V1_sch.pdf), as well as ground.  Make sure to connect the LATCH signal to both pins on the Teensy, as well as the display connector.
 > ![Manual Wiring](photos/TeensyManualWiring.jpg)
@@ -50,7 +51,7 @@ _Note for Teensy 3.0 users: Teensy 3.0 boards do work with the SmartMatrix Shiel
 Make sure you have a supported version of the Arduino IDE and Teensyduino add-on installed.
 
 * [Arduino IDE](http://arduino.cc/en/main/software) - only version 1.0.5
-* [Teensyduino](http://www.pjrc.com/teensy/td_download.html) - only version 1.17
+* [Teensyduino](http://www.pjrc.com/teensy/td_download.html) - only version 1.18
 
 Before continuing, use the blink example in the Arduino IDE to verify you can compile and run a sketch on your Teensy 3.1.
 
