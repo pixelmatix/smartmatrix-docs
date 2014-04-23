@@ -22,19 +22,20 @@
 
   <!-- Flatdoc -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src='http://rstacruz.github.io/flatdoc/v/0.8.0/legacy.js'></script>
-  <script src='http://rstacruz.github.io/flatdoc/v/0.8.0/flatdoc.js'></script>
+  <script src='assets/legacy-flatdoc.js'></script>
+  <script src='assets/flatdoc.js'></script>
 
   <!-- Flatdoc theme -->
-  <link  href='http://rstacruz.github.io/flatdoc/v/0.8.0/theme-white/style.css' rel='stylesheet'>
-  <script src='http://rstacruz.github.io/flatdoc/v/0.8.0/theme-white/script.js'></script>
+  <link  href='assets/style-flatdoc.css' rel='stylesheet'>
+  <script src='assets/script-flatdoc.js'></script>
 
   <!-- theme mods -->
   <link href='assets/style.css' rel='stylesheet'>
 
   <!-- Meta -->
   <meta content="SmartMatrix" property="og:title">
-  <meta content="SmartMatrix description goes here." name="description">
+  <meta content="SmartMatrix RGB LED Matrix Controller." name="description">
+
 
   <!-- Initializer -->
   <script>
@@ -46,16 +47,31 @@
 <body role='flatdoc'>
 
   <div class='header'>
-    <div class='left'>
-      <h1>SmartMatrix</h1>
+    <h1>SmartMatrix</h1>
+    <div class='right'>
       <ul>
-        <li><a href='https://github.com/pixelmatix/smartmatrix-docs'>View on GitHub</a></li>
-        <li><a href='https://github.com/pixelmatix/smartmatrix-docs/issues'>Issues</a></li>
+        <li><script type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script><a data-celery="1ocvej" href="javascript:void(0)">Shop</a></li>
+        <li><a href="http://www.pixelmatix.com/forum/" target="_blank">Forums</a></li>
+        <li><a href="http://blog.pixelmatix.com/" target="_blank">Blog</a></li>
+        <li>
+          <!-- Icons from http://customizr.net/icons?preset=9090aa-100-87-ffffff-100-100-r-f1f1f1-100 -->
+          <a href="https://twitter.com/PixelmatixRGB" target="_blank"><img src="icons/twitter.png" height=20px width=20px></a>
+          &nbsp<a href="http://feeds.pixelmatix.com/pixelmatix" target="_blank"><img src="icons/rss-feed.png" height=20px width=20px></a>
+          &nbsp<a href="http://eepurl.com/SMFdD" target="_blank"><img src="icons/mail.png" height=20px width=20px></a>
+          &nbsp<a href="https://github.com/pixelmatix/SmartMatrix" target="_blank"><img src="icons/github.png" height=20px width=20px></a>
+        </li>
       </ul>
     </div>
-    <div class='right'>
-      <!-- GitHub buttons: see http://ghbtns.com -->
-      <iframe src="http://ghbtns.com/github-btn.html?user=pixelmatix&amp;repo=smartmatrix-docs&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    <div class='left'>
+      <ul>
+        <li><a href='index.html'>Overview</a></li>
+        <li><a href='library.html'>Library</a></li>
+        <li><a href='shieldref.html'>Shield</a></li>
+<!--
+        <li><a>Examples</a></li>
+        <li><a>Projects</a></li>
+-->
+      </ul>
     </div>
   </div>
 
@@ -65,6 +81,5 @@
     </div>
     <div role='flatdoc-content' class='content'></div>
   </div>
-
 </body>
 </html>
