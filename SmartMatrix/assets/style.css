@@ -9,3 +9,9 @@
     margin-right: -135px;
   }
 }
+#logo {
+  height: 40px;
+  margin: -10px 0px 0px 0px;
+  padding-right: 15px;
+  display: block;
+}

@@ -553,7 +553,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   border-bottom: solid 1px #dfe2e7;
   padding: 15px 15px 15px 30px;
   zoom: 1;
-  line-height: 20px;
+  line-height: 30px;
   position: relative;
 }
 .header:before,
@@ -566,7 +566,6 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 .header .left {
   float: left;
-  margin-left: 30px;
 }
 .header .right {
   text-align: right;
@@ -632,7 +631,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 @media (max-width: 480px) /* Mobile */ {
   .header .right {
-    position:absolute;
+    position: absolute;
   }
   .header .left {
     margin-left: 0px;
