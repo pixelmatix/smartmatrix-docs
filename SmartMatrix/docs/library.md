@@ -8,6 +8,8 @@ The SmartMatrix Library is designed to make it easy to display graphics and scro
 
 ### Init
 
+*For library installation, see [Overview - Software and Teensy Setup](index.html#software-and-teensy-setup)*
+
 Before using the library, add a SmartMatrix object to your sketch:
 ```
 SmartMatrix matrix;

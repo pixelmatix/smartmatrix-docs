@@ -55,4 +55,16 @@ Make sure you have a supported version of the Arduino IDE and Teensyduino add-on
 
 Before continuing, use the blink example in the Arduino IDE to verify you can compile and run a sketch on your Teensy 3.1.
 
-TODO: add instructions on installation of library, and running example sketch
+Download the latest version of the SmartMatrix Library:  
+[SmartMatrix Releases - GitHub](https://github.com/pixelmatix/SmartMatrix/releases)
+
+Import either the "16x32" "32x32" library depending on what resolution display you have.  If you want to work with both resolutions, import both.  See instructions from Arduino here:  
+[Arduino - Libraries](http://arduino.cc/en/Guide/Libraries)
+
+Start with FeatureDemo Example project, included with the library.  From the Arduino File menu, choose Examples, the appropriate SmartMatrix library for your display resolution, then FeatureDemo.  
+
+You should already have most of the correct settings to load the FeatureDemo sketch on your Teensy, from running the blink example earlier.  Under Tools, CPU Speed, make sure either 48 MHz or 96MHz (overclock) is selected.
+
+Click the Upload button, and the sketch should compile and upload to your Teensy, and start running right away.
+
+You can use the FeatureDemo sketch as a way to get started with your own project.  Inside loop(), find a demo section that is similar to what you want to do with your project, delete the other sections, and save it as as new sketch.
