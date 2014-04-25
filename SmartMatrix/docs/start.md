@@ -39,6 +39,18 @@ A Teensy 3.1 can also be connected to the display panel using individual wires. 
 > ![Manual Wiring](photos/TeensyManualWiring.jpg)
 
 
+### Power
+
+Connect power to the board through the 5.5mm OD, 2.1mm ID positive tip barrel jack connector.  These connector is a common size in power supplies and Adafruit seems to have standardized on it.
+
+The display draws up to 3.5A at 5V when displaying full white.  A 5V 4A DC adapter is recommended for powering the display and Teensy.  Adafruit sells one [here](http://www.adafruit.com/products/1466).  Sparkfun did not carry a suitable power supply when I checked.
+
+For some reason both Adafruit and Sparkfun say these panels draw only 2A max, which isn't correct.  Here's an article that shows some power supply current measurements for these panels:  
+[Octoscroller - NYC Resistor](http://www.nycresistor.com/2013/09/12/octoscroller/)
+
+Both the 16x32 and 32x32 will have similar current draw, which may seem strange at first examination, but both panels only light up two rows at a time when refreshing (one in the top half and one in the bottom half).  The 16x32 panel scans through eight row pairs per frame, and the 32x32 panels scans through 16 row pairs per frame.  The 32x32 panel refreshes twice the number of rows, but spends half the amount of time driving each row.
+
+
 ### Software and Teensy Setup
 This documentation assumes you have a general knowledge of the Teensy 3.1, how to use the Arduino IDE, and the Teensyduino addon.  If you need an overview of any of those tools, please use these references:
 
