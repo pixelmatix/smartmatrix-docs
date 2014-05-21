@@ -70,10 +70,10 @@ Before continuing, use the blink example in the Arduino IDE to verify you can co
 Download the latest version of the SmartMatrix Library:  
 [SmartMatrix Releases - GitHub](https://github.com/pixelmatix/SmartMatrix/releases)
 
-Import either the "16x32" "32x32" library depending on what resolution display you have.  If you want to work with both resolutions, import both.  See instructions from Arduino here:  
+Import either the "16x32" or "32x32" library depending on what resolution display you have.  If you want to work with both resolutions, import both.  See instructions from Arduino here:  
 [Arduino - Libraries](http://arduino.cc/en/Guide/Libraries)
 
-Start with FeatureDemo Example project, included with the library.  From the Arduino File menu, choose Examples, the appropriate SmartMatrix library for your display resolution, then FeatureDemo.  
+Start with the FeatureDemo Example project, included with the library.  From the Arduino File menu, choose Examples, the appropriate SmartMatrix library for your display resolution, then FeatureDemo.  
 
 You should already have most of the correct settings to load the FeatureDemo sketch on your Teensy, from running the blink example earlier.  Under Tools, CPU Speed, make sure either 48 MHz or 96MHz (overclock) is selected.
 
