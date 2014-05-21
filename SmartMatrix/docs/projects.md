@@ -21,7 +21,7 @@ The front screen of the enclosure is made from three layers: transparent gray ac
 
 A couple important things before starting:  
  - Any large dust trapped between the layers will show when light is shined through, so it is important to clear dust off of each layer before assembling.  
- - If the polypropylene film is creased, the crease will be visible, so be careful to keep the film flat as much as possible when working with it.
+ - If the polypropylene film is creased, the crease will be visible, so be careful not to fold the film or use any tools that might pinch it while assembling.
 
 Wipe the exposed side of acrylic with your cloth, and if you have any, use the acrylic cleaner on it.
 
