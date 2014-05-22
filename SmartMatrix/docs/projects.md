@@ -148,7 +148,7 @@ from the commandline.
 
 First we need a program to generate animations to send to the display.  Fadecandy comes with a number of examples for Processing, which is a program that provides an easy way for artists to get into graphics programming.  Download the latest version of Processing from [processing.org](http://processing.org/download/), extract the program and run it.  Open up the 32x32 pixel example inside `fadecandy/examples/processing/grid32x32z_clouds`.  Run the example by pressing the play button.  You should see animated clouds inside the java application that just started.  Let's get those graphics moving toward the display.
 
-Next, start the Fadecandy server by running the precompiled server binary located in the /bin directory.  There is a binary for Windows called fc-server.exe, and one for Mac called fc-server-osx.  You can double click on the appropriate one for your OS to run it, or open a terminal or command prompt window and run it from there.  If you're running on Linux or specifically the Raspbery Pi, you need to compile the server from source in the /server directory.
+Next, start the Fadecandy server by running the precompiled server binary located in the /bin directory.  There is a binary for Windows called fc-server.exe, and one for Mac called fc-server-osx.  You can double click on the appropriate one for your OS to run it, or open a terminal or command prompt window and run it from there.  If you're running on Linux or specifically the Raspbery Pi, you need to compile the server from source in the /server directory (see the Linux section below).
 
 Running the server should open up a terminal or command prompt window with a message saying `NOTICE: Server listening on 127.0.0.1:7890`.  Open up that address in a web browser to see a Fadecandy Server status page, that should look like this:
 
@@ -178,6 +178,16 @@ OK, now that we know how to run the Teensy Loader program, we just need to copy 
 > ![Teensy Loader](photos/Fadecandy/TeensyLoader.png)
 
 That was a lot of steps, but now you should be able to see smoothly changing LEDs on your SmartMatrix display.  Next time you want to run Fadecandy it will be easier.  You shouldn't need to load the firmware, unless you replaced it with other firmware in the meantime.  The server starts with just double clicking the executable, and it's easy to load and play a processing example.
+
+### Linux and Raspberry Pi
+
+Fadecandy doesn't come with a precompiled server binary for Linux.  To compile, first clone the github repo, then use make tools to compile:
+
+`git clone https://github.com/pixelmatix/fadecandy`  
+`make submodules`
+`make all`
+
+I'd like to include a precompiled binary for Raspberry Pi in the next release.  If you are able to compile the server for Raspberry Pi and want to share your binary, please email me or submit a pull request with the binary: [louis@pixelmatix.com](mailto:louis@pixelmatix.com)
 
 ### Examples
 
