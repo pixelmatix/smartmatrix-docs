@@ -2,6 +2,14 @@
 
 ## Aurora Display
 
+The Aurora Display is a combination of SmartMatrix Shield, and an enclosure with an adjustable diffusion screen that can be separated from the RGB matrix panel. By putting the diffusion screen close to the panel, the screen shows a pixelated effect. By separating the diffusion screen from the panel, the individual pixels lose focus and blur together. The images that can be made with the out of focus panel don’t look like they could be made by such a low resolution display.
+
+> ![Aurora Display](photos/AuroraAssembly/AuroraIsolated.png)  
+
+Design credit for the goes to Al Linke's Pixel, which is where I got the idea for the dark acrylic in front with diffusion behind, nice-looking screw heads, and standoffs combination for this case.
+https://www.kickstarter.com/projects/alinke/pixel-led-art
+
+
 ### Assembly
 
 Tools needed for assembling the Aurora Display enclosure  
