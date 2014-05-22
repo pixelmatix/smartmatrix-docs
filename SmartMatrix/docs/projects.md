@@ -110,3 +110,76 @@ You may have to pull some bits off the screws in the corners.
 > ![Removing Front Paper](photos/AuroraAssembly/23-RemovingFrontPaper2.jpg)
 
 You can now add the SmartMatrix Shield to your display and adjust the height of the front panel to get the desired effect for the content you are displaying.
+
+## Fadecandy Support
+
+### Getting Started
+
+Fadecandy is an open source project by Micah Elizabeth Scott to "make LED art easier, tastier, and more creative".  It combines server software running on a computer with firmware running on specialized hardware to drive WS2812 LED strips and matrix displays with smooth color transitions.  
+
+Take a look at the first three links from the [Fadecandy Readme](https://github.com/scanlime/fadecandy/blob/master/README.md) to get a good overview of what Fadecandy is all about:
+
+* [Video Introduction](https://vimeo.com/79935649)
+* [Tutorial: LED Art with Fadecandy](http://learn.adafruit.com/led-art-with-fadecandy)
+* [Presentation slides: Easier and Tastier LED Art with Fadecandy](http://imgur.com/a/TaJBK)
+
+To make Fadecandy compatible with the SmartMatrix display required major Fadecandy firmware changes that combine pieces of the Fadecandy firmware with the SmartMatrix Library, as well as some minor Fadecandy server changes.  The end result is a new set of firmware and server binaries published on GitHub, along with the server source (firmware source coming soon).  At the moment there's only one example Fadecandy application for the SmartMatrix 32x32 display, but other examples can be adapted with just a few changes.
+
+
+### Installation
+
+*Note for any Teensy 3.0 or 16x32 matrix display users - the SmartMatrix Fadecandy firmware only runs on a Teensy 3.1, any only supports a 32x32 display right now*
+
+Let's run an example application, similar to what Pixelmatix was showing at Maker Faire.  It consists of:
+
+- A Processing application that generates graphics which are then turned into a 32x32 pixel frame and sent to...
+- The Fadecandy server, which has been slightly modified from the original to allow for driving up to 1024 (32x32) LEDs instead of the original maximum of 512.  The server receives video data from a network socket and translates it into messages sent over a USB connection to...
+- The Fadecandy firmware, running on a Teensy 3.1 attached to a SmartMatrix Shield.  The firmware waits to receive a full frame of graphics over USB, then converts the data into the appropriate bits to send to the SmartMatrix display.
+
+It will take some work the first time to set everything up.  First, we need to get the Fadecandy project with modifications for SmartMatrix.  It is available on GitHub here, and you can either download the ZIP file from the link on the right hand side, or if you are using Git, you can clone the project.
+
+[GitHub - Pixelmatix/Fadecandy](https://github.com/pixelmatix/fadecandy)
+
+If you downloaded the ZIP, extract the contents to a folder where you plan to store the project.
+
+If you're using git, run  
+`git clone https://github.com/pixelmatix/fadecandy`  
+from the commandline.
+
+First we need a program to generate animations to send to the display.  Fadecandy comes with a number of examples for Processing, which is a program that provides an easy way for artists to get into graphics programming.  Download the latest version of Processing from [processing.org](http://processing.org/download/), extract the program and run it.  Open up the 32x32 pixel example inside `fadecandy/examples/processing/grid32x32z_clouds`.  Run the example by pressing the play button.  You should see animated clouds inside the java application that just started.  Let's get those graphics moving toward the display.
+
+Next, start the Fadecandy server by running the precompiled server binary located in the /bin directory.  There is a binary for Windows called fc-server.exe, and one for Mac called fc-server-osx.  You can double click on the appropriate one for your OS to run it, or open a terminal or command prompt window and run it from there.  If you're running on Linux or specifically the Raspbery Pi, you need to compile the server from source in the /server directory.
+
+Running the server should open up a terminal or command prompt window with a message saying `NOTICE: Server listening on 127.0.0.1:7890`.  Open up that address in a web browser to see a Fadecandy Server status page, that should look like this:
+
+> ![Fadecandy Server - No Devices Connected](photos/Fadecandy/FadecandyServer-Noconnect.png)
+
+You should also see another line that says `NOTICE: New Open Pixel Control connection` refering to the connection from the clouds Processing application that is running.  With the webpage up and server running, let's move on to the next step.
+
+Next, we need a tool to load the Fadecandy firmware onto the Teensy 3.1.  If you've already loaded some firmware onto your Teensy using the Arudino IDE, you're ahead of the game and can now skip ahead a few paragraphs in the instructions to use Teensy Loader to copy the fc-firmware-sm-v107.hex file to the Teensy.
+
+Download the Arduino IDE and Teensyduino Addon.  Install the Arduino IDE first, then the Teensyduino Addon.
+
+* [Arduino IDE](http://arduino.cc/en/main/software) - only version 1.0.5
+* [Teensyduino](http://www.pjrc.com/teensy/td_download.html) - only version 1.18
+* Teensyduino needs to be installed as an administrator on Windows to install USB driver properly
+* You don't need to add any additional Arduino libraries when asked during Teensyduino installation to enable Fadecandy support. 
+
+Start the Teensy Loader application.  If you've already uploaded a sketch to your Teensy, then just do that again to bring up the Teensy Loader.  Or, continue on to find where the Teensy Loader application is stored on your computer.
+
+On a Mac, find Arduino.app in your Applications folder, and right click on the icon to choose "Show Package Contents".  Navigate into the application structure to find the Teensy Loader application.  It is buried inside the application at
+`Arduino.app/Contents/Resources/Java/hardware/tools/teensy.app`
+You can make an alias to make this program easier to find in the future.
+
+On the PC, find the directory where Arduino was installed under "Program Files", then under /hardware/tools/ run teensy.exe.  You can make a shortcut to make this program easier to find in the future.
+
+OK, now that we know how to run the Teensy Loader program, we just need to copy the Fadecandy firmware to the Teensy.  Either use the File menu and Open HEX File to open firmware-sm-v107.hex in the `/fadecandy/bin directory`, or just drag `firmware-sm-v107.hex` onto the Teensy Loader window to queue it for loading.  Now connect your Teensy 3.1 through the USB cable to your computer, and connect power to the SmartMatrix shield.  Press the button on the Teensy 3.1 to download new firmware.  You can watch the progress on the Teensy Loader application to make sure it was loaded.  When complete, the cloud animation should be showing on the SmartMatrix display, and look at the Fadecandy server status page in your webbrowser, and you should now see a new device connected.
+
+> ![Teensy Loader](photos/Fadecandy/TeensyLoader.png)
+
+That was a lot of steps, but now you should be able to see smoothly changing LEDs on your SmartMatrix display.  Next time you want to run Fadecandy it will be easier.  You shouldn't need to load the firmware, unless you replaced it with other firmware in the meantime.  The server starts with just double clicking the executable, and it's easy to load and play a processing example.
+
+### Examples
+
+You can play with some more Processing examples by replacing any calls to `opc.ledGrid*()` with a single `opc.ledGrid()` call like in the `grid32x32z_clouds` example.  Most will work with just this one line change, and there will be more examples added to the GitHub repo soon.
+
