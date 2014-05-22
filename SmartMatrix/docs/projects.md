@@ -6,7 +6,7 @@ The Aurora Display is a combination of SmartMatrix Shield, and an enclosure with
 
 > ![Aurora Display](photos/AuroraAssembly/AuroraIsolated.png)  
 
-Design credit for the goes to Al Linke's Pixel, which is where I got the idea for the dark acrylic in front with diffusion behind, nice-looking screw heads, and standoffs combination for this case.
+Design credit for the enclosure goes to Al Linke's Pixel, which is where I got the idea for the dark acrylic in front with diffusion behind, nice-looking screw heads, and standoffs combination for this case.
 https://www.kickstarter.com/projects/alinke/pixel-led-art
 
 
