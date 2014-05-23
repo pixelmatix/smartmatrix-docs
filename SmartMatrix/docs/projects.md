@@ -189,7 +189,7 @@ Fadecandy doesn't come with a precompiled server binary for Linux.  To compile, 
 > 
 > make all
 
-I'd like to include a precompiled binary for Raspberry Pi in the next release.  If you are able to compile the server for Raspberry Pi and want to share your binary, please email me or submit a pull request with the binary: [louis@pixelmatix.com](mailto:louis@pixelmatix.com)
+GitHub user pup05 contributed a compiled version for Raspberry Pi: `fcserver-rpi` in the `/bin` folder
 
 ### Examples
 
