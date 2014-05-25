@@ -70,6 +70,39 @@ SmartMatrix Library differences from Adafruit Graphics Library:
 - Scaling the fonts is not available as it is better to use a large size font directly
 - Not yet implemented: Advanced character drawing functions using `print()`
 
+### Drawing Raw Bitmaps with backBuffer
+Here's how to add a bitmap to your Arduino project and display it.
+
+Start by finding a bitmap file that you want to import.  A 32x32 icon is a good place to start, or search Google Images limiting the search to a file sized exactly 32x32 pixels:  
+[Google Image Search for "Icon"](https://www.google.com/search?q=icon&tbm=isch&tbs=isz:ex%2Ciszw:32%2Ciszh:32&imgdii=_)
+
+Download [GIMP](http://www.gimp.org/downloads/) (GNU Image Manipulation Program), which is a free cross-platform image editing tool.
+
+Open the image in GIMP, make any edits that you want, then under the File menu choose export, and select file type "C Source Code".
+
+Type in a name with .c extension, and click Export.  In the options dialog, first give your bitmap a unique name for "Prefixed Name", this is how you will refer to the image in Arduino.  For this example we'll use "testbitmap".  Uncheck the rest of the options, and make sure Opacity is left at 100.  Click Export.
+
+> ![Image Export](photos/Library/GIMPExport.png)
+
+
+Copy the .c file to your Arduino project directory.  Include the .c file you created at the top of your project, e.g. `#include "testbitmap.c"`
+
+To display the bitmap to the screen, we need to copy the raw bitmap from the image to the drawing buffer.  The `backBuffer()` function returns a pointer to the start of the drawing buffer, which holds an array of rgb24 values corresponding to all the pixels starting with the left of the top row and ending with the right of the bottom row.
+
+This short piece of code will copy the contents of the bitmap to the drawing buffer, and will swap the buffers at the end to display the bitmap on the screen.
+
+```
+rgb24 *buffer = matrix.backBuffer();  
+  
+for (i = 0; i < 32 * matrix.getScreenHeight(); i++) {  
+    buffer[i].red = testbitmap.pixel_data[i * 3 + 0];  
+    buffer[i].green = testbitmap.pixel_data[i * 3 + 1];  
+    buffer[i].blue = testbitmap.pixel_data[i * 3 + 2];  
+}
+  
+matrix.swapBuffers(true);
+```
+
 ### Scrolling Text
 It's popular to use LED matrix displays for a scrolling text marquee, and the SmartMatrix Library makes this easy to do.  Just configure how you want the text to be displayed, then call `scrollText()` with the text to display and the number of times you want it to scroll across the screen.  The text scrolls on top of the main drawing buffer without modifying it, so you can continue drawing to the screen behind the text.
 
