@@ -35,6 +35,8 @@ The SmartMatrix Shield includes multiple options for connecting the Shield to th
 See more details on the shield here:  
 [SmartMatrix Shield](shieldref.html)
 
+The Shield is available for purchase using the "Shop" link at the top of this page, or from [Adafruit](https://www.adafruit.com/products/1902).
+
 A Teensy 3.1 can also be connected to the display panel using individual wires.  Follow the wiring for the 13 signals between J1 and U1 in the [SmartMatrix Shield schematic](https://github.com/pixelmatix/SmartMatrix/raw/master/hardware/SmartMatrixShield_V1_sch.pdf), as well as ground.  Make sure to connect the LATCH signal to both pins on the Teensy, as well as the display connector.
 > ![Manual Wiring](photos/TeensyManualWiring.jpg)
 
