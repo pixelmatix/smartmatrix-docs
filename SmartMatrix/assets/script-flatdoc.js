@@ -7,7 +7,10 @@
   */
 
  $document.on('flatdoc:ready', function() {
-    $("h2, h3").scrollagent(function(cid, pid, currentElement, previousElement) {
+   $("h1, h2, h3").scrollagent({
+      offset: 250
+    },
+    function(cid, pid, currentElement, previousElement) {
       if (pid) {
        $("[href='#"+pid+"']").removeClass('active');
       }
