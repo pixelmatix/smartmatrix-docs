@@ -13,6 +13,7 @@ The current draw from the 5V (Vext) pin is limited to 500mA (assuming a 4A power
 
 Note that the 5V line may have significant ripple coming from the PWM driving of the display.  If your external circuit can handle a slightly lower voltage, using the Shield's Self Power option will give you 5V minus the voltage drop from the diode.  If your application needs closer to 5V, you can draw from the 5V line, but add a shottky diode and smoothing capacitor to your circuit. 
 
+The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware).
 
 ## Kit Assembly
 
