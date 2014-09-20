@@ -27,7 +27,7 @@ The SmartMatrix Library and SmartMatrix Shield has been tested with an Adafruit 
 The displays are also available directly from suppliers in China using [Aliexpress.com](http://www.aliexpress.com/).  Search for "P5" or "P6" referring to the 5mm or 6mm pitch between LEDs and "Indoor RGB" to pull up a lot of results.  The prices may be a bit cheaper, but you will not get the same customer service as you would from Adafruit or Sparkfun.
 
 ### Connecting Teensy and Display
-The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external power supply to the display and Teensy, and brings out the Teensy's free signals to a convenient header.
+The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external 5V supply to p[power the display and Teensy, and brings out the Teensy's free signals to a convenient header.
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 
 The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield included two connectors for power, to match the two main types of power cables included with these displays.

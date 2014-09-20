@@ -10,14 +10,25 @@ The SmartMatrix Library is designed to make it easy to display graphics and scro
 
 *For library installation, see [Overview - Software and Teensy Setup](index.html#software-and-teensy-setup)*
 
-Before using the library, add a SmartMatrix object to your sketch:
+Before using the library, include the appropriate header file for the size of your panel, and the SmartMatrix object to your sketch.  Right now two sizes are supported: 32x32 and 16x32.
+
 ```
+// for a 32x32 panel
+#include <SmartMatrix_32x32.h>
+SmartMatrix matrix;
+```
+
+```
+// for a 16x32 panel
+#include <SmartMatrix_16x32.h>
 SmartMatrix matrix;
 ```
 
 Then, initialize the library inside `setup()`:
 ```
-matrix.begin()
+void setup() {
+  matrix.begin()
+}
 ```
 
 ### Simple Drawing
@@ -57,6 +68,16 @@ drawPixel(0,0, {0xff, 0, 0});
 Drawing functions update a virtual screen that is not used for refreshing the display until the `swapBuffers()` method is called.  The `swapBuffers()` method waits until the next full screen refresh, then swaps the drawing buffer with the refresh buffer to display on the new graphics on the screen.
 ```
 matrix.swapBuffers();
+```
+
+By default, `swapBuffers()` makes a copy of the drawing buffer so you can continue adding to your drawing.  If you don't care what's in the drawing buffer because you fill it completely each frame, you can call `matrix.swapBuffers(false)`, which disables the copy and returns faster.
+
+```
+matrix.fillScreen({0xff,0,0});
+matrix.swapBuffers(false);
+delay(1000);
+matrix.fillScreen({0,0xff,0});
+matrix.swapBuffers(false);
 ```
 
 The SmartMatrix drawing functions are very similar to the functions used by the Adafruit Graphics Library, with a few differences explained below.  Adafruit has an excellent reference on library functions that mostly applies to the SmartMatrix Library:  
@@ -100,21 +121,21 @@ for (i = 0; i < 32 * matrix.getScreenHeight(); i++) {
     buffer[i].blue = testbitmap.pixel_data[i * 3 + 2];  
 }
   
-matrix.swapBuffers(true);
+matrix.swapBuffers();
 ```
 
-### Scrolling Text
+### Scrolling Text Overview
 It's popular to use LED matrix displays for a scrolling text marquee, and the SmartMatrix Library makes this easy to do.  Just configure how you want the text to be displayed, then call `scrollText()` with the text to display and the number of times you want it to scroll across the screen.  The text scrolls on top of the main drawing buffer without modifying it, so you can continue drawing to the screen behind the text.
 
 ```
-    matrix.setScrollMode(SCROLLMODE_WRAP);
+    matrix.setScrollMode(wrapForward);
     matrix.setScrollSpeed(10);
-    matrix.setFont(font3x5);
+    matrix.setScrollFont(font3x5);
     matrix.setScrollColor({0xff,0xff,0xff});
     matrix.scrollText("Wrap message 4 times", 4);
 ```
 ```
-    matrix.setScrollMode(SCROLLMODE_BOUNCE_FORWARD);
+    matrix.setScrollMode(bounceForward);
     matrix.setScrollSpeed(20);
     matrix.setFont(font5x7);
     matrix.setScrollColor({0x00,0xff,0x00});
@@ -141,7 +162,7 @@ You can stop the scrolling text at any time by using `stopScrollText()`.
     matrix.stopScrollText();
 ```
 
-### Configuration
+### Configuration Overview
 There are several options that can be configured in the library.
 
 **Rotation**  

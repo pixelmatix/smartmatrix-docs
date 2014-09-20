@@ -1,5 +1,18 @@
 # SmartMatrix Shield
 
+## Overview
+
+The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external 5V supply to power the display and Teensy, and brings out the Teensy's free signals to a convenient header.
+
+> ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
+
+The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield included two connectors for power, to match the two main types of power cables included with these displays.
+
+The Shield is available for purchase using the "Shop" link at the top of this page, or from [Adafruit](https://www.adafruit.com/products/1902).
+
+> ![SmartMatrix Shield](photos/ShieldRef/SmartMatrixShield_V1.png)
+
+
 ## Specs
 
 The [Teensy 3.1 specs](https://www.pjrc.com/teensy/teensy31.html) are the best source for general info on the capabilities of the Teensy 3.1 when used in the shield.  Changes from the Teensy 3.1 specs are listed below:
@@ -76,6 +89,8 @@ If you are doing the self power option, you need to modify your Teensy by cuttin
 Now, use your sharp knife to cut several times in the space between the two pads, separating the trace that connects these two pads.  Use the meter again on the two pads and listen for no beep.  If there is a beep, cut again and test.
 
 > ![Teensy Vusb Cut](photos/Assembly/SelfPower1.jpg)
+
+Advanced users only: you can solder a SMT diode between the two disconnected pads so that your Teensy can be removed and powered via USB.  There are some details [here](http://forum.pjrc.com/threads/24776-Power-from-both-USB-and-external) on the Teensy Forums.
 
 Now, only if you cut the Vusb trace for the Self power option, solder the diode.  The diode is polarized; make sure the white band around the diode matches the band on the silkscreen.  
 
