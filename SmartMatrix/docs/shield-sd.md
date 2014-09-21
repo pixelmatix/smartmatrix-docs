@@ -37,7 +37,7 @@ Note that the side with the MicroSD slot is the top side of the board.
 #### I2C Resistors
 If you plan to use an I2C connector in your circuit, and you need pull-up resistors (some I2C peripherals include pull-up resistors already) solder the resistors first.  If you're not sure, set them aside and you can always add them later on.  
 
-> ![Resistor Position](photos/SdAssembly/01-IMG_6149.JPG)
+> ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
 
 Two of the resistors pads are very close together, but they are connected to the same circuit, so don't worry if the leads touch or you have a solder blob between the two pads.
 
