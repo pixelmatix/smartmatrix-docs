@@ -8,7 +8,7 @@ The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible L
 
 The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield included two connectors for power, to match the two main types of power cables included with these displays.
 
-The Shield is available for purchase using the "Shop" link at the top of this page, or from [Adafruit](https://www.adafruit.com/products/1902).
+The Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).
 
 > ![SmartMatrix Shield](photos/ShieldRef/SmartMatrixShield_V1.png)
 

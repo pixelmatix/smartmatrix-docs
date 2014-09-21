@@ -1,8 +1,21 @@
 # SmartMatrix Overview
 
 ### Introduction
-The SmartMatrix Library is an Arduino library written specifically for the Teensy 3.1 microcontroller development system.  Using the powerful DMA hardware built into the Teensy 3's microcontroller, the library takes care of refreshing the LED driver circuitry on the display with 24-bits of color depth, and provides an interface to draw to a virtual screen and scroll text on top of the drawing.
+The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels, and in combination with the SmartMatrix Library can create stunning LED visuals with just a few lines of code.
 
+> ![Aurora Demo](photos/AuroraDemo.jpg)
+> Example display created using the SmartMatrix SD Shield, 32x32 P6 LED Matrix Panel, and SmartMatrix Frame Kit installed in a shadowbox picture frame.  
+> [Click for Video](https://www.youtube.com/watch?v=alcExtbLE3w&feature=youtu.be)
+
+The Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
+
+> ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
+
+The SmartMatrix SD Shield was announced at World Maker Faire in September and will be available soon.  This new shield adds a MicroSD card reader on the board, making it easy to play animated GIFs from the card on the matrix display.  The SD Shield does not replace the SmartMatrix Shield, but is a premium option that makes it much easier to add a micro SD card to a SmartMatrix project and connect to other devices as well.  [Join the waitlist](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-shield/) on Tindie to get notified when this new shield is available.
+
+> ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
+
+Also announced was the SmartMatrix Frame kit, adding a way to easily mount a SmartMatrix Shield or SmartMatrix SD Shield and 32x32 P6 RGB Matrix Panel in an attractive shadowbox picture frame, as in the demo photo at the top of the page.  This product will be also made avilable on Tindie, [join the waitlist](https://www.tindie.com/products/Pixelmatix/smartmatrix-frame-kit/) there to find out when it's ready to ship.
 
 ### Large RGB LED Matrix Display Panels
 The supported RGB matrix display panels are designed to be used in large scale video advertising screens, and come in different sizes and pixel pitches, with driver circuitry built into the board.  The panels require an external controller to refresh the display.
@@ -35,7 +48,7 @@ The SmartMatrix Shield includes multiple options for connecting the Shield to th
 See more details on the shield here:  
 [SmartMatrix Shield](shieldref.html)
 
-The Shield is available for purchase using the "Shop" link at the top of this page, or from [Adafruit](https://www.adafruit.com/products/1902).
+The Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).
 
 A Teensy 3.1 can also be connected to the display panel using individual wires.  Follow the wiring for the 13 signals between J1 and U1 in the [SmartMatrix Shield schematic](https://github.com/pixelmatix/SmartMatrix/raw/master/hardware/SmartMatrixShield_V1_sch.pdf), as well as ground.  Make sure to connect the LATCH signal to both pins on the Teensy, as well as the display connector.
 > ![Manual Wiring](photos/TeensyManualWiring.jpg)
