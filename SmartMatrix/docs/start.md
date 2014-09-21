@@ -11,7 +11,7 @@ The Shield is available for purchase from [Adafruit](https://www.adafruit.com/pr
 
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 
-The SmartMatrix SD Shield was announced at World Maker Faire in September and will be available soon.  This new shield adds a MicroSD card reader on the board, making it easy to play animated GIFs from the card on the matrix display.  The SD Shield does not replace the SmartMatrix Shield, but is a premium option that makes it much easier to add a micro SD card to a SmartMatrix project and connect to other devices as well.  [Join the waitlist](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-shield/) on Tindie to get notified when this new shield is available.
+The SmartMatrix SD Shield was announced at World Maker Faire in September and will be available soon.  This new shield adds a MicroSD card reader on the board, making it easy to play back animated GIFs from a MicroSD card on the matrix display.  The SD Shield is a premium option that makes it much easier to add a micro SD card to a SmartMatrix project and connect to other devices as well, and the SmartMatrix Shield will still continue to be sold as a lower cost option.  [Join the waitlist](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-shield/) on Tindie to get notified when this new shield is available.
 
 > ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
 
