@@ -1,11 +1,13 @@
 # SmartMatrix Overview
 
 ### Introduction
-The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels, and in combination with the SmartMatrix Library can create stunning LED visuals with just a few lines of code.
+The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels, and in combination with the SmartMatrix Library can create stunning LED visuals with just a few lines of code.  You can also use the prebuilt [Aurora software](https://github.com/pixelmatix/aurora) that creates an interactive display to play animated GIFs and patterns using the SmartMatrix Shield, for those who want to easily get started or don't want to write their own code.
 
 > ![Aurora Demo](photos/AuroraDemo.jpg)
 > Example display created using the SmartMatrix SD Shield, 32x32 P6 LED Matrix Panel, and SmartMatrix Frame Kit installed in a shadowbox picture frame.  
 > [Click for Video](https://www.youtube.com/watch?v=alcExtbLE3w&feature=youtu.be)
+
+All of our products are sold as kits and require some soldering, but we are working to have an assembled option as well.  [Sign up for our email list](http://eepurl.com/UX2V5) to get notified when this product is available.
 
 The Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
 
