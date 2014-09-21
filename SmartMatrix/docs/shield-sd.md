@@ -4,6 +4,8 @@
 
 The SmartMatrix SD Shield is brand new, and the documentation is even newer.  If you see any errors or have any questions, please contact us (links above), and the documentation will be improved over the coming weeks.
 
+**Attention Maker Faire Customers** - If you bought a full frame kit on Saturday before 3:00, you are missing a small parts bag containing four M3 screws to attach the paperpoard to the panel, and a hanger and nails to add to the frame.  Please contact us at the links above, and we'll send the missing parts to you ASAP.  If you're in the middle of assembling and don't want to wait, home depot carries this screw in store which is not identical but will work temporarily while we get the missing parts out to you: [Home Depot - M3 6mm phillips pan head screw](http://www.homedepot.com/p/Crown-Bolt-M3-6-mm-Phillips-Pan-Head-Machine-Screws-3-Pack-36618/202836120)
+
 ## Specs
 
 The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main difference is a MicroSD slot on the board connected to SPI with chip select on pin 15.  The expansion header uses the same pins (with the exception of pin 15), but the layout is changed to allow for making easier connections.
@@ -171,9 +173,17 @@ Route the power cable in a smooth curve and insert the Shield into the panel.
 
 The shield rest on top of the paperboard at an angle.  If you want to keep the shield flat for a lower profile, you can cut the paperboard with a knife, then gently bend it down so the front of the shield can sit lower.  
 
-The first batch of paperboard has extra holes due to a miscommunication from the vendor.  It may take a little extra work to find the right holes.  Use the picture with the screws to see which holes to use.  Use the polarizing pins on the panel to guide the paperboard into the right place.
+The first batch of paperboard has extra holes due to a miscommunication with the vendor.  It may take a little extra work to find the right holes.  Use the picture with the screws to see which holes to use.  Use the polarizing pins on the panel to guide the paperboard into the right place.
 
 ![title](photos/SdAssembly/Frame/1-IMG_6320.jpg) ![title](photos/SdAssembly/Frame/2-IMG_6321.jpg) ![title](photos/SdAssembly/Frame/3-IMG_6322.jpg) ![title](photos/SdAssembly/Frame/4-IMG_6324.jpg) ![title](photos/SdAssembly/Frame/5-IMG_6326.jpg) ![title](photos/SdAssembly/Frame/6-IMG_6327.jpg) ![title](photos/SdAssembly/Frame/7-IMG_6329.jpg) ![title](photos/SdAssembly/Frame/8-IMG_6332.jpg)
+
+#### Compatible Frames
+There are quite a few 8"x8" shadow box frames out there, but only two of them are recommended for use with the SmartMatrix Frame Kit based on fit and quality.
+
+MCS makes a 1" deep frame that gives a pixelated effect when used with the frosted acrylic in the SmartMatrix Frame Kit.  It's available from [Amazon.com](http://www.amazon.com/MCS-Scrapbook-Shadowbox-8-Inch-40393/dp/B004L6G2RE/), and [Target.com](http://www.target.com/p/mbi-black-shadow-box-frame-8-x8-8-x8/-/A-13370729#prodSlot=medium_1_7&term=shadow+box).
+
+Michaels makes a 1-1/4" deep frame that gives an abstract effect when used with the frosted acrylic in the SmartMatrix Frame Kit.  It's available from [Michaels.com](http://www.michaels.com/shadowbox-with-signature-mat-black-8x8in/10223090.html) as well as in most of their stores.
+
 
 ### IR Remote Kit
 
@@ -191,8 +201,5 @@ The battery compartment can be tricky to open.  Use one fingernail to move the t
 
 ### Aurora Sketch
 
-The sketch can be found at a temporary home here:
-https://github.com/pup05/aurora
-
-And will be moved to a more permanent home here shortly:
+This sketch demoed at Maker Faire features a menu system controlled using the IR remote and plays animated GIFs from a SD card.  You can find the sketch and instructions for use here:
 https://github.com/pixelmatix/aurora
