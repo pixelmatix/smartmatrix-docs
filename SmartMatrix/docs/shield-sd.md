@@ -37,7 +37,9 @@ Solder pieces in the order listed below.  Solder only one or two pins first, the
 Note that the side with the MicroSD slot is the top side of the board.
 
 #### I2C Resistors
-If you plan to use an I2C connector in your circuit, and you need pull-up resistors (some I2C peripherals include pull-up resistors already) solder the resistors first.  If you're not sure, set them aside and you can always add them later on.  
+If you plan to use an I2C connector in your circuit, and you need pull-up resistors (some I2C peripherals include pull-up resistors already) solder the resistors first.  If you're not sure, set them aside and you can always add them later on.
+
+If you're using these pins for something other than I2C, you probably don't need or want the pull-up resistors on the pins.  If you are using I2C and your peripheral already has pull-up resistors, it shouldn't break anything, but it may slow down the maximum I2C bus speed as it will now take more current to drive a 0V signal on these lines.
 
 > ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
 
@@ -51,10 +53,14 @@ After soldering, trim the excess leads using the diagonal cutter.
 
 You need to modify your Teensy by cutting the Vusb trace.  First, use your multimeter to do a continuity test between these two gold pads on the back of the board.  The meter should beep showing these pads are connected.  
 
+These pads connect the 5V power line coming from USB to the Vin pin on the Teensy.  If the trace is not cut, it's possible that current could flow from the external power supply *into* to the 5V power line on your computer, or that USB will try to power the matrix panel through the data lines, potentially drawing more than the allowed amount of current from the USB power source.
+
 > ![Teensy Vusb Cut](photos/Assembly/TeensyVusbCut.jpg)
 > Source: http://www.pjrc.com/teensy/card5b_rev3.pdf
 
 Now, use your sharp knife to cut several times in the space between the two pads, separating the trace that connects these two pads.  Use the meter again on the two pads and listen for no beep.  If there is a beep, cut again and test.
+
+If you forget to cut this before soldering, not all is lost, it's possible but much more awkward to cut the trace through the little gap between the soldered Teensy and Shield.  Contact us through the links above if you're in this situation.
 
 > ![Teensy Vusb Cut](photos/Assembly/SelfPower1.jpg)
 
@@ -64,6 +70,8 @@ Add the two 14-pin headers and 5-pin headers to the underside of the Teensy.
  > ![Adding Teensy Headers](photos/SdAssembly/05-IMG_6273.jpg)
 
 Place the Teensy on top of the Shield, and rest the shield on the table, so the Shield will keep the pins straight while soldering
+
+There are some components that are quite close to the outer rows of pins on the Teensy.  Be careful not to short or damage anything on the board by keeping the tip of the soldering iron toward the outside of the board, and by not applying too much solder.
 
  > ![Shield holder](photos/SdAssembly/06-IMG_6276.jpg)
  
@@ -169,19 +177,37 @@ Route the power cable in a smooth curve and insert the Shield into the panel.
 
 ### SmartMatrix Frame Kit
 
-(More details coming soon)
-
-The shield rest on top of the paperboard at an angle.  If you want to keep the shield flat for a lower profile, you can cut the paperboard with a knife, then gently bend it down so the front of the shield can sit lower.  
-
 The first batch of paperboard has extra holes due to a miscommunication with the vendor.  It may take a little extra work to find the right holes.  Use the picture with the screws to see which holes to use.  Use the polarizing pins on the panel to guide the paperboard into the right place.
 
+When routing the matrix power cable between the paperboard and the display, be careful of the sharp screws that protrude from the display.  Route the cable to avoid the screws so they do not impale the power cable when the paperboard is added.  You can also remove the screws, or clip them with diagonal cutters to be shorter and less sharp.
+
+The shield rests on top of the paperboard at an angle.  If you want to keep the shield flat for a lower profile, you can cut the paperboard with a knife, then gently bend it down so the front of the shield can sit lower.  
+
 > ![title](photos/SdAssembly/Frame/1-IMG_6320.jpg) 
+
+Start with the Shield plugged (loosely is fine) into the matrix data connector and the power cable routed the way you want it.  Unplug the Shield and feed it at an angle through the hold in the paperboard. 
+
 > ![title](photos/SdAssembly/Frame/2-IMG_6321.jpg) 
 > ![title](photos/SdAssembly/Frame/3-IMG_6322.jpg) 
+
+Seat the paperboard on the matrix panel, making sure the polarizing pins on the panel fit through holes in the paperboard, and the four screw holes in the corners are visible through other holes.
+
 > ![title](photos/SdAssembly/Frame/4-IMG_6324.jpg) 
+
+Make sure the cable is routed neatly under the paperboard and isn't kinked or sitting on top of a sharp screw in the panel.  Adjust the cable routing if necessary.  Press down a bit to hold the paperboard in place until you have added a screw in the upper right corner to hold it for you.  
+
 > ![title](photos/SdAssembly/Frame/5-IMG_6326.jpg) 
+
+Tighten each screw until the paperboard is sitting flat against the panel and the top of the screw is flush with the paperboard
+
 > ![title](photos/SdAssembly/Frame/6-IMG_6327.jpg) 
+
+Remove the cover from the adhesive strip
+
 > ![title](photos/SdAssembly/Frame/7-IMG_6329.jpg) 
+
+Insert the shield into the data connector and push the front edge down on the adhesive.  If you cut and bent down the adhesive a bit before adding the shield, the shield should sit fairly flat against the paperboard.
+
 > ![title](photos/SdAssembly/Frame/8-IMG_6332.jpg)
 
 #### Compatible Frames
@@ -209,7 +235,7 @@ Remove the divider, and carefully remove the glass as it has sharp edges.  We wo
 
 Remove the protective film from both sides of the frosted acrylic.  It may be difficult to start peeling the film, you can use the edge of a knife to separate the film from the acrylic at one of the corners to get started.  
 
-> ![title](Frame/Michaels/09-IMG_6345.JPG) 
+> ![title](photos/SdAssembly/Frame/Michaels/09-IMG_6345.JPG) 
 
 Set the acrylic into the frame
 
