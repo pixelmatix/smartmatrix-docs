@@ -131,5 +131,8 @@ It's possible the SdFat library folder is nested.  Find SdFat.h in the folder wh
 
 It's also possible that the SdFat library is installed in a folder with characters the Arduino IDE doesn't like.  If you download the SdFat .zip from GitHub and try to add it as is, the library will be nested in a folder called `SdFat-master`. Arduino doesn't like the dash character and the nested folders.  Following the steps in the Adafruit tutorial avoids both of these issues.
 
+**Teensy Audio Library**
+The SpectrumAnalyzer sketch requires the [Teensy Audio Library](http://www.pjrc.com/teensy/td_libs_Audio.html), which is included in [Teensyduino 1.20](http://www.pjrc.com/teensy/td_download.html).  If you have trouble compiling, first make sure you can compile either of the FastLED examples, as FastLED 2.1 is also a requirement for this sketch.  If you're missing the Audio library, the best way to install is by running the Teensyduino 1.20 installer.  Make sure the "Audio" library is checked during the install, but don't check all libraries as you will downgrade FastLED to 2.0.
+
 
 
