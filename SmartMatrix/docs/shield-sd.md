@@ -4,7 +4,7 @@
 
 The SmartMatrix SD Shield is brand new, and the documentation is even newer.  If you see any errors or have any questions, please contact us (links above), and the documentation will be improved over the coming weeks.
 
-**Attention Maker Faire Customers** - If you bought a full frame kit on Saturday before 3:00, you are missing a small parts bag containing four M3 screws to attach the paperpoard to the panel, and a hanger and nails to add to the frame.  Please contact us at the links above, and we'll send the missing parts to you ASAP.  If you're in the middle of assembling and don't want to wait, home depot carries this screw in store which is not identical but will work temporarily while we get the missing parts out to you: [Home Depot - M3 6mm phillips pan head screw](http://www.homedepot.com/p/Crown-Bolt-M3-6-mm-Phillips-Pan-Head-Machine-Screws-3-Pack-36618/202836120)
+**Attention Maker Faire Customers** - If you bought a full frame kit on Saturday before 3 PM, you are missing a small parts bag containing four M3 screws to attach the paperpoard to the panel, and a hanger and nails to add to the frame.  Please contact us at the links above, and we'll send the missing parts to you ASAP.  If you're in the middle of assembling and don't want to wait, home depot carries this screw in store which is not identical but will work temporarily while we get the missing parts out to you: [Home Depot - M3 6mm phillips pan head screw](http://www.homedepot.com/p/Crown-Bolt-M3-6-mm-Phillips-Pan-Head-Machine-Screws-3-Pack-36618/202836120)
 
 ## Specs
 
