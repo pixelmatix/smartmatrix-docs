@@ -309,25 +309,46 @@ Carefully drop the display with the paperboard panel onto the divider so the dis
 
 ### IR Remote Kit
 
-(More details coming soon)
-
 The red/black/white leads line up to 3V3/Gnd/Data pins on the IR Receiver.  Use the pictures to make sure the receiver is inserted the right way.
 
-Wiggle and guide the leads in with pinched fingers, and push gently on the head of the receiver as well.  The leads will move in noticeably when positioned correctly.
+> ![title](photos/SdAssembly/IR/1-IMG_6349.jpg) 
 
-You can braid the cable to keep it tidier.  Insert the loose ends into the 3-pin housing in the same Red/Black/White order as the other end of the cable.  Use the colors to add the IR receiver cable to the correct pins on the SmartMatrix SD Shield
+It can be difficult to tell how far the leads are inserted into the connector.  This sensor has the leads covered with a black marker to the depth of the connector, about .19".  When inserted properly, you can't see the black marker anymore.  This can be a good way to tell if the sensor is inserted far enough.
+
+> ![title](photos/SdAssembly/IR/IMG_6417.jpg) 
+
+It's much easier to insert the sensor when the leads are at an angle.  Point the leads so they are facing the all-white wall of the connector, not the side with the silver contacts visible.  Pointed this way, it should only take a little pressure and wiggling of the sensor before it goes in.  The leads will move in noticeably when positioned correctly.  
+
+> ![title](photos/SdAssembly/IR/IMG_6419.jpg) 
+
+It's possible to push the sensor in too far, so the leads are sticking out the other side.  This will work, but is more of a risk for shorting something out or damaging the cable.
+
+> ![title](photos/SdAssembly/IR/IMG_6420.jpg) 
+
+You can trim the leads before sliding into the connector if you want the sensor to be closer to the connector.
+
+> ![title](photos/SdAssembly/IR/3-IMG_6352.jpg) 
+
+You can braid the cable to keep it tidier.  
+
+> ![title](photos/SdAssembly/IR/4-IMG_6353.jpg)
+
+Insert the loose ends into the 3-pin housing in the same Red/Black/White order as the other end of the cable.
+
+> ![title](photos/SdAssembly/IR/5-IMG_6356.jpg)
+> ![title](photos/SdAssembly/IR/6-IMG_6357.jpg)
+
+Use the colors to add the IR receiver cable to the correct pins on the SmartMatrix SD Shield.  
+(Red = 3V3, Black = GND, White = IR)
+
+> ![title](photos/SdAssembly/IR/IMG_6415.jpg)
 
 The battery compartment can be tricky to open.  Use one fingernail to move the tab inward.  At the same time, use your thumbnail to pull the tray outward.  
 
-> ![title](photos/SdAssembly/IR/1-IMG_6349.jpg) 
-> ![title](photos/SdAssembly/IR/2-IMG_6351.jpg) 
-> ![title](photos/SdAssembly/IR/3-IMG_6352.jpg)
-> ![title](photos/SdAssembly/IR/4-IMG_6353.jpg)
-> ![title](photos/SdAssembly/IR/5-IMG_6356.jpg)
-> ![title](photos/SdAssembly/IR/6-IMG_6357.jpg) 
 > ![title](photos/SdAssembly/IR/7-IMG_6359.jpg) 
 > ![title](photos/SdAssembly/IR/8-IMG_6360.jpg) 
 > ![title](photos/SdAssembly/IR/9-IMG_6363.jpg)
+
 
 ### Aurora Sketch
 
