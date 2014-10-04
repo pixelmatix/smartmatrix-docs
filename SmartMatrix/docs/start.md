@@ -41,6 +41,8 @@ The SmartMatrix Library and SmartMatrix Shield has been tested with an Adafruit 
 
 The displays are also available directly from suppliers in China using [Aliexpress.com](http://www.aliexpress.com/).  Search for "P5" or "P6" referring to the 5mm or 6mm pitch between LEDs and "Indoor RGB" to pull up a lot of results.  The prices may be a bit cheaper, but you will not get the same customer service as you would from Adafruit or Sparkfun.
 
+Currently the SmartMatrix Library has support for 32x32 and 16x32 panels, though most of the included examples and projects based on the library are optimized for 32x32 panels.  These panels are designed to be chained together, though the SmartMatrix Library does not have support for drawing to more than one panel right now, some users have made their own forks of the library to support multiple panels: [here](https://github.com/pixelmatix/SmartMatrix/pull/2) and [here](https://github.com/pixelmatix/SmartMatrix/pull/7)
+
 ### Connecting Teensy and Display
 The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external 5V supply to power the display and Teensy, and brings out the Teensy's free signals to a convenient header.
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
