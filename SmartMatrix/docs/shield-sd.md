@@ -140,6 +140,7 @@ Add the connector, and make sure it's on the *bottom* of the board before solder
 Add the power connector for the display.  To keep the power cable out of the way, add the terminal block to the bottom side of the board, with the opening facing in.  Solder the two pads on the top of the board, and use the same tips from above for soldering the external power jack, as these pads are connected to the same large copper planes.
 
  > ![Matrix Power Terminal Block](photos/SdAssembly/24-IMG_6306.jpg)
+ > ![Matrix Power Terminal Block Soldering](photos/SdAssembly/IMG_6414.jpg)
 
 #### Trimming Leads
 If you are using the SmartMatrix Frame Kit, you will want to trim the leads from the first quarter inch of the board to make it as flat as possible.  Use diagonal cutters to trim the leads on the front of the external power connector, and the first three leads of the rows for the Teensy and expansion header.
