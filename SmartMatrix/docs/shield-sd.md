@@ -118,10 +118,11 @@ Now solder the rest of the pads.  Some pads are connected to large ground planes
 #### Matrix Data Connector
 The kit includes a 20-pin female connector, though the pads on the board only have 16 holes.  This isn't a mistake, the extra length of this connector will make sure the shield isn't misaligned on the panel.  With a 16-pin connector it is far too easy to insert the connector off by one direction.
 
-Using needle nose pliers, pull out the two pins on each end of the connector (four pins total).  Another option is to clip these pins off, but pulling them out is cleaner.
+Using needle nose pliers, pull out the two pins on each end of the connector (four pins total).  Another option is to clip these pins off, but pulling them out is cleaner.  It can be easier to pull/twist the pins out from the side than to pull straight out.
 
 > ![Pulling Pins 1](photos/SdAssembly/16-IMG_6291.jpg)
 > ![Pulling Pins 2](photos/SdAssembly/17-IMG_6293.jpg)
+> ![Pulling Pins 3](photos/SdAssembly/IMG_6412.jpg)
 > ![Clipping Pins 1](photos/SdAssembly/18-IMG_6294.jpg)
 > ![Clipping Pins 2](photos/SdAssembly/19-IMG_6295.jpg)
 
