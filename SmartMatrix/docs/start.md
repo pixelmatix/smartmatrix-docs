@@ -97,3 +97,39 @@ You should already have most of the correct settings to load the FeatureDemo ske
 Click the Upload button, and the sketch should compile and upload to your Teensy, and start running right away.
 
 You can use the FeatureDemo sketch as a way to get started with your own project.  Inside loop(), find a demo section that is similar to what you want to do with your project, delete the other sections, and save it as as new sketch.
+
+### External Libraries
+
+Some SmartMatrix examples require external libraries to compile.  You may already have older versions of these libraries installed in Arduino that may be too old to work with SmartMatrix and the examples.
+
+Installing Arduino libraries from GitHub has a couple pitfalls.  [This Adafruit tutorial](https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use/) explains the basics of installing libraries and how to avoid the pitfalls.
+
+**FastLED**  
+If you're having trouble compiling Aurora and are getting errors that refer to FastLED.h, try compiling one of the simpler FastLED examples first, which will help narrow down the issue.  
+`FastLED_Controller`  
+`FastLED_Functions`
+
+This error means the FastLED library isn't installed (correctly):  
+`fatal error: FastLED.h: No such file or directory`
+
+The latest version of Teensyduino includes FastLED version 2.0 which is too old to work with SmartMatrix.  We need version 2.1 which is only available from GitHub on a separate branch.  If you see any of these errors, you likely have an older version of FastLED installed:  
+`no known conversion for argument 4 from 'CRGB' to 'const rgb24&'`  
+`error: 'inoise8' was not declared in this scope`
+
+This can be tricky to trace down as Teensyduino might have installed the library in a different folder than your default libraries folder.  I'm not sure about Windows, but for OSX you will need to navigate into the the Arduino.app package to find the libraries folder and delete the old FastLED.
+
+Install FastLED 2.1 from this branch, not the `master` branch:  
+https://github.com/FastLED/FastLED/tree/FastLED2.1
+
+**SdFat**  
+If you're having trouble compiling Aurora and are getting errors that refer to SdFat.h, try compiling the `AnimatedGIFs` example first, which will help narrow down the issue.
+
+This error means the SdFat library isn't installed (correctly):  
+`fatal error: SdFat.h: No such file or directory`
+
+It's possible the SdFat library folder is nested.  Find SdFat.h in the folder where the SdFat library is installed and make sure the path looks like this: `libraries\SdFat\SdFat.h`, not like this: `libraries\SdFat\SdFat\SdFat.h`
+
+It's also possible that the SdFat library is installed in a folder with characters the Arduino IDE doesn't like.  If you download the SdFat .zip from GitHub and try to add it as is, the library will be nested in a folder called `SdFat-master`. Arduino doesn't like the dash character and the nested folders.  Following the steps in the Adafruit tutorial avoids both of these issues.
+
+
+
