@@ -55,35 +55,41 @@ You need to modify your Teensy by cutting the Vusb trace.  First, use your multi
 
 These pads connect the 5V power line coming from USB to the Vin pin on the Teensy.  If the trace is not cut, it's possible that current could flow from the external power supply *into* to the 5V power line on your computer, or that USB will try to power the matrix panel through the data lines, potentially drawing more than the allowed amount of current from the USB power source.
 
-> ![Teensy Vusb Cut](photos/Assembly/TeensyVusbCut.jpg)
+> ![Teensy Vusb Cut](photos/SdAssembly/04-IMG_6158.jpg)
 > Source: http://www.pjrc.com/teensy/card5b_rev3.pdf
 
 Now, use your sharp knife to cut several times in the space between the two pads, separating the trace that connects these two pads.  Use the meter again on the two pads and listen for no beep.  If there is a beep, cut again and test.
 
 If you forget to cut this before soldering, not all is lost, it's possible but much more awkward to cut the trace through the little gap between the soldered Teensy and Shield.  Contact us through the links above if you're in this situation.
 
-> ![Teensy Vusb Cut](photos/Assembly/SelfPower1.jpg)
-
 #### Teensy Headers
-Add the two 14-pin headers and 5-pin headers to the underside of the Teensy.
+Add the two 14-pin headers and 5-pin header to the SmartMatrix Shield.
 
- > ![Adding Teensy Headers](photos/SdAssembly/05-IMG_6273.jpg)
+ > ![Adding Teensy Headers](photos/SdAssembly/IMG_6402.jpg)
 
-Place the Teensy on top of the Shield, and rest the shield on the table, so the Shield will keep the pins straight while soldering
+Place the Teensy upside down on top of the Shield.  At this point the Teensy will just be holding the pins straight while you solder pins on the other side of the board, and placing it upside down lets you rest it flat against your table.
 
-There are some components that are quite close to the outer rows of pins on the Teensy.  Be careful not to short or damage anything on the board by keeping the tip of the soldering iron toward the outside of the board, and by not applying too much solder.
-
- > ![Shield holder](photos/SdAssembly/06-IMG_6276.jpg)
- 
- Solder all pins on the outside of the Teensy
- 
-  > ![Teensy Soldering 1](photos/SdAssembly/07-IMG_6278.jpg)
-  > ![Teensy Soldering 2](photos/SdAssembly/08-IMG_6279.jpg)
+ > ![Upside Down Teensy](photos/SdAssembly/IMG_6403.jpg)
 
 Now flip the shield over, and put a little pressure on the board to keep the header in place and the board from moving, while soldering the underside of the pins.
 
   > ![Teensy Soldering Underside 1](photos/SdAssembly/09-IMG_6281.jpg)
   > ![Teensy Soldering Underside 1](photos/SdAssembly/10-IMG_6282.jpg)
+
+Flip the board back over to the top, remove the Teensy and slide it back onto the pins right-side-up.
+
+ > ![Shield holder](photos/SdAssembly/06-IMG_6276.jpg)
+ 
+There are some components that are quite close to the outer rows of pins on the Teensy.  Be careful not to short or damage anything on the board by keeping the tip of the soldering iron toward the outside of the board, and by not applying too much solder.
+
+Solder all pins on the outside of the Teensy
+ 
+  > ![Teensy Soldering 1](photos/SdAssembly/07-IMG_6278.jpg)
+  > ![Teensy Soldering 2](photos/SdAssembly/08-IMG_6279.jpg)
+
+
+
+
 
 #### Expansion Header
 Add the 15-pin expansion header next.  Use the right angle header to keep a low profile to the board.
