@@ -116,7 +116,7 @@ The latest version of Teensyduino includes FastLED version 2.0 which is too old 
 `no known conversion for argument 4 from 'CRGB' to 'const rgb24&'`  
 `error: 'inoise8' was not declared in this scope`
 
-This can be tricky to trace down as Teensyduino might have installed the library in a different folder than your default libraries folder.  I'm not sure about Windows, but for OSX you will need to navigate into the the Arduino.app package to find the libraries folder and delete the old FastLED.
+This can be tricky to trace down as Teensyduino installs libraries into your Arduino application directory, which might not be in your Arduino sketchbook.  For OSX you will need to navigate into the the Arduino.app package to find the libraries folder and delete the old FastLED.
 
 Install FastLED 2.1 from this branch, not the `master` branch:  
 https://github.com/FastLED/FastLED/tree/FastLED2.1
