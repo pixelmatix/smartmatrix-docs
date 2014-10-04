@@ -9,7 +9,7 @@ The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible L
 
 All of our products are sold as kits and require some soldering, but we are working to have an assembled option as well.  [Sign up for our email list](http://eepurl.com/UX2V5) to get notified when this product is available.
 
-The Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
+The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
 
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 
