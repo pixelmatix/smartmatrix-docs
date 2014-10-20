@@ -209,6 +209,3 @@ Take a look at all the solder joints and make sure none were skipped, or have in
 
 If you have a multimeter, do a continuity test between the 5V and GND pads, as a short there could be particularly bad.
 
-## Testing Shield
-
-Instructions coming soon...
