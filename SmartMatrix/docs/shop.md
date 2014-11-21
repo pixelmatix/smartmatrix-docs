@@ -7,8 +7,23 @@ The SmartMatrix Shield is available for purchase from [Adafruit](https://www.ada
 > ![SmartMatrix Shield](photos/Shop/AdafruitSmartMatrixKit.jpg)
 > Photo courtesy Adafruit Industries CC-BY-SA
   
-Several others distributors that carry Adafruit products are carrying the SmartMatrix Shield.  
+Several other distributors that carry Adafruit products are carrying the SmartMatrix Shield.  
+
+**UK**  
+[Cool Components](https://www.coolcomponents.co.uk/smartmatrix-shield-for-teensy-3-1.html)
+
+**France**  
+[Lextronic](http://www.lextronic.fr/P30184-module-smartmatrix-shield.html)
   
+**Greece**  
+[GRobotronics](http://grobotronics.com/smartmatrix-shield-for-teensy-3.1.html)
+
+**Slovakia**  
+[RLX Components](http://www.rlx.sk/sk/arm-freescale/2919-smartmatrix-shield-for-teensy-31-adafruit-1902.html)
+
+**China - with Free Worldwide Shipping**  
+[Geek World on Aliexpress](http://www.aliexpress.com/item/SmartMatrix-Shield-for-Teensy-3-1/2011620249.html)
+
 If you are a distributor reselling the SmartMatrix Shield, please let us know so we can add a link to this page.  
   
 
