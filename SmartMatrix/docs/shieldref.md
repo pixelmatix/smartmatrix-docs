@@ -6,16 +6,15 @@ The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible L
 
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 
-The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield included two connectors for power, to match the two main types of power cables included with these displays.
+The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield includes two connectors for power, to match the two main types of power cables included with these displays.
 
 The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).
 
 > ![SmartMatrix Shield](photos/ShieldRef/SmartMatrixShield_V1.png)
 
-The SmartMatrix SD Shield features a microSD connector on board and revisied expansion header.  The SD Shield is not a replacement for the SmartMatrix Shield, as the new design is more expensive to manufacture and not all users want to use an SD card for storing animations.  See more details on this new shield here: [SmartMatrix Docs - SD Shield](shield-sd.html)
+The SmartMatrix SD Shield features a microSD connector on board and revised expansion header.  The SD Shield is not a replacement for the SmartMatrix Shield, as the new design is more expensive to manufacture and not all users want to use an SD card for storing animations.  See more details on this new shield here: [SmartMatrix Docs - SD Shield](shield-sd.html)
 
 > ![SmartMatrix SD](photos/SdAssembly/01-IMG_6149.jpg)
-
 
 ## Specs
 
@@ -30,9 +29,11 @@ The current draw from the 5V (Vext) pin is limited to 500mA (assuming a 4A power
 
 Note that the 5V line may have significant ripple coming from the PWM driving of the display.  If your external circuit can handle a slightly lower voltage, using the Shield's Self Power option will give you 5V minus the voltage drop from the diode.  If your application needs closer to 5V, you can draw from the 5V line, but add a shottky diode and smoothing capacitor to your circuit. 
 
-The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware).
+The Schematic, Board Layout, Gerber Files, and BOM can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware).
 
 ## Kit Assembly
+
+_For Instructions assembling the SmartMatrix SD Shield - there is a dedicated page [here](shield-sd.html)_
 
 Tools needed for assembling the shield
 
