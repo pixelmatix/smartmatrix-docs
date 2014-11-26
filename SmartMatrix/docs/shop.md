@@ -3,12 +3,12 @@
 ### SmartMatrix Shield
 
 The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  
-
+  
 > ![SmartMatrix Shield](photos/Shop/AdafruitSmartMatrixKit.jpg)
 > Photo courtesy Adafruit Industries CC-BY-SA
   
 Several other distributors that carry Adafruit products are carrying the SmartMatrix Shield.  
-
+  
 **UK**  
 [Cool Components](https://www.coolcomponents.co.uk/smartmatrix-shield-for-teensy-3-1.html)
 
