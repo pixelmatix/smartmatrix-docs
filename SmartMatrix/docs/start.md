@@ -17,6 +17,8 @@ The [SmartMatrix SD Shield](shield-sd.html) adds a microSD card reader on the bo
 
 > ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
 
+For an overview of the types of projects you can do with the SmartMatrix Shield, see [our guides on the Adafruit Learning System](https://learn.adafruit.com/users/Pixelmatix).
+
 ### Large RGB LED Matrix Display Panels
 The supported RGB matrix display panels are designed to be used in large scale video advertising screens, and come in different sizes and pixel pitches, with driver circuitry built into the board.  The panels require an external controller to refresh the display.
 
@@ -52,7 +54,7 @@ The SmartMatrix Shield includes multiple options for connecting the Shield to th
 See more details on the shield and assembly instructions here:  
 [SmartMatrix Shield](shieldref.html)
 
-The Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).
+The Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html), as well as some other distributors listed on [the Shop page](shop.html).
 
 A Teensy 3.1 can also be connected to the display panel using individual wires.  Follow the wiring for the 13 signals between J1 and U1 in the [SmartMatrix Shield schematic](https://github.com/pixelmatix/SmartMatrix/raw/master/hardware/SmartMatrixShield_V1_sch.pdf), as well as ground.  Make sure to connect the LATCH signal to both pins on the Teensy, as well as the display connector.
 > ![Manual Wiring](photos/TeensyManualWiring.jpg)
