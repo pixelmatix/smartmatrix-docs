@@ -65,7 +65,7 @@ Decide if you want to be able to be able to remove your Teensy 3.1 from the shie
 
 Finally, decide if you want to power your Teensy from USB, or from the external power supply.  
 
-Powering from USB (USB Power Option) requires a USB cable to connect the Teensy to power any time you want to use the display, even if your sketch does not require USB communication with your computer.  
+Powering from USB (USB Power Option) requires a USB cable to connect the Teensy to power any time you want to use the display, even if your sketch does not require USB communication with your computer.  You can't power the LED display through USB, and will need to connect an external power supply to the shield in addition to the USB connection to the computer when using this option.
 
 To allow for power from an external power supply (Self Power Option), you need to cut a trace on the Teensy with a knife to disconnect USB power.  If you plan on removing the Teensy from the shield later for use with another project, you will need to either solder a jumper to reconnect USB power to the Teensy, or to supply external power to the Teensy in your project.  
 
