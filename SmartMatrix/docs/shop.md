@@ -21,13 +21,16 @@ Several other distributors that carry Adafruit products are carrying the SmartMa
 **Slovakia**  
 [RLX Components](http://www.rlx.sk/sk/arm-freescale/2919-smartmatrix-shield-for-teensy-31-adafruit-1902.html)
 
+**Singapore**
+[SGBotic](http://www.sgbotic.com/index.php?dispatch=products.view&product_id=1776)
+
 If you are a distributor reselling the SmartMatrix Shield, please let us know so we can add a link to this page.  
   
 
 
 ### SmartMatrix SD
 
-The SmartMatrix SD Shield is currently available as part of a [bundle sold on the Pixelmatix Tindie store](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-shield/).  If you want to purchase the shield by itself, [sign up for the waiting list](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-kit/) on Tindie to get notified when more SmartMatrix SD Shields have been manufacturered and are available.
+The SmartMatrix SD Shield is currently only available from our [Tindie store](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-kit/) shipping to US customers only.  If you want to purchase the shield outside the US, [Sign up for our email list](http://eepurl.com/UX2V5) or follow us on G+, Facebook, or Twitter to get notified when more SmartMatrix SD Shields have been manufacturered and are available through our distributors.
 
 > ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
 
