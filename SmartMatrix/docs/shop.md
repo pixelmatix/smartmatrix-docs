@@ -21,7 +21,7 @@ Several other distributors that carry Adafruit products are carrying the SmartMa
 **Slovakia**  
 [RLX Components](http://www.rlx.sk/sk/arm-freescale/2919-smartmatrix-shield-for-teensy-31-adafruit-1902.html)
 
-**Singapore**
+**Singapore**  
 [SGBotic](http://www.sgbotic.com/index.php?dispatch=products.view&product_id=1776)
 
 If you are a distributor reselling the SmartMatrix Shield, please let us know so we can add a link to this page.  
