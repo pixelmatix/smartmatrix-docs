@@ -12,7 +12,7 @@ The SmartMatrix Full Bundle contains:
 
 Depending on where you buy the bundle, the Teensy 3.1 required to drive the display may be included, or may need to be purchased separately.
 
-> ![Full Bundle Contents](photos/FullBundle-HAD.png)
+> ![Full Bundle Contents](photos/FullBundle-HAD.jpg)
 
 
 ## Specs
