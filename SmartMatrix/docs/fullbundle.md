@@ -12,6 +12,9 @@ The SmartMatrix Full Bundle contains:
 
 Depending on where you buy the bundle, the Teensy 3.1 required to drive the display may be included, or may need to be purchased separately.
 
+> ![Full Bundle Contents](photos/FullBundle-HAD.png)
+
+
 ## Specs
 
 The [Teensy 3.1 specs](https://www.pjrc.com/teensy/teensy31.html) are the best source for general info on the capabilities of the Teensy 3.1 when used in the shield.  Changes from the Teensy 3.1 specs are listed below:
