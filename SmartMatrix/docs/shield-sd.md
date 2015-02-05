@@ -11,7 +11,7 @@ The shield uses 13 IO pins to drive the display, which are not brought out to th
 
 The current draw from the 5V (Vext) pin is limited to 500mA (assuming a 4A power supply is connected to the shield), as the display draws up to 3.5A.
 
-Note that the 5V line may have significant ripple coming from the PWM driving of the display.  If your external circuit can handle a slightly lower voltage, using the Shield's Self Power option will give you 5V minus the voltage drop from the diode.  If your application needs closer to 5V, you can draw from the 5V line, but add a shottky diode and smoothing capacitor to your circuit. 
+Note that the 5V line may have significant ripple coming from the PWM driving of the display.  If your external circuit can handle a slightly lower voltage, using the Shield's Self Power option will give you 5V minus the voltage drop from the diode.  If your application needs closer to 5V, you can draw from the 5V line, but add a schottky diode and smoothing capacitor to your circuit. 
 
 The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main difference is a MicroSD slot on the board connected to SPI with chip select on pin 15.  The expansion header uses the same pins (with the exception of pin 15), but the layout is changed to allow for making easier connections.
 
@@ -33,7 +33,7 @@ Tools needed for assembling the shield
 If soldering is new to you, this kit is fairly easy to solder as it uses all through-hole components.  This guide assumes you have the bare minimum tools, but if you have extras like a vice or third hand tool and know how to use them, please do!  The Adafruit Learning System has a [good overview on soldering](http://learn.adafruit.com/adafruit-guide-excellent-soldering/tools).
 
 ### Assembly Options
-This guide focuses on using the female connector to attach to the display panel and terminal block to connect power, as this method is what was presented at Maker Faire when this shield was released.  There will be connectors left over at the end of assembly, which you can use for another project if you like.
+This guide focuses on using the female connector to attach to the display panel and terminal block to connect power as this gives the cleanest look when mounting in a frame.  There will be connectors left over at the end of assembly, which you can use for another project if you like.
 
 
 ### Assembly Steps
@@ -161,7 +161,7 @@ Take a look at all the solder joints and make sure none were skipped, or have in
 If you have a multimeter, do a continuity test between the 5V and GND pads, as a short there could be particularly bad.
 
 #### Panel Connection
-The panels sold at Maker Faire have a screw terminal power connection.  Strip the wires on the ends without a connector, the wire is 14 gauge.
+The panels sold with the SmartMatrix Bundles have a screw terminal power connection.  Strip the wires on the ends without a connector, the wire is 14 gauge.
 
  > ![Panel Power Connection 1](photos/SdAssembly/28-IMG_6214.jpg)
 
