@@ -301,6 +301,8 @@ You can now add the SmartMatrix Shield to your display and adjust the height of 
 
 ### Getting Started
 
+_Note: We are not maintaining this port anymore, though it should still work.  Take a look at the TPM2 streaming support built into the [Aurora sketch](https://github.com/pixelmatix/aurora) for an alternative streaming protocol we are continuing to support._
+
 Fadecandy is an open source project by Micah Elizabeth Scott to "make LED art easier, tastier, and more creative".  It combines server software running on a computer with firmware running on specialized hardware to drive WS2812 LED strips and matrix displays with smooth color transitions.  
 
 Take a look at the first three links from the [Fadecandy Readme](https://github.com/scanlime/fadecandy/blob/master/README.md) to get a good overview of what Fadecandy is all about:
