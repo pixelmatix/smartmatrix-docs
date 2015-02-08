@@ -1,14 +1,18 @@
 # SmartMatrix Full Bundle
 
+The SmartMatrix Bundle combines the SmartMatrix SD Shield with a 32x32 pixel RGB Matrix Panel and parts to turn it into a remote controlled display for showing LED artwork and GIF animations.
+
 ## Bundle Contents
 
 The SmartMatrix Full Bundle contains:
 
-* 32x32 Pixel RGB LED Matrix Display Panel - 192mm (7.56") square
-* 5V 4A Power Supply, 6' USB Cable
-* Remote control and IR receiver so you can control the display from across the room
-* 4GB microSD card to store content for the display
-* Parts to give a nice look to the display by mounting in your choice of shadow box frame (frame not included).
+* 32x32 Pixel RGB LED Matrix Display Panel - 192mm (7.56”) square.
+* 5V 4A Power Supply, 6’ USB Cable.
+* Remote control and IR receiver to control the display from across the room.
+* 4GB microSD card to store content for the display.
+* 8 inch (203mm) square sheet of specialty lighting acrylic to diffuse the LEDs and improve the look of the display
+* 8 inch (203mm) paperboard backing attaches to the display to hide panel electronics and makes the panel easy to mount
+* The acrylic sheet and paperboard backing are designed to fit in 8 inch square shadow box frames available from several manufacturers (not included), or can be used to mount the panel in a custom enclosure.
 
 Depending on where you buy the bundle, the Teensy 3.1 required to drive the display may be included, or may need to be purchased separately.
 
@@ -216,3 +220,10 @@ Route the power cable in a smooth curve and insert the Shield into the panel.
 ## Accessories
 
 You can find instructions for using the accessories from the SmartMatrix Bundle on the [projects page](projects.html).
+
+## Aurora Sketch
+
+This sketch features a menu system controlled using the IR remote and plays platterns, and animated GIFs from a SD card.  You can find the sketch and instructions for installation and use here:
+https://github.com/pixelmatix/aurora
+
+

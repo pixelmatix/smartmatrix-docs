@@ -181,8 +181,10 @@ The battery compartment can be tricky to open.  Use one fingernail to move the t
 
 ### Aurora Sketch
 
-This sketch demoed at Maker Faire features a menu system controlled using the IR remote and plays animated GIFs from a SD card.  You can find the sketch and instructions for use here:
+This sketch features a menu system controlled using the IR remote and plays platterns, and animated GIFs from a SD card.  You can find the sketch and instructions for installation and use here:
 https://github.com/pixelmatix/aurora
+
+
 
 ## Aurora Display (Bay Area Maker Faire 2014)
 
