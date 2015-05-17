@@ -1,7 +1,7 @@
 # SmartMatrix Overview
 
 ## SmartMatrix is on Kickstarter!
-Please visit our [Kickstarter page](https://www.kickstarter.com/projects/pixelmatix/smartmatrix-dynamic-led-art-display-and-music-visu/comments) for more details on the finished product we're building, and the Instructables page linked from Kickstarter for details on how you can make one yourself with a SmartMatrix shield.
+Please visit our [Kickstarter page](https://www.kickstarter.com/projects/pixelmatix/smartmatrix-dynamic-led-art-display-and-music-visu) for more details on the finished product we're building, and the Instructables page linked from Kickstarter for details on how you can make one yourself with a SmartMatrix shield.
 
 ### Introduction
 The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels, and in combination with the SmartMatrix Library can create stunning LED visuals with just a few lines of code.  You can also use the prebuilt [Aurora software](https://github.com/pixelmatix/aurora) that creates an interactive display to play animated GIFs and patterns using the SmartMatrix Shield, for those who want to easily get started or don't want to write their own code.
