@@ -1,4 +1,4 @@
-# SmartMatrix SD Shield (Version 2)
+# SmartMatrix SD Shield (Version 2 and Version 3)
 
 ## Specs
 
