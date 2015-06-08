@@ -13,9 +13,9 @@ The SmartMatrix Shield is available for purchase from [Adafruit](https://www.ada
 > ![SmartMatrix Shield](photos/ShieldRef/SmartMatrixShield_V1.png)
 
 The SmartMatrix SD Shield features a microSD connector on board and revised expansion header.  The SD Shield is not a replacement for the SmartMatrix Shield, as the new design is more expensive to manufacture and not all users want to use an SD card for storing animations.  See more details on this new shield here:  
-> ![SmartMatrix SD](photos/SdAssembly/01-IMG_6149.jpg)
 [SmartMatrix Docs - SD Shield (V1)](shield-sd.html)  
 [SmartMatrix Docs - SD Shield (V2 + V3)](shield-sdv2.html)
+> ![SmartMatrix SD](photos/SdAssembly/01-IMG_6149.jpg)
 
 
 ## Specs
