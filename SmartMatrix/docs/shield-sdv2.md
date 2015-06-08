@@ -36,6 +36,7 @@ If soldering is new to you, this kit is fairly easy to solder as it uses all thr
 ### Assembly Options
 This guide focuses on using the female connector to attach to the display panel and terminal block to connect power as this gives the cleanest look when mounting in a frame.  There will be connectors left over at the end of assembly, which you can use for another project if you like.
 
+The pictures in the guide are for the V2 version, V3 (the version adding level shifting buffers) assembly is identical.
 
 ### Assembly Steps
 Solder pieces in the order listed below.  Solder only one or two pins first, then flip the board over and check the connector to make sure it was seated properly before continuing with the rest of the pads on the connector.
