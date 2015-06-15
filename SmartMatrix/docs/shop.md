@@ -1,8 +1,5 @@
 # Purchasing SmartMatrix
 
-## SmartMatrix is on Kickstarter!
-Please visit our [Kickstarter page](https://www.kickstarter.com/projects/pixelmatix/smartmatrix-dynamic-led-art-display-and-music-visu/comments) for more details on the finished product we're building, and the Instructables page linked from Kickstarter for details on how you can make one yourself with a SmartMatrix shield.
-
 ### SmartMatrix Bundle
 
 The [SmartMatrix Bundle](http://store.hackaday.com/products/smartmatrix-bundle) includes everything needed to build a 32x32 RGB display that runs the Aurora software, and uses the SmartMatrix SD board to make it easy to read content from a microSD card.  In addition to the parts needed to make a basic display, it includes a remote control and receiver, microSD card, and parts to mount the display in a shadow box picture frame.
