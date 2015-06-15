@@ -1,7 +1,7 @@
 # Purchasing SmartMatrix
 
 ## SmartMatrix is on Kickstarter!
-Please visit our [Kickstarter page](https://www.kickstarter.com/projects/pixelmatix/smartmatrix-dynamic-led-art-display-and-music-visu) for more details on the finished product we're building, and the Instructables page linked from Kickstarter for details on how you can make one yourself with a SmartMatrix shield.
+Please visit our [Kickstarter page](https://www.kickstarter.com/projects/pixelmatix/smartmatrix-dynamic-led-art-display-and-music-visu/comments) for more details on the finished product we're building, and the Instructables page linked from Kickstarter for details on how you can make one yourself with a SmartMatrix shield.
 
 ### SmartMatrix Bundle
 
