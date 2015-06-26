@@ -7,15 +7,11 @@ The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible L
 > Example display created using the SmartMatrix SD Shield, 32x32 P6 LED Matrix Panel, and SmartMatrix Frame Kit installed in a shadowbox picture frame.  
 > [Click for Video](https://www.youtube.com/watch?v=alcExtbLE3w&feature=youtu.be)
 
-The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  We sell the SmartMatrix Bundle - which comes with everything you need to build a display that can be mounted in a shadowbox picture frame and comes with a remote control to change what's playing - through our [Tindie Store](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-shield/).
+The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  The SmartMatrix Bundle - which comes with everything you need to build a display that can be mounted in a shadowbox picture frame and comes with a remote control to change what's playing - is available through the [Hackaday Store](http://store.hackaday.com/products/smartmatrix-bundle) with free worldwide shipping.
 
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 
-All of our products are sold as kits and require some soldering.  If you buy the SmartMatrix Bundle from our Tindie Store, there is an option to purchase an assembled Shield, and you can assemble the rest of the parts without any soldering.  If you are interested in purchasing a complete product and not a kit, [sign up for our email list](http://eepurl.com/UX2V5) to get notified when this is available.
-
-The [SmartMatrix SD Shield](shield-sd.html) adds a microSD card reader on the board, making it easy to play back animated GIFs from a microSD card on the matrix display.  The SD Shield is a premium option that makes it much easier to add a microSD card to a SmartMatrix project and connect to other devices as well, and the SmartMatrix Shield will still continue to be sold as a lower cost option.  You can purchase this shield as part of the [SmartMatrix Bundle](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-shield/), or [Join the waitlist](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-kit/) on Tindie to get notified when this new shield is available for purchase separately.
-
-> ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
+All of our products are sold as kits and require some soldering.  If you are interested in purchasing a complete product and not a kit, [sign up for our email list](http://eepurl.com/UX2V5) to get notified when this is available.
 
 For an overview of the types of projects you can do with the SmartMatrix Shield, see [our guides on the Adafruit Learning System](https://learn.adafruit.com/users/Pixelmatix).
 

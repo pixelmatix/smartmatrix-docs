@@ -11,7 +11,7 @@ The bundle is only available from the [Hackaday Store](http://store.hackaday.com
 
 ### SmartMatrix Shield
 
-The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  
+The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  
   
 > ![SmartMatrix Shield](photos/Shop/AdafruitSmartMatrixKit.jpg)
 > Photo courtesy Adafruit Industries CC-BY-SA
@@ -35,16 +35,5 @@ Several other distributors that carry Adafruit products are carrying the SmartMa
 
 If you are a distributor reselling the SmartMatrix Shield, please let us know so we can add a link to this page.  
 
-
-### SmartMatrix SD
-
-The SmartMatrix SD Shield is currently only available from our [Tindie store](https://www.tindie.com/products/Pixelmatix/smartmatrix-sd-kit/) shipping to US customers only, and as part of the SmartMatrix Bundle [sold on the Hackaday Store](http://store.hackaday.com/products/smartmatrix-bundle).  If you want to purchase just the shield outside the US, [Sign up for our email list](http://eepurl.com/UX2V5) or follow us on G+, Facebook, or Twitter to get notified when more SmartMatrix SD Shields have been manufacturered and are available through our distributors.
-
-> ![Resistor Position](photos/SdAssembly/01-IMG_6149.jpg)
-
-
-### Aurora Display
-
-The Aurora Display will have similar features to the SmartMatrix Bundle and will run the Aurora software, but will not require any soldering to assemble.  [Sign up for our email list](http://eepurl.com/UX2V5) to get notified when this product is available.
 
 
