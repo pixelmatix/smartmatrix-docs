@@ -7,7 +7,7 @@ The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible L
 > Example display created using the SmartMatrix SD Shield, 32x32 P6 LED Matrix Panel, and SmartMatrix Frame Kit installed in a shadowbox picture frame.  
 > [Click for Video](https://www.youtube.com/watch?v=alcExtbLE3w&feature=youtu.be)
 
-The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [PJRC](http://www.pjrc.com/store/smartmatrix_kit.html).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  The SmartMatrix Bundle - which comes with everything you need to build a display that can be mounted in a shadowbox picture frame and comes with a remote control to change what's playing - is available through the [Hackaday Store](http://store.hackaday.com/products/smartmatrix-bundle) with free worldwide shipping.
+The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  The SmartMatrix Bundle - which comes with everything you need to build a display that can be mounted in a shadowbox picture frame and comes with a remote control to change what's playing - is available through the [Hackaday Store](http://store.hackaday.com/products/smartmatrix-bundle) with free worldwide shipping.
 
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 
