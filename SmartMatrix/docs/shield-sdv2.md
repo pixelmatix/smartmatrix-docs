@@ -50,8 +50,6 @@ If you're using these pins for something other than I2C, you probably don't need
 
 > ![Resistor Position](photos/SdAssemblyV2/IMG_6578.jpg)
 
-Two of the resistors pads are very close together, but they are connected to the same circuit, so don't worry if the leads touch or you have a solder blob between the two pads.
-
 > ![Resistor Soldering](photos/SdAssemblyV2/IMG_6579.jpg)
 
 After soldering, trim the excess leads using the diagonal cutter.
