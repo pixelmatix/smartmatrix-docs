@@ -135,7 +135,61 @@ The [Aurora Software Wiki](https://github.com/pixelmatix/aurora/wiki) has some i
 
 ## Modifying SmartMatrix
 
-We will be adding more details.  Please check back here or in the [SmartMatrix](http://community.pixelmatix.com/) Community for updates, and post any questions you have.
+If you don't see what you're looking for, please post in the [SmartMatrix](http://community.pixelmatix.com/) Community.
 
+### Running custom code on SmartMatrix
 
+SmartMatrix development was done using the [Teensy 3.1][teensy31] and the [SmartMatrix Shield][smartmatrixshield], with code compiled in the Arduino IDE with Teensyduino add-on.  The Teensy 3.1 has a bootloader chip containing special code to connect to a loader application on the computer and transfer new firmware.  SmartMatrix doesn't have the bootloader chip, and instead has a completely different bootloader that takes files in a special format.  
+
+You can compile code for SmartMatrix using the Arduino IDE and Teensyduino add-on, after making a few modifications.
+
+#### Arduino Modifications to compile Aurora or your own code
+
+First, install the latest Arduino IDE and Teensyduino add-on.  Follow the  instructions for compiling Aurora and make sure you can compile Aurora for the Teensy 3.1 board.  
+https://github.com/pixelmatix/aurora/wiki/Compiling
+
+Next, install srec_cat and modify the Arduino install to create a binary with 0x8080 offset.  
+https://github.com/pixelmatix/JumpToAppWithOffset
+
+Finally, either run `srec_cat` from the commandline to generate `software.bin`, or modify the Arduino IDE to give a menu option for running srec_cat after compiling.  
+https://github.com/pixelmatix/uTaskerBootWithArduinoApp
+
+#### Loading software.bin onto SmartMatrix
+There are two options for loading new firmware.  You can run the bootloader at startup by holding down the button while applying power, or you can load software.bin onto the root of the microSD card where it will overwrite the firmware when the SmartMatrix CPU restarts.
+
+**Failsafe Bootloader**  
+This option will always be available, even when there is no microSD card inserted, or there is no firmware installed.
+
+1. Disconnect all power (including USB)
+2. Hold button on back of SmartMatrix while connecting USB
+3. Look for flashing red light in left-center of SmartMatrix, and fast flashing light on back of SmartMatrix
+4. Release button
+5. Look for `SMARTMATRIX_BOOT` drive on your computer
+6. Open drive and delete existing `software.bin` file if present
+7. Copy over new `software.bin` file into root of drive
+8. Drive will disconnect automatically, ignore any warnings by the OS on improperly connecting drive
+
+**MicroSD Bootloader**  
+1. Load `software.bin` onto the root of the microSD card - you can use the "Update Files" option in Aurora
+2. Restart SmartMatrix - you can cycle power, or eject the drive and disconnect the USB cable from the computer
+3. You should see a fast flashing red light in the lower left corner of SmartMatrix, and a fast flashing yellow light on the back of SmartMatrix.  Don't disconnect power while the light is flashing as it is updating the software
+4. When complete, the bootloader will delete `software.bin` from the microSD card
+
+### Connecting to other electronics
+
+The expansion port - based on Fadecandy's [Hacker Port][hackerport] layout - has connections for UART, I2C, and power.  Outputs are at 3.3V but inputs are 5V tolerant.  I2C pull-ups are not installed.  Full hardware details are in the [SmartMatrix GitHub Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware), see the files starting with "SmartMatrix_V1".
+
+| Name | Function | Teensy Pin # | Kinetis GPIO |
+-:----:|:--------:|:------------:|:------------:|
+| TX (out)   | UART1 TX | 31           | E0           |
+| RX (in)   | UART1 RX | 26           | E1           |
+| SDA  |  I2C SDA | 17           | B1           |
+| SCL  |  I2C SCL | 16           | B0           |
+
+VUSB is close to 5V coming from a diode OR of external power and USB power
+3.3V is drawing from the Kinetis 3.3V output, limited to 100mA
+
+[hackerport]:https://github.com/scanlime/fadecandy
+[teensy31]:https://www.pjrc.com/teensy/index.html
+[smartmatrixshield]:docs.pixelmatix.com/SmartMatrix/shieldref.html
 
