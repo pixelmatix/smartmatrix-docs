@@ -150,7 +150,7 @@ You can compile code for SmartMatrix using the Arduino IDE and Teensyduino add-o
 First, install the latest Arduino IDE and Teensyduino add-on.  Follow the  instructions for compiling Aurora and make sure you can compile Aurora for the Teensy 3.1 board.  
 https://github.com/pixelmatix/aurora/wiki/Compiling
 
-Next, install srec_cat and modify the Arduino install to create a binary with 0x8080 offset.  The Linker Script option should be set to "0x8080 Offset" to compile for the SmartMatrix Display.
+Next, download the `srec_cat` tool and modify the Arduino install to create a binary with 0x8080 offset.  The Linker Script option should be set to "0x8080 Offset" to compile a binary that will run on the SmartMatrix Display.
 https://github.com/pixelmatix/JumpToAppWithOffset
 
 Finally, either run `srec_cat` from the commandline to generate `software.bin`, or modify the Arduino IDE to give a menu option for running srec_cat after compiling.  
