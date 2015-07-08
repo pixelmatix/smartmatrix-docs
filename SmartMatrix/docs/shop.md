@@ -1,5 +1,9 @@
 # Purchasing SmartMatrix
 
+### SmartMatrix Display
+
+For a fully assembled display, no soldering required, see the page dedicated to the [SmartMatrix Display](postkick.html).
+
 ### SmartMatrix Bundle
 
 The [SmartMatrix Bundle](http://store.hackaday.com/products/smartmatrix-bundle) includes everything needed to build a 32x32 RGB display that runs the Aurora software, and uses the SmartMatrix SD board to make it easy to read content from a microSD card.  In addition to the parts needed to make a basic display, it includes a remote control and receiver, microSD card, and parts to mount the display in a shadow box picture frame.
