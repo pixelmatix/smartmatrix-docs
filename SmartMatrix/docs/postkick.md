@@ -1,7 +1,7 @@
 # SmartMatrix After Kickstarter
 Our Kickstarter campaign ended, but the SmartMatrix project isn't over.  We're selling the SmartMatrix units we already built, with free shipping to the US, while supplies last:
 
-<a href="https://shop.trycelery.com/page/556bb89a502fad0b00edf08d" data-celery="556bb89a502fad0b00edf08d" data-celery-version="v2">Pre-order SmartMatrix Now ></a>
+<a href="https://shop.trycelery.com/page/556bb89a502fad0b00edf08d" data-celery="556bb89a502fad0b00edf08d" data-celery-version="v2">Order SmartMatrix Now ></a>
 <script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>  
 
 > ![SmartMatrix](photos/KickStaffPick.jpg)
@@ -133,6 +133,8 @@ In the Settings menu, there is a menu entry for "Audio Calibration".  Inside the
 
 The [Aurora Software Wiki](https://github.com/pixelmatix/aurora/wiki) has some instructions.  We will be adding more later.  Please check back here or in the [SmartMatrix Community](http://community.pixelmatix.com/) for updates, and post any questions you have.
 
+
+
 ## Modifying SmartMatrix
 
 If you don't see what you're looking for, please post in the [SmartMatrix](http://community.pixelmatix.com/) Community.
@@ -148,7 +150,7 @@ You can compile code for SmartMatrix using the Arduino IDE and Teensyduino add-o
 First, install the latest Arduino IDE and Teensyduino add-on.  Follow the  instructions for compiling Aurora and make sure you can compile Aurora for the Teensy 3.1 board.  
 https://github.com/pixelmatix/aurora/wiki/Compiling
 
-Next, install srec_cat and modify the Arduino install to create a binary with 0x8080 offset.  
+Next, install srec_cat and modify the Arduino install to create a binary with 0x8080 offset.  The Linker Script option should be set to "0x8080 Offset" to compile for the SmartMatrix Display.
 https://github.com/pixelmatix/JumpToAppWithOffset
 
 Finally, either run `srec_cat` from the commandline to generate `software.bin`, or modify the Arduino IDE to give a menu option for running srec_cat after compiling.  
