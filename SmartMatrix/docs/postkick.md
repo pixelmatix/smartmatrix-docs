@@ -23,6 +23,12 @@ If you purchased the "Assembled" version, remove the tape and cardboard used to 
 
 Plug in the power supply and you can start using SmartMatrix with the remote control.
 
+Aurora boots to a menu that lets you select between Patterns, Audio Patterns, Animations, and Settings.  Press the select button (circle button) on the remote to enter any of these modes.
+
+Select content to play with the left/right buttons.  The Playback button lets you change playback modes to cycle through content sequentially or randomly.  In Patterns and Audio Patterns you can customize the color palette with the Palette button.  The overlay button shows one of the clock faces or messages.
+
+The [Aurora Software Wiki](https://github.com/pixelmatix/aurora/wiki) has more details on Aurora's features.
+
 ### Loading Content
 
 To customize content on SmartMatrix, connect the USB cable to your computer.  Use the remote to navigate to the Settings menu, then "Update Files".  The screen will go blank and SmartMatrix will go into a mode where it looks like a flash drive to the computer.
@@ -40,12 +46,6 @@ In the Settings menu, there is a menu entry for "Set Time" and "Set Date".  Once
 Audio Calibration is used to remove noise from the Audio Patterns so you just see your music and not noise in the pattern.  Run calibration without any music playing.  You can connect up your audio source with music paused for the best calibration.  You can run the calibration again at any time.
 
 In the Settings menu, there is a menu entry for "Audio Calibration".  Inside the settings page, use left/right to choose "Auto", and press select to start calibration.  Press select again to stop, and back to exit the menu.
-
-
-## Using SmartMatrix
-
-The [Aurora Software Wiki](https://github.com/pixelmatix/aurora/wiki) has some instructions.  We will be adding more later.  Please check back here or in the [SmartMatrix Community](http://community.pixelmatix.com/) for updates, and post any questions you have.
-
 
 
 ## Assembling SmartMatrix
