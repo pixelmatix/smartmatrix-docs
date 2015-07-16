@@ -9,7 +9,7 @@ The SmartMatrix Shield includes multiple options for connecting the Shield to th
 > ![SmartMatrix Shield](photos/sdv3isometric.jpg)
 > Photo courtesy Adafruit
 
-The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
+The SmartMatrix SD Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
 
 The SmartMatrix Bundle - which comes with everything you need to build a display that can be mounted in a shadowbox picture frame and comes with a remote control to change what's playing - is available through the [Hackaday Store](http://store.hackaday.com/products/smartmatrix-bundle) with free worldwide shipping.
 
@@ -20,7 +20,7 @@ SmartMatrix SD Shields have a microSD card slot for storing Animated GIFs, a low
 > ![SmartMatrix SD Shield](photos/sdv3isometric.jpg)
 > SmartMatrix SD Shield V3 - Photo courtesy Adafruit
 
-[SmartMatrix SD V3](shield-sdv2.html) adds buffers on all the signals going to the panel for better compatibility with some panels that require 5V signals.
+[SmartMatrix SD V3](shield-sdv2.html) adds buffers on all the signals going to the panel for better compatibility with some panels that require 5V signals.  It's sold through [Adafruit](https://www.adafruit.com/products/1902).
 
 [SmartMatrix SD V2](shield-sdv2.html) is the version included in the [SmartMatrix Bundle](fullbundle.html), and was previously available in our Tindie store.
 
