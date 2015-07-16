@@ -8,7 +8,7 @@ The SmartMatrix Library is designed to make it easy to display graphics and scro
 
 ### Init
 
-*For library installation, see [Overview - Software and Teensy Setup](index.html#software-and-teensy-setup)*
+*See the README hosted in the [SmartMatrix GitHub Repo](https://github.com/pixelmatix/SmartMatrix/) for installation instructions*
 
 Before using the library, include the appropriate header file for the size of your panel, and the SmartMatrix object to your sketch.  Right now two sizes are supported: 32x32 and 16x32.
 

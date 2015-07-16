@@ -1,4 +1,12 @@
-# SmartMatrix SD Shield
+# SmartMatrix SD Shield (V1)
+
+## Overview
+SmartMatrix SD Shields have a microSD card slot for storing Animated GIFs, a lower profile, bring more signals out to the expansion connectors.  This isn't the [latest version of the SD Shield](shieldref.html), V2 has a slightly different expansion connector (bringing out the microSD card's CS signal), and V3 adds 5V level shifting buffers to all the panel signals.
+
+> ![SmartMatrix SD Shield](photos/SdAssembly/01-IMG_6149.jpg)
+> SmartMatrix SD Shield - Photo courtesy Adafruit
+
+The pinout connecting to the panel is the same on all of the Shields, so code that runs on the SmartMatrix Shield should run on the SmartMatrix SD Shield.
 
 ## Specs
 
@@ -15,7 +23,9 @@ Note that the 5V line may have significant ripple coming from the PWM driving of
 
 The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main difference is a MicroSD slot on the board connected to SPI with chip select on pin 15.  The expansion header uses the same pins (with the exception of pin 15), but the layout is changed to allow for making easier connections.
 
-The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware).
+The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) (files start with "SmartMatrixSD_V1").
+
+There are details on the RGB Panels on the [main SmartMatrix Shield page](shieldref.html)
 
 
 ## Kit Assembly
@@ -189,4 +199,8 @@ Route the power cable in a smooth curve and insert the Shield into the panel.
 ## Accessories
 
 You can find instructions for using the accessories from the SmartMatrix Bundle on the [projects page](projects.html).
+
+## Compiling and Running a SmartMatrix Sketch
+
+See the README hosted in the [SmartMatrix GitHub Repo](https://github.com/pixelmatix/SmartMatrix/) for installation instructions.
 
