@@ -7,6 +7,7 @@ The SmartMatrix Bundle combines the SmartMatrix SD Shield with a 32x32 pixel RGB
 The SmartMatrix Full Bundle contains:
 
 * 32x32 Pixel RGB LED Matrix Display Panel - 192mm (7.56”) square.
+* SmartMatrix SD Shield
 * 5V 4A Power Supply, 6’ USB Cable.
 * Remote control and IR receiver to control the display from across the room.
 * 4GB microSD card to store content for the display.
@@ -33,9 +34,14 @@ The current draw from the 5V (Vext) pin is limited to 500mA (assuming a 4A power
 
 Note that the 5V line may have significant ripple coming from the PWM driving of the display.  If your external circuit can handle a slightly lower voltage, using the Shield's Self Power option will give you 5V minus the voltage drop from the diode.  If your application needs closer to 5V, you can draw from the 5V line, but add a schottky diode and smoothing capacitor to your circuit. 
 
-The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main difference is a MicroSD slot on the board connected to SPI with chip select on pin 15.  The expansion header uses the same pins (with the exception of pin 15), but the layout is changed to allow for making easier connections.
+The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main difference is a microSD slot on the board connected to SPI with chip select on pin 15.  The expansion header uses the same pins, but the layout is changed to allow for making easier connections.
 
-The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware).
+This section of the SmartMatrix Shield schematic shows the names printed on the board next to the Teensy pin number/alternate pin function.  Note that the three SPI pins and pin 15 (CS2) are connected to the microSD card slot.
+> ![SD pinout](photos/SdAssemblyV2/SmartMatrixSDpinout.png)
+
+The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) - files start with "SmartMatrixSD_V2".
+
+There are details on the RGB Panel on the [main SmartMatrix Shield page](shieldref.html)
 
 
 ## Kit Assembly
@@ -59,7 +65,7 @@ This guide focuses on using the female connector to attach to the display panel 
 ### Assembly Steps
 Solder pieces in the order listed below.  Solder only one or two pins first, then flip the board over and check the connector to make sure it was seated properly before continuing with the rest of the pads on the connector.
 
-Note that the side with the MicroSD slot is the top side of the board.
+Note that the side with the microSD slot is the top side of the board.
 
 #### I2C Resistors
 If you plan to use an I2C connector in your circuit, and you need pull-up resistors (some I2C peripherals include pull-up resistors already) solder the resistors first.  If you're not sure, set them aside and you can always add them later on.

@@ -51,6 +51,8 @@ If soldering is new to you, this kit is fairly easy to solder as it uses all thr
 ### Assembly Options
 This guide focuses on using the female connector to attach to the display panel and terminal block to connect power as this gives the cleanest look when mounting in a frame.  There will be connectors left over at the end of assembly, which you can use for another project if you like.
 
+It's not pictured, but you can use the 4-pin 0.156" connector if your panel came with one and you'd rather not cut the cable and strip the wires.  The 4-pin connector goes on the *top* of the board.  See the original [SmartMatrix Shield assembly instructions](shield-v1.html) for pictures of soldering this connector.
+
 The pictures in the guide are for the V2 version, V3 (the version adding level shifting buffers) assembly is identical.
 
 ### Assembly Steps
@@ -187,6 +189,8 @@ Take a look at all the solder joints and make sure none were skipped, or have in
 If you have a multimeter, do a continuity test between the 5V and GND pads, as a short there could be particularly bad.
 
 #### Panel Connection
+This guide assumes you have a panel with screw terminal power connectors.  Panels may also have a 4-pin power connector, and should come with a cable with at least one 4-pin power connector.  Cut the other end of the cable and strip the wires to connect to the terminal block on the shield.  You can either use just one pair of the four wires, or twist the ends of the red wires together, and the black wires together before inserting to the terminal block.
+
 The panels sold with the SmartMatrix Bundles have a screw terminal power connection.  Strip the wires on the ends without a connector, the wire is 14 gauge.
 
  > ![Panel Power Connection 1](photos/SdAssembly/28-IMG_6214.jpg)

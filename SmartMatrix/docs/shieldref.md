@@ -9,29 +9,38 @@ The SmartMatrix Shield includes multiple options for connecting the Shield to th
 > ![SmartMatrix Shield](photos/sdv3isometric.jpg)
 > Photo courtesy Adafruit
 
-
 The SmartMatrix Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
 
 The SmartMatrix Bundle - which comes with everything you need to build a display that can be mounted in a shadowbox picture frame and comes with a remote control to change what's playing - is available through the [Hackaday Store](http://store.hackaday.com/products/smartmatrix-bundle) with free worldwide shipping.
 
 ## Versions
-SmartMatrix SD shields have a microSD card slot for storing Animated GIFs, a lower profile, and bring more signals out to the expansion connectors.
+### SmartMatrix SD Shield
+SmartMatrix SD Shields have a microSD card slot for storing Animated GIFs, a lower profile, and bring more signals out to the expansion connectors.
 
 > ![SmartMatrix SD Shield](photos/sdv3isometric.jpg)
 > SmartMatrix SD Shield V3 - Photo courtesy Adafruit
 
 [SmartMatrix SD V3](shield-sdv2.html) adds buffers on all the signals going to the panel for better compatibility with some panels that require 5V signals.
 
-[SmartMatrix SD V2](shield-sdv2.html) is the version included in the SmartMatrix Bundle, and was previously available in our Tindie store.
+[SmartMatrix SD V2](shield-sdv2.html) is the version included in the [SmartMatrix Bundle](fullbundle.html), and was previously available in our Tindie store.
 
 [SmartMatrix SD V1](shield-sd.html) was sold at Maker Faire NYC 2014 and in our Tindie store.
 
+### SmartMatrix Shield
 [SmartMatrix Shield](shield-v1.html) was sold through Adafruit and PJRC (and some of Adafruit's distributors) through May 2015.
 
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 > SmartMatrix Shield
 
-If you purchased a SmartMatrix Shield, look for a short URL on the board or packaging that will take you directly to one of the above links with installation instructions for your board.
+### SmartMatrix Bundle
+The [SmartMatrix Bundle](fullbundle.html) comes with everything you need to build a display that can be mounted in a shadowbox picture frame and comes with a remote control to change what's playing.
+
+> ![SmartMatrix in MCS Frame](photos/Shop/MCSFrameFront.jpg)
+
+> ![SmartMatrix Bundle](photos/Shop/SmartMatrixBundle.jpg)
+
+
+If you purchased a SmartMatrix product and are not sure where to go for instructions, look for a short "pixl.mx" URL on the board or packaging that will take you directly to one of the above links.
 
 ## Technical Details
 ### Large RGB LED Matrix Display Panels
