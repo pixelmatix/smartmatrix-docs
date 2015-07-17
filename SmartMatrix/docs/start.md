@@ -1,9 +1,9 @@
-# SmartMatrix Overview
+# SmartMatrix
 
 SmartMatrix is a beautiful music visualizer, dynamic art display, video game art display, and more. It's controllable, customizable, and extendable, allowing you to display your own animations and messages.
 
-> ![SmartMatrix](photos/KickStaffPick.jpg)
-> [Click for Video](https://vimeo.com/128016189)
+> <iframe src="https://player.vimeo.com/video/128016189" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 Customize what's on the screen with the included remote control: choose what's playing, show a clock or message on top, and change settings, all from the remote. You don't need a computer or phone to control what's on the screen.
 
