@@ -26,7 +26,7 @@ Note that the 5V line may have significant ripple coming from the PWM driving of
 
 The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main difference is a MicroSD slot on the board connected to SPI with chip select on pin 15.  The expansion header uses the same pins, but the layout is changed to allow for making easier connections.
 
-This section of the SmartMatrix Shield (V3) schematic shows the names printed on the board next to the Teensy pin number/alternate pin function.  Note that the three SPI pins and pin 15 (CS2) are connected to the microSD card slot.
+This section of the SmartMatrix Shield (V3) schematic shows the names printed on the board next to the Teensy pin number/alternate pin function.  Note that the three SPI pins and pin 15 (CS2) are connected to the microSD card slot.  Pin 15 (CS2) is not brought out to the expansion header in V2.
 > ![SD pinout](photos/SdAssemblyV2/SmartMatrixSDpinout.png)
 
 The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) - files start with "SmartMatrixSD".
@@ -110,7 +110,9 @@ Solder all pins on the outside of the Teensy
 
 
 #### Expansion Header
-Add the 15-pin expansion header next.  Use the right angle header to keep a low profile to the board.
+Add the 16-pin expansion header next.  Use the right angle header to keep a low profile to the board.
+
+V2 only has 15 pins as the microSD card's CS2 pin is not brought out to the header.  Use diagonal cutters to cut off the excess pin.
 
 Solder one pin on the top of the board to hold the connector in place.  
 
