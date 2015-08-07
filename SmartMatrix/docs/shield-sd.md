@@ -66,6 +66,7 @@ After soldering, trim the excess leads using the diagonal cutter.
 
 > ![Resistor Trimming](photos/SdAssembly/03-IMG_6153.jpg)
 
+#### Cut Vusb Trace
 You need to modify your Teensy by cutting the Vusb trace.  First, use your multimeter to do a continuity test between these two gold pads on the back of the board.  The meter should beep showing these pads are connected.  
 
 These pads connect the 5V power line coming from USB to the Vin pin on the Teensy.  If the trace is not cut, it's possible that current could flow from the external power supply *into* to the 5V power line on your computer, or that USB will try to power the matrix panel through the data lines, potentially drawing more than the allowed amount of current from the USB power source.
