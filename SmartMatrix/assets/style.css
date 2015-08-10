@@ -1,3 +1,5 @@
+/* note: the flatdoc style.css is modified to remove .active to disable highlighting - this needs to be repeated when upgrading flatdoc */
+
 .content img {
   width: 100%;
   border: 1px solid #e7e7e7;
