@@ -35,7 +35,7 @@ Tools needed for assembling the shield
 - Soldering Iron
 - Solder
 - Diagonal Cutters
-- Wire Strippers (14 AWG) and Small Screwdriver
+- Wire Strippers (14 AWG) and Small Screwdrivers (Phillips and Flathead)
 - X-Acto or similar Knife
 - Anything on hand to protect your workspace while soldering, e.g. a scrap piece of cardboard
 - Recommended: Multimeter with Continuity Tester
