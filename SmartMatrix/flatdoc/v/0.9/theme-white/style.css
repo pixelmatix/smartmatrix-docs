@@ -101,6 +101,8 @@ td {
 }
 a img {
   border: none;
+  /* Pixelmatix - change from original FlatDoc CSS, not sure what this does */
+  vertical-align: middle;
 }
 html,
 body {
@@ -594,13 +596,14 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     padding-right: 0;
   }
 }
+/* Pixelmatix - note header changes from original FlatDoc style */
 .header {
   background: #f3f6fb;
   text-shadow: 0 1px 0 rgba(255,255,255,0.5);
   border-bottom: solid 1px #dfe2e7;
-  padding: 15px 15px 15px 30px;
+  padding: 15px 15px 5px 30px;
   zoom: 1;
-  line-height: 20px;
+  line-height: 30px;
   position: relative;
 }
 .header:before,
@@ -616,7 +619,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 .header .right {
   text-align: right;
-  position: absolute;
+  float: right;
   right: 15px;
   top: 15px;
 }
@@ -635,14 +638,16 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 .header h1 a,
 .header h1 a:visited {
   color: #9090aa;
+  font-size: 1.2em;
 }
 .header h1 a:hover {
-  color: #505050;
+  color: #3a3a44;
 }
 .header li a {
-  font-size: 0.88em;
+  font-size: 1.0em;
   color: #9090aa;
-  display: block;
+  font-weight: bold;
+
 }
 .header li a:hover {
   color: #3a3a44;
@@ -666,17 +671,20 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   .header li {
     border-left: solid 1px rgba(255,255,255,0.5);
     border-right: solid 1px #dfe2e7;
+    padding: 0 15px;
   }
   .header li:last-child {
     border-right: 0;
   }
   .header li a {
-    padding: 0 15px;
   }
 }
 @media (max-width: 480px) {
-  .right {
-    display: none;
+  .header .right {
+    position: absolute;
+  }
+  .header .left {
+    margin-left: 0px;
   }
 }
 .menubar {
