@@ -4,10 +4,9 @@ SmartMatrix is a beautiful music visualizer, dynamic art display, video game art
 
 > <iframe src="https://player.vimeo.com/video/128016189" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-
 Customize what's on the screen with the included remote control: choose what's playing, show a clock or message on top, and change settings, all from the remote. You don't need a computer or phone to control what's on the screen.
 
-> ![](https://ksr-ugc.imgix.net/assets/003/761/261/9d043e65197d596dfb810e2229f40d9a_original.gif?v=1431207557&w=680&fit=max&q=92&s=108c35656aaec42cddfe71c8a0693609)
+> <iframe src="https://vine.co/v/eih2bxetUpH/embed/simple" width="480" height="480" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
 
 [Learn More >](postkick.html)
 
