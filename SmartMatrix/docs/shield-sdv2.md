@@ -10,6 +10,10 @@ The pinout connecting to the panel is the same on all of the Shields, so code th
 
 SmartMatrix SD Shields V2 and V3 are nearly identical except for the level shifting buffers hidden under the Teensy, so the same photos are used in these instructions.
 
+The SmartMatrix SD Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
+
+> [Buy Shield From Adafruit >](https://www.adafruit.com/products/1902)
+
 ## Specs
 
 The [Teensy 3.1 specs](https://www.pjrc.com/teensy/teensy31.html) are the best source for general info on the capabilities of the Teensy 3.1 when used in the shield.  Changes from the Teensy 3.1 specs are listed below:
