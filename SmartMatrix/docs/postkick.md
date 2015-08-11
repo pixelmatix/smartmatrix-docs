@@ -17,7 +17,7 @@ Please join [our mailing list](http://eepurl.com/UX2V5) to get the latest update
 
 The board comes preprogrammed with the Aurora software and a selection of GIFs we have permission to include.
 
-If you purchased the "Kit" version, you need to assemble it first, [click here for instructions](#assembling-smartmatrix).
+If you purchased the "Kit" version, you need to assemble it first, [click here for instructions](#smartmatrix-after-kickstarter-assembling-smartmatrix).
 
 If you purchased the "Assembled" version, remove the tape and cardboard used to protect the IR sensor and keep it in place during shipping.  Pull the plastic tab out of the bottom of the remote control to connect the battery.
 

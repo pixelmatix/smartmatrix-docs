@@ -219,7 +219,7 @@ Route the power cable in a smooth curve and insert the Shield into the panel.
 
 ## SmartMatrix Bundle Accessories
 
-If you purchased parts from the SmartMatrix Bundle along with the shield, you can find instructions for using the accessories from the SmartMatrix Bundle on the [SmartMatrix Bundle page](fullbundle.html#smartmatrix-bundle-accessories).
+If you purchased parts from the SmartMatrix Bundle along with the shield, you can find instructions for using the accessories from the SmartMatrix Bundle on the [SmartMatrix Bundle page](fullbundle.html#smartmatrix-bundle-smartmatrix-bundle-accessories).
 
 ## Compiling and Running a SmartMatrix Sketch
 
