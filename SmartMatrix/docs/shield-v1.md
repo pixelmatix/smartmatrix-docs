@@ -1,7 +1,7 @@
 # SmartMatrix Shield
 
 ## Overview
-The SmartMatrix Shield is no longer being manufactured.  It's been replaced with the [SmartMatrix SD Shield](shieldref.html) which has a microSD card slot for storing Animated GIFs, a lower profile, 5V level shifting buffers on all the panel signals (as of V3), and brings more signals out to the expansion connectors.
+The SmartMatrix Shield is no longer being manufactured.  It's been replaced with the [SmartMatrix SD Shield](shieldref.html#smartmatrix-shield-overview-versions-smartmatrix-sd-shield) which has a microSD card slot for storing Animated GIFs, a lower profile, 5V level shifting buffers on all the panel signals (as of V3), and brings more signals out to the expansion connectors.
 
 > ![SmartMatrix Shield](photos/ProtoIsometric.jpg)
 > SmartMatrix Shield

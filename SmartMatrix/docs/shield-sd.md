@@ -1,7 +1,7 @@
 # SmartMatrix SD Shield (V1)
 
 ## Overview
-SmartMatrix SD Shields have a microSD card slot for storing Animated GIFs, a lower profile, bring more signals out to the expansion connectors.  This isn't the [latest version of the SD Shield](shieldref.html), V2 has a slightly different expansion connector (bringing out the microSD card's CS signal), and V3 adds 5V level shifting buffers to all the panel signals.
+SmartMatrix SD Shields have a microSD card slot for storing Animated GIFs, a lower profile, bring more signals out to the expansion connectors.  This isn't the [latest version of the SD Shield](shieldref.html#smartmatrix-shield-overview-versions-smartmatrix-sd-shield), V2 has a slightly different expansion connector (bringing out the microSD card's CS signal), and V3 adds 5V level shifting buffers to all the panel signals.
 
 > ![SmartMatrix SD Shield](photos/SdAssembly/01-IMG_6149.jpg)
 > SmartMatrix SD Shield
