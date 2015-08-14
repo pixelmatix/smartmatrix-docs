@@ -504,11 +504,12 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 .content .button + em {
   color: #9090aa;
 }
+/* Pixelmatix: subtract 230 (missing side menu) from box-shadow position */
 @media (min-width: 1180px) {
   body:not(.no-literate) .content-root {
     background-color: #f3f6fb;
-    -webkit-box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
-    box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 550px 0 #fff, inset 551px 0 #dfe2e7, inset 560px 0 5px -10px rgba(0,0,0,0.1);
+    box-shadow: inset 550px 0 #fff, inset 551px 0 #dfe2e7, inset 560px 0 5px -10px rgba(0,0,0,0.1);
   }
 }
 @media (min-width: 1180px) {
@@ -738,13 +739,15 @@ a.big.button:hover:visited {
     border-bottom: solid 1px #dfe2e7;
   }
 }
-@media (max-width: 768px) {
+/* Pixelmatix: no menubar */
+@media {
   .menubar {
     display: none;
   }
 }
+/* Pixelmatix: no menubar */
 @media (min-width: 768px) {
-  .content-root {
+/*  .content-root {
     padding-left: 230px;
   }
   .menubar {
@@ -776,7 +779,7 @@ a.big.button:hover:visited {
     background: #999;
     -webkit-box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
     box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
-  }
+  }*/
 }
 .menubar {
   font-size: 0.9em;
