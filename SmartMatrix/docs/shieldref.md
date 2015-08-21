@@ -2,9 +2,7 @@
 
 ## Overview
 
-The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external 5V supply to power the display and Teensy, and brings out the Teensy's free signals to a convenient header.  
-
-The SmartMatrix Shield includes multiple options for connecting the Shield to the display, using either the ribbon cable included with the display, or attaching the shield directly to the display.  The shield includes two connectors for power, to match the two main types of power cables included with these displays.
+The SmartMatrix Shield is the best way to connect the Teensy 3.1 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external 5V supply to power the display and Teensy, and brings out the Teensy's free signals to a convenient header.   The kit includes several connector options for power and data, so you can connect the shield to the panel in the best way for your particular project. 
 
 > ![SmartMatrix Shield](photos/sdv3isometric.jpg)
 > Photo courtesy Adafruit
