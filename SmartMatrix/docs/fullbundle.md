@@ -2,6 +2,8 @@
 
 The SmartMatrix Bundle combines the SmartMatrix SD Shield with a 32x32 pixel RGB Matrix Panel and parts to turn it into a remote controlled display for showing LED artwork and GIF animations.
 
+[Buy Bundle Now >](shop.html#purchasing-smartmatrix-smartmatrix-bundle)
+
 ## Bundle Contents
 
 The SmartMatrix Full Bundle contains:

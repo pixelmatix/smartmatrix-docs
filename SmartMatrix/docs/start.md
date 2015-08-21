@@ -8,7 +8,8 @@ Customize what's on the screen with the included remote control: choose what's p
 
 > <iframe src="https://vine.co/v/eih2bxetUpH/embed/simple" width="480" height="480" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
 
-[Learn More >](postkick.html)
+<a href="https://shop.trycelery.com/page/556bb89a502fad0b00edf08d" data-celery="556bb89a502fad0b00edf08d" data-celery-version="v2">Buy Now - $179 ></a>
+<script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>[Learn More >](postkick.html)
 
 ## SmartMatrix Shield
 We prototyped SmartMatrix using our SmartMatrix Shield, the SmartMatrix Library and a Teensy 3.1.  The Shield and Library are open source, and you can use them to create your own projects.
