@@ -36,7 +36,6 @@ The SmartMatrix SD Shield is available for purchase from [Adafruit](https://www.
 > Photo courtesy Adafruit
 
 <a href="https://www.adafruit.com/products/1902" target="_blank">Buy From Adafruit ></a>
-
   
 ### SmartMatrix Shield
 
