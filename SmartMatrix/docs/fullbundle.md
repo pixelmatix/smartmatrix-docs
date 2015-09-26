@@ -21,6 +21,13 @@ Depending on where you buy the bundle, the Teensy 3.1 required to drive the disp
 
 > ![Full Bundle Contents](photos/FullBundle-HAD.jpg)
 
+The SmartMatrix (Minimal) Bundle contains:
+
+* 32x32 Pixel RGB LED Matrix Display Panel - 192mm (7.56”) square.
+* SmartMatrix SD Shield
+* Teensy 3.1
+* 5V 4A Power Supply
+
 
 ## Specs and Shield Assembly
 
