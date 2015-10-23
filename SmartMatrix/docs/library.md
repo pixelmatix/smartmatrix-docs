@@ -3,6 +3,8 @@
 ## Library Overview
 The SmartMatrix Library is designed to make it easy to display graphics and scrolling text on an RGB 16x32 or 32x32 display.  The library stores a buffer and convenient graphics functions to draw to the buffer, with double buffering to update the drawing in a clean manner.  The library supports scrolling text above the graphics layer, and takes care of updating the scrolling text in the background without modifying the drawing buffer.  The library uses the DMA module in the Teensy 3 to refresh the display at a high frame rate and high color-depth with minimal CPU usage.  When CPU is required to refresh the display, it is run in the background as a low-priority interrupt.
 
+**This documentation was based on SmartMatrix Library version 2.x, and is now out of date**  
+Version 3.0 has a significantly different API, so many examples here can't be used directly.  [MIGRATION.md](https://github.com/pixelmatix/SmartMatrix/blob/master/MIGRATION.md) describes the differences between version 2.x and 3.0, and how to update a sketch that uses SmartMatrix Library 2.x to work with 3.0.
 
 ## How to Use the Library
 
