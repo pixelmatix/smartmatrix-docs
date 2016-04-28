@@ -26,7 +26,6 @@ The SmartMatrix SD Shield is available for purchase from [Adafruit](https://www.
 ## SmartMatrix Bundle
 
 The [SmartMatrix Bundle](http://store.hackaday.com/products/smartmatrix-bundle) was sold through our site, in person at Maker Faires, and through the Hackaday store, but is currently unavailable.   The Bundle includes everything needed to build a 32x32 RGB display that runs the Aurora software, and uses the SmartMatrix SD shield to make it easy to read content from a microSD card.  In addition to the parts needed to make a basic display, it includes a remote control and receiver, microSD card, and parts to mount the display in a shadow box picture frame.  The bundle can run the same software as the SmartMatrix Display, as described in [our Instructable](http://www.instructables.com/id/SmartMatrix-Dynamic-LED-Art-Display/).
-The bundle is available from the [Hackaday Store](http://store.hackaday.com/products/smartmatrix-bundle) with free worldwide shipping.
 
 > ![SmartMatrix in MCS Frame](photos/Shop/MCSFrameFront.jpg)
 
