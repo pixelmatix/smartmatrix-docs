@@ -1,11 +1,8 @@
 # SmartMatrix Display
 
-**SmartMatrix is available now!**
+**SmartMatrix is now a retired product**
 
-<a href="https://shop.trycelery.com/page/556bb89a502fad0b00edf08d" data-celery="556bb89a502fad0b00edf08d" data-celery-version="v2">Buy Now - $179 ></a>
-<script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>  
-
-Please join our list to find out when SmartMatrix is available outside the US. We'll extend a discount to non-US customers on the list when we do our wider release:  [SmartMatrix Non-US Waiting List](http://eepurl.com/bnEwKv)
+It's possible to make your own SmartMatrix Display using a SmartLED Shield, Teensy, and [free instructions](http://www.instructables.com/id/SmartMatrix-Dynamic-LED-Art-Display/).
 
 ## What is SmartMatrix?
 
