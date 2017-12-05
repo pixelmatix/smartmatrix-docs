@@ -1,8 +1,8 @@
 # SmartMatrix Display
 
-**SmartMatrix is now a retired product**
+**SmartMatrix Display is now a retired product**
 
-It's possible to make your own SmartMatrix Display using a SmartLED Shield, Teensy, and [free instructions](http://www.instructables.com/id/SmartMatrix-Dynamic-LED-Art-Display/).
+It's possible to make your own SmartMatrix Display using a [SmartLED Shield](shieldref.html), Teensy, and [free instructions](http://www.instructables.com/id/SmartMatrix-Dynamic-LED-Art-Display/).
 
 ## What is SmartMatrix?
 
