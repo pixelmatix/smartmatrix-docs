@@ -75,6 +75,8 @@ The displays are also available directly from suppliers in China using [Aliexpre
 
 Currently the SmartMatrix Library has support for 32x32 and 16x32 panels, though most of the included examples and projects based on the library are optimized for 32x32 panels and some functionality is not available for 16x32 panels.  These panels are designed to be chained together, though the SmartMatrix Library does not have support for drawing to more than one panel right now.  Some users have made their own forks of the library to support multiple panels: [here](https://github.com/pixelmatix/SmartMatrix/pull/2), [here](https://github.com/pixelmatix/SmartMatrix/pull/7), and [here](https://github.com/pixelmatix/SmartMatrix/pull/17).
 
+There are some high pixel density panels, e.g. 64x64 with 2.5mm pitch, that have only "A" and "B" address lines despite being specified as /32 scan (normally should have 5 address lines "A,B,C,D,E").  They use a shift register for updating the address, instead of directly driving the address lines.  These panels are not compatible with the SmartMatrix or SmartLED Shields, or the SmartMatrix Library, and are unlikely to be supported anytime in the future.
+
 ### Power
 
 Connect power to the board through the 5.5mm OD, 2.1mm ID positive tip barrel jack connector.  This connector is a common size in power supplies and Adafruit seems to have standardized on it.
