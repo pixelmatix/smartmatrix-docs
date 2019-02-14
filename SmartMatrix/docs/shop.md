@@ -1,5 +1,15 @@
 # Purchasing SmartMatrix
 
+## SmartLED/SmartMatrix Shield
+
+The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [SparkFun](https://www.sparkfun.com/products/15046).  Compatible RGB matrix panels are available from Adafruit and SparkFun and linked from their SmartLED Shield product pages.  
+  
+> ![SmartMatrix Shield](photos/sdv4isometric.jpg)
+> Photo courtesy Adafruit
+
+<a href="https://www.adafruit.com/products/1902" target="_blank">Buy From Adafruit ></a>
+<a href="https://www.sparkfun.com/products/15046" target="_blank">Buy From SparkFun ></a>
+
 ## SmartMatrix Display
 
 SmartMatrix is a beautiful music visualizer, dynamic art display, video game art display, and more. It's controllable, customizable, and extendable, allowing you to display your own animations and messages.  
@@ -7,21 +17,8 @@ SmartMatrix is a beautiful music visualizer, dynamic art display, video game art
 
 > ![SmartMatrix](photos/KickStaffPick.jpg)
 
-We are currently shipping to the US only - with free Priority Mail shipping.
+SmartMatrix Display is now discontinued and not available for purchase
 
-<a href="https://shop.trycelery.com/page/556bb89a502fad0b00edf08d" data-celery="556bb89a502fad0b00edf08d" data-celery-version="v2">Buy Now - $179 ></a>
-<script async type="text/javascript" src="https://www.trycelery.com/js/celery.js"></script>  
-
-
-
-## SmartMatrix SD Shield
-
-The SmartMatrix SD Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.  
-  
-> ![SmartMatrix Shield](photos/sdv3isometric.jpg)
-> Photo courtesy Adafruit
-
-<a href="https://www.adafruit.com/products/1902" target="_blank">Buy From Adafruit ></a>
 
 ## SmartMatrix Bundle
 
