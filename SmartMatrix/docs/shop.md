@@ -30,7 +30,7 @@ The [SmartMatrix Bundle](http://store.hackaday.com/products/smartmatrix-bundle) 
 
 ## SmartMatrix SD Shield
 
-The [SmartMatrix SD Shield] is discontinued, replaced by the SmartLED Shield V4.  The SmartMatrix SD Shield still works with the SmartMatrix Library and many projects can still use this shield.  Our main distributors have stopped carrying it and started carrying the SmartLED Shield V4 instead.
+The [SmartMatrix SD Shield](shield-sdv2.html) is discontinued, replaced by the SmartLED Shield V4.  The SmartMatrix SD Shield still works with the SmartMatrix Library and many projects can still use this shield.  Our main distributors have stopped carrying it and started carrying the SmartLED Shield V4 instead.
 
 > ![SmartMatrix Shield](photos/sdv3isometric.jpg)
 > Photo courtesy Adafruit
