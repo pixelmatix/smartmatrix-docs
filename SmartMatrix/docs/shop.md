@@ -17,7 +17,7 @@ SmartMatrix is a beautiful music visualizer, dynamic art display, video game art
 
 > ![SmartMatrix](photos/KickStaffPick.jpg)
 
-SmartMatrix Display is now discontinued and not available for purchase
+SmartMatrix Display is now discontinued and not available for purchase, but you can build your own DIY version by following [our Instructable](https://www.instructables.com/id/SmartMatrix-Dynamic-LED-Art-Display/).
 
 
 ## SmartMatrix Bundle
@@ -28,7 +28,13 @@ The [SmartMatrix Bundle](http://store.hackaday.com/products/smartmatrix-bundle) 
 
 > ![SmartMatrix Bundle](photos/Shop/SmartMatrixBundle.jpg)
 
-  
+## SmartMatrix SD Shield
+
+The [SmartMatrix SD Shield] is discontinued, replaced by the SmartLED Shield V4.  The SmartMatrix SD Shield still works with the SmartMatrix Library and many projects can still use this shield.  Our main distributors have stopped carrying it and started carrying the SmartLED Shield V4 instead.
+
+> ![SmartMatrix Shield](photos/sdv3isometric.jpg)
+> Photo courtesy Adafruit
+
 ## SmartMatrix Shield
 
 The [SmartMatrix Shield](shield-v1.html) is no longer being manufactured, as it's been replaced with the SmartMatrix SD Shield.  The SmartMatrix Shield still works with the SmartMatrix Library and many projects can still use the original shield, as long as the RGB panel you have can be driven from 3.3V signals.  The original SmartMatrix Shield may still available from several distributors:
