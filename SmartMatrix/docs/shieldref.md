@@ -60,20 +60,16 @@ There doesn't seem to be an official standard for these displays, but they usual
 > ![Display Variations (Back)](photos/DisplayVariationsBack.jpg)
 > ![Display Pinout](photos/DisplayPinout.jpg)
 
-There are many suppliers of RGB displays with this pinout.  The SmartMatrix Library supports driving 16x32 displays with 1/8 scan, and 32x32 displays with 1/16 scan.  Popular sources for these displays in the Maker Community are Adafruit and Sparkfun, links below.  
+There are many suppliers of RGB displays with this pinout.  The SmartMatrix Library supports driving 16x32 displays with 1/8 scan, 32x32 and 64x32 displays with 1/16 scan, and 64x64 panels with 1/16 and 1/32 scan.  Popular sources for these displays in the Maker Community are Adafruit and Sparkfun, links below.  
 <br/>
-[Adafruit Medium 16x32 Panel](http://www.adafruit.com/products/420)  
-[Adafruit 32x32 Panel - 6mm Pitch](http://www.adafruit.com/products/1484)  
-[Adafruit 32x32 Panel - 5mm Pitch](http://www.adafruit.com/products/2026)  
-[Adafruit 32x32 Panel - 4mm Pitch](http://www.adafruit.com/products/607)  
-[Sparkfun 16x32 Panel](https://www.sparkfun.com/products/12583)  
-[Sparkfun 32x32 Panel](https://www.sparkfun.com/products/12584)  
+[Adafruit Search for RGB LED Matrix Panels](https://www.adafruit.com/?q=rgb%20LED%20matrix%20panel)  
+[Sparkfun Search for RGB LED Matrix Panels](https://www.sparkfun.com/search/results?term=RGB+LED+matrix+panel)  
 <br/>
-The SmartMatrix Library and SmartMatrix Shield has been tested with an Adafruit 16x32 Display purchased in November 2013, and Adafruit's 32x32 4mm, 5mm and 6mm pitch displays purchased in November 2014.  The Library and Shield should work the displays from Sparkfun, but they have not been tested.
+The SmartMatrix Library and SmartMatrix Shield has been tested with many panels from Adafruit and SparkFun, as well as Chinese vendors.  If you're unsure of compatibility, please post a link to the panel you're interested in to the [SmartMatrix Community](https://community.pixelmatix.com)
 
 The displays are also available directly from suppliers in China using [Aliexpress.com](http://www.aliexpress.com/).  Search for "P4", P5", or "P6" referring to the 4-6mm pitch between LEDs and "Indoor RGB" to pull up a lot of results.  The prices may be a bit cheaper, but you will not get the same customer service as you would from Adafruit or Sparkfun, and you may get a [defective display](https://plus.google.com/113700969348903612932/posts/dmweg9newJa), or a [display that is incompatible](https://muut.com/pixelmatix#!/support:mirrored-text-start-coord) with the SmartMatrix Library, without a good way to return them.
 
-Currently the SmartMatrix Library has support for 32x32 and 16x32 panels, though most of the included examples and projects based on the library are optimized for 32x32 panels and some functionality is not available for 16x32 panels.  These panels are designed to be chained together, though the SmartMatrix Library does not have support for drawing to more than one panel right now.  Some users have made their own forks of the library to support multiple panels: [here](https://github.com/pixelmatix/SmartMatrix/pull/2), [here](https://github.com/pixelmatix/SmartMatrix/pull/7), and [here](https://github.com/pixelmatix/SmartMatrix/pull/17).
+Currently the SmartMatrix Library has support for 64x64, 64x32, 32x32, and 16x32 panels, though most of the included examples and projects based on the library are optimized for 32x32 panels and some functionality is not available for 16x32 panels.  These panels are designed to be chained together, and SmartMatrix Library supports this, though the RAM and CPU speed of the Teensy microcontroller you choose may limit your display size.
 
 There are some high pixel density panels, e.g. 64x64 with 2.5mm pitch, that have only "A" and "B" address lines despite being specified as /32 scan (normally should have 5 address lines "A,B,C,D,E").  They use a shift register for updating the address, instead of directly driving the address lines.  These panels are not compatible with the SmartMatrix or SmartLED Shields, or the SmartMatrix Library, and are unlikely to be supported anytime in the future.
 
