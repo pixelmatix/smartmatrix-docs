@@ -91,4 +91,4 @@ A Teensy 3 can be connected to the display panel using individual wires.  Follow
 
 Most panels are compatible with 3.3V signals, but some are not.  Starting with V3, the SmartMatrix Shield includes 74AHCT245 buffers for all the signals going to the panel, to boost the signals closer to the 5V level some panels require.  If you are seeing flickering or no LEDs lit when driving a panel, you may need to add buffers between the Teensy and panel.
 
-
+If you want to use the improved circuit included in SmartLED Shield V4, that requires some external chips to drive the ADDX lines, freeing up more pins and other resources on the Teensy for other purposes.  See the [schematic](https://github.com/pixelmatix/SmartMatrix/raw/master/extras/hardware/SmartLEDShield_V4_sch.pdf) and [BOM](https://github.com/pixelmatix/SmartMatrix/raw/master/extras/hardware/SmartLEDShield_V4_BOM.pdf) for the circuit and parts needed.
