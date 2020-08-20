@@ -9,9 +9,10 @@ The shield was renamed "SmartLED" from "SmartMatrix" as the new APA102 LED suppo
 > ![SmartLED Shield V4](photos/sdv4isometric.jpg)
 > Photo courtesy Adafruit
 
-The SmartMatrix SD Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
+The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [SparkFun](https://www.sparkfun.com/products/15046).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
 
 > [Buy Shield From Adafruit >](https://www.adafruit.com/products/1902)
+> [Buy Shield From SparkFun >](https://www.sparkfun.com/products/15046)
 
 ### New Features
 
