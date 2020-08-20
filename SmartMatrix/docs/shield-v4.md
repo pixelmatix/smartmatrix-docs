@@ -1,8 +1,8 @@
-# SmartLED Shield (V4) for Teensy 
+# SmartLED Shield (V4) for Teensy 3
 
 ## Overview
 
-SmartLED Shield V4 is a complete redesign of the SmartMatrix Shield.  Its new design comes as a pre-assembled board and can be used without any soldering, and it adds support for the Teensy 3.5/3.6, as well as driving APA102 LEDs.
+SmartLED Shield V4 for Teensy 3 is a complete redesign of the SmartMatrix Shield.  Its new design comes as a pre-assembled board and can be used without any soldering, and it adds support for the Teensy 3.5/3.6, as well as driving APA102 LEDs.
 
 The shield was renamed "SmartLED" from "SmartMatrix" as the new APA102 LED support can be used with LED Strips, and not just matrices.
 
