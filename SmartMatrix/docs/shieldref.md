@@ -10,7 +10,7 @@ The SmartLED Shield (formerly SmartMatrix Shield) is the best way to connect the
 The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [SparkFun](https://www.sparkfun.com/products/15046).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
 
 [Buy from Adafruit >](https://www.adafruit.com/products/1902)
-[Buy from Adafruit >](https://www.sparkfun.com/products/15046)
+[Buy from SparkFun >](https://www.sparkfun.com/products/15046)
 
 ## Versions
 
