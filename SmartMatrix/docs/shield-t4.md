@@ -1,4 +1,6 @@
-# SmartLED Shield (V4) for Teensy 3
+# SmartLED Shield for Teensy 4
+
+Note: right now this is just a copy of the SmartLED Shield for Teensy 3 (V4) assembly instructions, this will be updated for the Teensy 4 shield before shields start shipping
 
 ## Overview
 
