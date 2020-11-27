@@ -2,15 +2,18 @@
 
 The SmartLED Shield (formerly SmartMatrix Shield) is the best way to connect the Teensy 3 to compatible Large RGB LED matrix display panels.  In combination with the SmartMatrix Library, you can create stunning LED visuals with just a few lines of code.
 
-You can also use the prebuilt [Aurora software](https://github.com/pixelmatix/aurora) that creates an interactive display to play animated GIFs and patterns using the SmartLED Shield, for those who want to easily get started or don't want to write their own code.
-
 > ![SmartLED Shield Shield](photos/sdv4isometric.jpg)
 > Photo courtesy Adafruit
 
-The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartLED Shield product page.
+The SmartLED Shield is available for purchase from Adafruit, SparkFun, and other distributors.  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page, or [read this page](https://github.com/pixelmatix/SmartMatrix/wiki/HUB75-Panels) on sourcing compatible HUB75 panels elsewhere.
 
 [Learn More >](shieldref.html)
-[Buy from Adafruit >](https://www.adafruit.com/products/1902)
+
+[Buy Teensy 3 Shield from Adafruit >](https://www.adafruit.com/products/1902)
+
+[Buy Teensy 3 Shield from SparkFun >](https://www.sparkfun.com/products/15046)
+
+[Buy Teensy 4 Shield from Crowd Supply >](https://www.crowdsupply.com/pixelmatix/smartled-shield-for-teensy-4)
 
 ## SmartMatrix Display
 

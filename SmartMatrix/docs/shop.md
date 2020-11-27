@@ -2,13 +2,16 @@
 
 ## SmartLED/SmartMatrix Shield
 
-The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [SparkFun](https://www.sparkfun.com/products/15046).  Compatible RGB matrix panels are available from Adafruit and SparkFun and linked from their SmartLED Shield product pages.  
+The SmartLED Shield is available for purchase from Adafruit, SparkFun, and other distributors.  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page, or [read this page](https://github.com/pixelmatix/SmartMatrix/wiki/HUB75-Panels) on sourcing compatible HUB75 panels elsewhere.
   
 > ![SmartMatrix Shield](photos/sdv4isometric.jpg)
 > Photo courtesy Adafruit
 
-<a href="https://www.adafruit.com/products/1902" target="_blank">Buy From Adafruit ></a>
-<a href="https://www.sparkfun.com/products/15046" target="_blank">Buy From SparkFun ></a>
+[Buy Teensy 3 Shield from Adafruit >](https://www.adafruit.com/products/1902)
+
+[Buy Teensy 3 Shield from SparkFun >](https://www.sparkfun.com/products/15046)
+
+[Buy Teensy 4 Shield from Crowd Supply >](https://www.crowdsupply.com/pixelmatix/smartled-shield-for-teensy-4)
 
 ## SmartMatrix Display
 

@@ -1,72 +1,67 @@
 # SmartLED Shield for Teensy 4
 
-Note: right now this is just a copy of the SmartLED Shield for Teensy 3 (V4) assembly instructions, this will be updated for the Teensy 4 shield before shields start shipping
-
 ## Overview
 
-SmartLED Shield V4 for Teensy 3 is a complete redesign of the SmartMatrix Shield.  Its new design comes as a pre-assembled board and can be used without any soldering, and it adds support for the Teensy 3.5/3.6, as well as driving APA102 LEDs.
+SmartLED Shield V4 for Teensy 4 comes as a pre-assembled board and can be used without any soldering, with support for the Teensy 4.0/4.1 driving HUB75 panels, as well as driving APA102 LEDs.
 
-The shield was renamed "SmartLED" from "SmartMatrix" as the new APA102 LED support can be used with LED Strips, and not just matrices.
+> ![SmartLED Shield V4](photos/sdt4v5isometric.jpg)
 
-> ![SmartLED Shield V4](photos/sdv4isometric.jpg)
-> Photo courtesy Adafruit
+The SmartLED Shield for Teensy 4 is available for purchase from Crowd Supply, Adafruit, SparkFun, and Smart Prototyping (with cheap worldwide shipping from China).  Distributors that resell products from Adafruit and SparkFun will likely start selling the shield as well, so have a look at those resellers locally for more options.  Compatible RGB matrix panels are available from Adafruit and SparkFun and linked from their SmartMatrix Shield product pages, or [read this page](https://github.com/pixelmatix/SmartMatrix/wiki/HUB75-Panels) on sourcing compatible HUB75 panels elsewhere.
 
-The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [SparkFun](https://www.sparkfun.com/products/15046).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
+> [Buy Shield From Crowd Supply >](https://www.crowdsupply.com/pixelmatix/smartled-shield-for-teensy-4)
 
-> [Buy Shield From Adafruit >](https://www.adafruit.com/products/1902)
-> [Buy Shield From SparkFun >](https://www.sparkfun.com/products/15046)
+### Features
 
-### New Features
-
-- Teensy 3.5/3.6 support in addition to existing Teensy 3.1/3.2 support (note Teensy LC is not supported)
+- Teensy 4.0/4.1 support (Note Teensy 3.x is supported by [a different shield](shield-v4.html))
 - Fully SMT design comes preassembled
 - Teensy is removable from board
 - APA102 LED support, with 5V level shifting buffers and a cable ready to plug into the JST-SM connectors used on the Adafruit DotStar panels
-- Support for /32 panels (a new version of panel that has 1/32 multiplexing requiring a 5th Address pin).  e.g. [this 2.5mm pitch 64x64 pixel panel](https://www.aliexpress.com/item/p2-5-led-display-module-2-5mm-pixel-indoor-rgb-full-color-led-display-1-16/32533038333.html)
-- Improved method of driving address lines on panels, saving 4 GPIO pins on the Teensy
-
-### Other Changes from SmartMatrix SD Shield V3
-
-- MicroSD card connector removed.  This connector takes up a lot of space and is redundant when used with the Teensy 3.5/3.6.
-- Barrel jack removed and power going to the LEDs does not flow through the shield.  This keeps the shield compact, and prevents the shield from becoming a bottleneck for larger panel setups.  Supply power through the JST SM cable (or USB) instead.  
-- Single breakout signal row replaced with two rows on sides of Teensy.  You can now use jumper wires or long header pins to connect to Teensy signals, and this keeps the shield more compact.
+- 5V buffers on all signals for better signal integrity and compatibility with panels that need 5V signals
+- Support for /32 panels (panels with 1/32 multiplexing requiring a 5th Address pin).  e.g. [this 2.5mm pitch 64x64 pixel panel](https://www.aliexpress.com/item/p2-5-led-display-module-2-5mm-pixel-indoor-rgb-full-color-led-display-1-16/32533038333.html)
 
 ### Full Kit Contents
 
-- SmartLED Shield V4
+- SmartLED Shield for Teensy 4 (V5)
 - Male 4-pin JST SM Cable (10cm)
 - 2x8 Extra Long Pin Header
+- 1x14 Pin Headers (x2) for soldering to bare Teensy without pins
 
-> ![SmartLED Shield Kit Contents](photos/SmartLedShieldV4Assembly/sdv4isometric-allparts.jpg)
+> ![SmartLED Shield Kit Contents](photos/SmartLedShieldT4V5Assembly/smartled-shield-4-sample-photo.jpg)
 
 ## Specs
 
-The [Teensy specs](https://www.pjrc.com/teensy/techspecs.html) are the best source for general info on the capabilities of the Teensy 3 when used in the shield.  Changes from the Teensy 3 specs are listed below:
+The [Teensy specs](https://www.pjrc.com/teensy/techspecs.html) are the best source for general info on the capabilities of the Teensy 4 when used in the shield.  Changes from the Teensy 4 specs are listed below:
 
-The shield uses 9 IO pins to drive the display.  The crossed off signals in the diagram are the pins used by the shield for driving the matrix display, and the remaining Teensy pins are brought out to the expansion header.  On the Teensy 3.5/3.6 which have more pins, the extra pins are not used by the SmartLED Shield.
+The shield uses 9 IO pins to drive the display.  The crossed off signals in the diagram are the pins used by the shield for driving the matrix display, and the remaining Teensy pins are brought out to the expansion header.  On the Teensy 4.1 which has more pins, the extra pins are not used by the SmartLED Shield.
 
-The shield uses three pins to drive the APA102 LEDs.  See more details of how to use these pins in the APA102 section below.
+The shield uses two pins to drive the APA102 LEDs.  See more details of how to use these pins in the APA102 section below.
 
-> ![Teensy Pinout](photos/SmartLedV4TeensyPinout.png)
-> [View Large PDF](photos/SmartLEDShieldV4TeensyPinout.pdf)  
+> ![Teensy Pinout](photos/SmartLedShieldT4V5Assembly/SmartLedT4V5TeensyPinout.png)
+> [View Large PDF](photos/SmartLedShieldT4V5Assembly/SmartLedT4V5TeensyPinout.pdf)  
 > Original Source http://www.pjrc.com/teensy/pinout.html
+
+Note for I2S users: There wasn't a way to free up both the I2S IN1 and OUT1A Data pins in the design, so if you're using I2S in your application you have to choose between having data input, or data output available, or use alternate pins.  By default, the shield uses pin 7 to drive the HUB75 panel, and pin 8 (I2S IN1) is available for receiving audio.  If you need I2S OUT1A in your application, you can cut jumper JP4 and solder to connect pin 8 to the HUB75 panel.  Tell SmartMatrix Library that you're using the alternate pin by editing the `kMatrixOptions` value at the top of your sketch: `const uint32_t kMatrixOptions = (SM_HUB75_OPTIONS_T4_CLK_PIN_ALT);`
+
+> ![Shield Top Closeup](photos/SmartLedShieldT4V5Assembly/sdt4v5closeup.jpg)
 
 The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) - files start with "SmartLEDShield_V4".
 
-There are details on the RGB Panels on the [main SmartMatrix Shield page](shieldref.html)
+There are details on the HUB75 RGB Panels on the [main SmartMatrix Shield page](shieldref.html)
 
 ## Assembly
-While assembly of the SmartMatrix Shield required a soldering iron and permanently attaching your Teensy to the shield, the SmartLED Shield (V4) only requires that your Teensy have pins soldered to it.  Power needs to be connected, which can be handled with crimps and/or screw terminals if you'd prefer not to solder.
+The SmartLED Shield only requires that your Teensy have pins soldered to it.  Power needs to be connected, which can be handled with crimps and/or screw terminals if you'd prefer not to solder.
+
+Note that this guide reuses pictures of the SmartLED Shield for Teensy 3, Teensy 3.2, and Teensy 3.6 in places where the shield differences aren't important, as the two shields are mechanically nearly identical.
 
 ### Teensy
-If your Teensy doesn't come with headers pre-soldered, you need to solder them yourself.  (Note: some Teensy sellers e.g. [PJRC](https://www.pjrc.com/store/teensy36_pins.html) and [SparkFun](https://www.sparkfun.com/categories/356) sell the Teensy with pins already attached)  For the longer Teensy 3.5 and Teensy 3.6, consider soldering shorter headers if you don't plan to use the extra pins on the long end of the Teensy so the extra pins don't get in the way.  You can solder just the top 14 pins on each side, matching the length of the Teensy 3.2 and the number of holes on the SmartLED Shield.
+If your Teensy doesn't come with headers pre-soldered, you need to solder them yourself.  (Note: some Teensy sellers e.g. [PJRC](https://www.pjrc.com/store/teensy40_pins.html) and [SparkFun](https://www.sparkfun.com/search/results?term=teensy+4+headers) sell the Teensy with pins already attached)  For the longer Teensy 4.1, consider soldering shorter headers if you don't plan to use the extra pins on the long end of the Teensy so the extra pins don't get in the way.  You can solder just the top 14 pins on each side, matching the length of the Teensy 4.0 and the number of holes on the SmartLED Shield.
 
-If you need the extra pins on the Teensy 3.5/3.6, you'll have to break off one of the mounting tabs of the SmartLED Shield which is in the way of the longer row of pins.  The mounting tabs are perforated, and easy to break off with pliers.
+If you need the extra pins on the Teensy 4.1, you'll have to break off one of the mounting tabs of the SmartLED Shield which is in the way of the longer row of pins.  The mounting tabs are perforated, and easy to break off with pliers.
 
-> ![Use Pliars to break off tab](photos/SmartLedShieldV4Assembly/breakofftab1.jpg)
+> ![Use Pliers to break off tab](photos/SmartLedShieldV4Assembly/breakofftab1.jpg)
 > ![V4 shield with tab missing](photos/SmartLedShieldV4Assembly/breakofftab2.jpg)
 
-You can also consider adding straight or even right-angle pins to the top of the Teensy 3.5/3.6, if you want to access the extra signals from the top of the Teensy
+You can also consider adding straight or even right-angle pins to the top of the Teensy 4.1, if you want to access the extra signals from the top of the Teensy
 
 > ![Teensy 3.6 Alternate Pins](photos/SmartLedShieldV4Assembly/Teensy36AltPins.jpg)
 
@@ -81,7 +76,7 @@ Your LED matrix panel needs a much higher current power connection to drive powe
 
 Note: you can't use the 16-pin HUB75 connector on the LED matrix panel for power, as that is a data connection only, there's no access to power.
 
-Note change from previous SmartMatrix Shields: With SmartLED Shield (V4), power going to the LEDs does not flow through the shield.  This keeps the shield compact, and prevents the shield from becoming a bottleneck for larger panel setups.
+Note change from previous SmartMatrix Shields: With SmartLED Shield, power going to the LEDs does not flow through the shield.  This keeps the shield compact, and prevents the shield from becoming a bottleneck for larger panel setups.
 
 You can supply power to the SmartLED Shield and Teensy through the Teensy's USB connector, but that has some downsides.  It's usually better to supply power through the rainbow colored 4-pin female JST SM cable.    The matching 4-pin male JST SM cable is supplied in the package to make it easier to connect up to power.  
 
@@ -115,8 +110,12 @@ Several options to connect power to the shield:
 - Special case: LED strip
     - If you're connecting APA102 LEDs in parallel or instead of the HUB75 matrix, power and ground from the JST SM cable will connect power and ground on the APA102 strip/matrix, and will power the Teensy and shield.
     - > ![Shield powered from APA102](photos/SmartLedShieldV4Assembly/poweredFromAPA102.jpg)
+- Special case: Powering LED strip from USB
+    - This isn't recommended for most users, but was included in the shield design by request
+    - You can solder JP5 on the board to connect the Teensy VIN (and the power pin from the Teensy's USB connector) pin directly to VEXT on the JST SM cable.
+    - The trace is sized for 2A of current through this connection, but there's no fuse or overcurrent protection, and if you apply power to the JST SM cable, it could conflict with your USB power, potentially damaging your computer
 
-
+#### Cutting VUSB Trace
 
 If you're powering the panel externally, it's recommended that you cut the VUSB trace on the Teensy to avoid accidentally back-powering the panel through the data lines when the Teensy is connected via USB.  
 
@@ -125,7 +124,7 @@ First, use your multimeter to do a continuity test between these two gold pads o
 These pads connect the 5V power line coming from USB to the Vin pin on the Teensy.  If the trace is not cut, it's possible that current could flow from the external power supply *into* to the 5V power line on your computer, or that USB will try to power the matrix panel through the data lines, potentially drawing more than the allowed amount of current from the USB power source.
 
 > ![Teensy Vusb Cut](photos/SdAssembly/04-IMG_6158.jpg)
-> Source: http://www.pjrc.com/teensy/card5b_rev3.pdf
+> Source: https://www.pjrc.com/teensy/card10b_rev1_web.pdf
 
 Now, use your sharp knife to cut several times in the space between the two pads, separating the trace that connects these two pads.  Use the meter again on the two pads and listen for no beep.  If there is a beep, cut again and test.
 
@@ -145,17 +144,20 @@ To use a ribbon cable to connect the SmartLED Shield to the matrix panel from a 
 ### APA102 LEDs
 You can connect up a strip or matrix of APA102 LEDs to the SmartLED Shield using the 4-pin JST SM connector.  The APA102 LEDs can be connected in parallel with or instead of the HUB75 connection to a panel.  You can use the APA102 strip to power the SmartLED Shield and Teensy, but not the other way around.
 
-- DAT is connected to Teensy pin 7
-- CLK is connected to Teensy pin 13
+- DAT is connected to Teensy pin 5
+- CLK is connected to Teensy pin 4
 - VEXT/+5V is used to supply 5V from the APA102 strip to the SmartLED Shield
-- The LED_EN signal (Teensy pin 17) must be driven high to enable the APA102 LED Buffers
+
+There's an optional LED_EN signal that can be used to disable the APA102 drivers (driving them with 0V) so pins 4/5 can be used for other purposes.  That requires soldering a jumper (JP1) on the board and moving SMT resistor R1 to R2.  This is likely an uncommon use case, but details can be found in the schematic if you want to make that modification.
+
+If you want to drive APA102 LEDs with the SPI bus (instead of the FlexIO_SPI driver SmartMatrix Library uses), jumpers JP2 and JP3 allow for connecting DAT to Teensy pin 11, and CLK to Teensy pin 13.  This conflicts with the HUB75 pinout, so you can't use both.  See the schematic for more details.
 
 See the `FastLED_Panel_Plus_APA` sketch in the SmartMatrix Library for an example of driving the APA102 LEDs with the SmartMatrix Shield
 
 ### Attaching Accessories to Teensy
-The Teensy plugs into a pair of double-row connectors, giving convienient access to the main 28 pins of the Teensy to connect to other circuits by using the rows just next to the Teensy.  You can plug in male jumper wires to the extra set of holes on the side of the Teensy for easy prototyping.  You can add extra long header pins to these rows to bring the pins out for probing or connecting via female jumper wires, either from the top or bottom.  Extra long header pins on the bottom side might work well for a breadboard connection.  If you want a more secure connection, wires or pins can be soldered to the exposed pads on the top rows.  You may consider using right angle headers, soldered from the top, then optionally bent vertical to stay out of the way.
+The Teensy plugs into a pair of double-row connectors, giving convenient access to the main 28 pins of the Teensy to connect to other circuits by using the rows just next to the Teensy.  You can plug in male jumper wires to the extra set of holes on the side of the Teensy for easy prototyping.  You can add extra long header pins to these rows to bring the pins out for probing or connecting via female jumper wires, either from the top or bottom.  Extra long header pins on the bottom side might work well for a breadboard connection.  If you want a more secure connection, wires or pins can be soldered to the exposed pads on the top rows.  You may consider using right angle headers, soldered from the top, then optionally bent vertical to stay out of the way.
 
-Note that some of the Teensy signals are reserved for driving the panel (see the Teensy Pinout diagram under "Specs" above).  If you are not using the APA102 drivers, those three pins can be used for other purposes.
+Note that some of the Teensy signals are reserved for driving the panel (see the Teensy Pinout diagram under "Specs" above).  If you are not using the APA102 drivers, those pins can be used for other purposes.
 
 > ![Inserting Extra Long Headers](photos/SmartLedShieldV4Assembly/extraLongHeaders.jpg)
 > ![Inserting Male Jumper Wires](photos/SmartLedShieldV4Assembly/insertingJumperWires.jpg)
@@ -164,11 +166,6 @@ Note that some of the Teensy signals are reserved for driving the panel (see the
 
 See the README hosted in the [SmartMatrix GitHub Repo](https://github.com/pixelmatix/SmartMatrix/) for installation instructions.
 
-Important note for SmartLED Shield V4: This line needs to be included before (or instead of) `#include <SmartMatrix3.h>`
+To tell the library you're using the SmartLED Shield for Teensy 4 (V5), uncomment this line at the top of the sketch:
 
-```
-#include <SmartLEDShieldV4.h> // this line must be first
-#include <SmartMatrix3.h> //optionally include this line for SmartLED Shield V4
-```
-
-If this line isn't included, the SmartMatrix Library will assume you're using a SmartMatrix Shield V3 or earlier, which is incompatible with SmartLED Shield V4 and will result in a blank screen on your matrix.
+`#include <MatrixHardware_Teensy4_ShieldV5.h>        // SmartLED Shield for Teensy 4 (V5)`

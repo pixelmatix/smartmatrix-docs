@@ -2,28 +2,35 @@
 
 ## Overview
 
-The SmartLED Shield (formerly SmartMatrix Shield) is the best way to connect the Teensy 3 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, connects an external 5V supply to power the display and Teensy, and brings out the Teensy's free signals to a convenient header.   The kit includes several connector options for power and data, so you can connect the shield to the panel in the best way for your particular project. 
+The SmartLED Shield (formerly SmartMatrix Shield) is the best way to connect the Teensy 3 and Teensy 4 to compatible Large RGB LED matrix display panels.  The shield makes it easy to connect the 13 signals required to drive the display, and brings out the Teensy's free signals to convenient headers.   The kit includes several connector options for power and data, so you can connect the shield to the panel in the best way for your particular project. 
 
 > ![SmartLED Shield Shield](photos/sdv4isometric.jpg)
 > Photo courtesy Adafruit
 
-The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [SparkFun](https://www.sparkfun.com/products/15046).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
+There are two versions of the shield, one for Teensy 3 and another for Teensy 4, as the pinouts aren't compatible.
 
-[Buy from Adafruit >](https://www.adafruit.com/products/1902)
-[Buy from SparkFun >](https://www.sparkfun.com/products/15046)
+The SmartLED Shield is available for purchase from Adafruit, SparkFun, and other distributors.  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page, or [read this page](https://github.com/pixelmatix/SmartMatrix/wiki/HUB75-Panels) on sourcing compatible HUB75 panels elsewhere.
+
+[Buy Teensy 3 Shield from Adafruit >](https://www.adafruit.com/products/1902)
+
+[Buy Teensy 3 Shield from SparkFun >](https://www.sparkfun.com/products/15046)
+
+[Buy Teensy 4 Shield from Crowd Supply >](https://www.crowdsupply.com/pixelmatix/smartled-shield-for-teensy-4)
 
 ## Versions
 
-### SmartLED Shield V4
+### SmartLED Shield V4/V5
 
-SmartLED Shield V4 is a complete redesign of the SmartMatrix Shield.  Its new design comes as a pre-assembled board and can be used without any soldering, and it adds support for the Teensy 3.5/3.6, as well as driving APA102 LEDs.
+SmartLED Shield V4/V5 is a complete redesign of the SmartMatrix Shield.  Its new design comes as a pre-assembled board and can be used without any soldering, and it adds support for the Teensy 3.5/3.6 (V4 shield), Teensy 4.0/4.1 (V5 shield), as well as driving APA102 LEDs.
 
 The shield was renamed "SmartLED" from "SmartMatrix" as the new APA102 LED support can be used with LED Strips, and not just matrices.
 
 > ![SmartLED Shield Shield](photos/sdv4isometric.jpg)
 > Photo courtesy Adafruit
 
-[Learn More >](shield-v4.html)
+[Learn More (Teensy 3) >](shield-v4.html)
+
+[Learn More (Teensy 4) >](shield-t4.html)
 
 ### Retired: SmartMatrix SD Shield (V2 and V3)
 The SmartMatrix SD Shield had a microSD card slot for storing Animated GIFs, a lower profile, and brought more signals out to the expansion connectors.  This kit required soldering to put together.
@@ -77,6 +84,13 @@ There are some high pixel density panels, e.g. 64x64 with 2.5mm pitch, that have
 Panels with a FM6126A chipset require a special initialization sequence to be sent before starting SmartMatrix Library.  This is not yet supported by SmartMatrix Library, but there is some discussion on how to make this work [here](https://community.pixelmatix.com/t/smartmatrix-doesnt-support-fm6126a-driver-chips/421/)
 
 Some panels drive more than one row per RGB channel at a time, and are more difficult for SmartMatrix Library to refresh.  If running example code on your panel results in scrambled text and graphics being displayed, you might have one of these panels.  These panels are only supported in the unreleased branch of the SmartMatrix Library, available [here](https://github.com/pixelmatix/SmartMatrix/tree/teensylc).  The [MultiRowRefreshMapping sketch](https://github.com/pixelmatix/SmartMatrix/tree/teensylc/examples/MultiRowRefreshMapping) in that branch walks you through determining the mapping for your panel, how to add the mapping to SmartMatrix Library, and how to test to make sure the mapping is applied correctly.  This is not yet an easy process.  You may find that one of the already added panel types supports your panel.  Feel free to record video of running the MultiRowRefreshMapping sketch and post to the [SmartMatrix Community](community.pixelmatix.com) to get help with mapping a new panel.
+
+<!-- ### TODO: Multiplexed Panels vs Addressable LEDs
+Cost
+Brightness
+Brightness control
+Size
+Refresh rate -->
 
 ### Power
 
