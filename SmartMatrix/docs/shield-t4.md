@@ -2,7 +2,7 @@
 
 ## Overview
 
-SmartLED Shield V4 for Teensy 4 comes as a pre-assembled board and can be used without any soldering, with support for the Teensy 4.0/4.1 driving HUB75 panels, as well as driving APA102 LEDs.
+SmartLED Shield V4 for Teensy 4 comes as a pre-assembled board and can be used without any soldering, and enables the Teensy 4.0/4.1 to drive HUB75 panels, as well as APA102-compatible LEDs.
 
 > ![SmartLED Shield V4](photos/sdt4v5isometric.jpg)
 

@@ -162,11 +162,8 @@ Note that some of the Teensy signals are reserved for driving the panel (see the
 
 See the README hosted in the [SmartMatrix GitHub Repo](https://github.com/pixelmatix/SmartMatrix/) for installation instructions.
 
-Important note for SmartLED Shield V4: This line needs to be included before (or instead of) `#include <SmartMatrix3.h>`
+To tell the library you're using the SmartLED Shield for Teensy 3 (V4), uncomment this line at the top of the sketch:
 
-```
-#include <SmartLEDShieldV4.h> // this line must be first
-#include <SmartMatrix3.h> //optionally include this line for SmartLED Shield V4
-```
+`#include <MatrixHardware_Teensy3_ShieldV4.h>        // SmartLED Shield for Teensy 3 (V4)`
 
-If this line isn't included, the SmartMatrix Library will assume you're using a SmartMatrix Shield V3 or earlier, which is incompatible with SmartLED Shield V4 and will result in a blank screen on your matrix.
+
