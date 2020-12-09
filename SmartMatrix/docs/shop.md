@@ -7,11 +7,27 @@ The SmartLED Shield is available for purchase from Adafruit, SparkFun, and other
 > ![SmartMatrix Shield](photos/sdv4isometric.jpg)
 > Photo courtesy Adafruit
 
+**Teensy 3 Shield**
+
 [Buy Teensy 3 Shield from Adafruit >](https://www.adafruit.com/products/1902)
 
 [Buy Teensy 3 Shield from SparkFun >](https://www.sparkfun.com/products/15046)
 
+[Buy Teensy 3 Shield from Digi-Key >](http://www.digikey.com/product-search/en?x=0&y=0&lang=en&site=us&keywords=SmartLED%20Shield)
+
+[Search Google Shopping for Other Distributors](https://www.google.com/search?q=SmartLED+Shield&tbm=shop)
+
+**Teensy 4 Shield**
+
 [Buy Teensy 4 Shield from Crowd Supply >](https://www.crowdsupply.com/pixelmatix/smartled-shield-for-teensy-4)
+
+[Buy Teensy 4 Shield from Sparkfun >](https://www.sparkfun.com/products/17521)
+
+[Buy Teensy 4 Shield from Adafruit (Launching in mid-December) >](https://www.adafruit.com/?q=SmartLED+Shield&sort=BestMatch)
+
+[Buy Teensy 4 Shield from Mouser >](https://www.mouser.com/ProductDetail/Crowd-Supply/CS-SMARTLEDSHDT4V5)
+
+[Buy Teensy 4 Shield from Smart Prototyping (Cheap Worldwide Shipping from China) >](https://www.smart-prototyping.com/SmartLED-Shield-for-Teensy-4)
 
 ## SmartMatrix Display
 
