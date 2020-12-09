@@ -1,6 +1,6 @@
 # SmartMatrix SD Shield (V2 and V3)
 
-SmartMatrix SD Shield is now retired, replaced with SmartLED Shield (V4) for Teensy 3
+SmartMatrix SD Shield is now retired, replaced with [SmartLED Shield (V4) for Teensy 3](shield-v4.html)
 
 ## Overview
 SmartMatrix SD Shields have a microSD card slot for storing Animated GIFs, a lower profile, bring more signals out to the expansion connectors, and add 5V level shifting buffers on all the panel signals (as of V3).
