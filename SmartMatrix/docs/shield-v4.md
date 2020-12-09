@@ -11,8 +11,13 @@ The shield was renamed "SmartLED" from "SmartMatrix" as the new APA102 LED suppo
 
 The SmartLED Shield is available for purchase from [Adafruit](https://www.adafruit.com/products/1902) and [SparkFun](https://www.sparkfun.com/products/15046).  Compatible RGB matrix panels are available from Adafruit and linked from their SmartMatrix Shield product page.
 
-> [Buy Shield From Adafruit >](https://www.adafruit.com/products/1902)
-> [Buy Shield From SparkFun >](https://www.sparkfun.com/products/15046)
+[Buy Teensy 3 Shield from Adafruit >](https://www.adafruit.com/products/1902)
+
+[Buy Teensy 3 Shield from SparkFun >](https://www.sparkfun.com/products/15046)
+
+[Buy Teensy 3 Shield from Digi-Key >](http://www.digikey.com/product-search/en?x=0&y=0&lang=en&site=us&keywords=SmartLED%20Shield)
+
+[Search Google Shopping for Other Distributors >](https://www.google.com/search?q=SmartLED+Shield&tbm=shop)
 
 ### New Features
 
