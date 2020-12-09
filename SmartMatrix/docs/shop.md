@@ -15,7 +15,7 @@ The SmartLED Shield is available for purchase from Adafruit, SparkFun, and other
 
 [Buy Teensy 3 Shield from Digi-Key >](http://www.digikey.com/product-search/en?x=0&y=0&lang=en&site=us&keywords=SmartLED%20Shield)
 
-[Search Google Shopping for Other Distributors](https://www.google.com/search?q=SmartLED+Shield&tbm=shop)
+[Search Google Shopping for Other Distributors >](https://www.google.com/search?q=SmartLED+Shield&tbm=shop)
 
 **Teensy 4 Shield**
 
