@@ -27,7 +27,7 @@ The SmartLED Shield is available for purchase from Adafruit, SparkFun, and other
 
 [Buy Teensy 4 Shield from Sparkfun >](https://www.sparkfun.com/products/17521)
 
-[Buy Teensy 4 Shield from Adafruit (Launching in mid-December) >](https://www.adafruit.com/?q=SmartLED+Shield&sort=BestMatch)
+[Buy Teensy 4 Shield from Adafruit >](https://www.adafruit.com/product/4828)
 
 [Buy Teensy 4 Shield from Mouser >](https://www.mouser.com/ProductDetail/Crowd-Supply/CS-SMARTLEDSHDT4V5)
 
