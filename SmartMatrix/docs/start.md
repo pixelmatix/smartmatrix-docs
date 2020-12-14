@@ -42,4 +42,5 @@ The SmartMatrix Display is now a retired product, but you can build your own wit
 
 Customize what's on the screen with a remote control: choose what's playing, show a clock or message on top, and change settings, all from the remote. You don't need a computer or phone to control what's on the screen.
 
-> <iframe src="https://vine.co/v/eih2bxetUpH/embed/simple" width="480" height="480" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script>
+> ![SmartMatrix Display Demo](photos/SmartMatrixDisplay.gif)
+
