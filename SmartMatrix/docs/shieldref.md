@@ -31,7 +31,8 @@ The SmartLED Shield is available for purchase from Adafruit, SparkFun, and other
 
 [Buy Teensy 4 Shield from Mouser >](https://www.mouser.com/ProductDetail/Crowd-Supply/CS-SMARTLEDSHDT4V5)
 
-[Buy Teensy 4 Shield from Smart Prototyping (Cheap Worldwide Shipping from China) >](https://www.smart-prototyping.com/SmartLED-Shield-for-Teensy-4)
+[Buy Teensy 4 Shield from Smart Prototyping >](https://www.smart-prototyping.com/SmartLED-Shield-for-Teensy-4)  
+(Smart Prototyping has Cheap Worldwide Shipping from China)
 
 ## Versions
 
