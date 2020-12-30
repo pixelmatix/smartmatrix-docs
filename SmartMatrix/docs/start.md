@@ -1,6 +1,6 @@
 # SmartLED Shield (formerly SmartMatrix Shield)
 
-The SmartLED Shield (formerly SmartMatrix Shield) is the best way to connect the Teensy 3 to compatible Large RGB LED matrix display panels.  In combination with the SmartMatrix Library, you can create stunning LED visuals with just a few lines of code.
+The SmartLED Shield (formerly SmartMatrix Shield) is the best way to connect the Teensy 3 and Teensy 4 to compatible Large RGB LED matrix display panels.  In combination with the SmartMatrix Library, you can create stunning LED visuals with just a few lines of code.
 
 > ![SmartLED Shield Shield](photos/sdv4isometric.jpg)
 > Photo courtesy Adafruit
