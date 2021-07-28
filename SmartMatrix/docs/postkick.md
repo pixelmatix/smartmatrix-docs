@@ -71,7 +71,7 @@ SmartMatrix is a continuation of the project - making it accessible to more peop
 
 ### SmartMatrix and Open Source
 
-SmartMatrix started as an Open Source project and continues to be. You can find [hardware](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) and [software](https://github.com/pixelmatix/aurora) details in our GitHub repos, and a tutorial on how to put together a SmartMatrix display using development boards and a bit of through-hole soldering on [Instructables](http://www.instructables.com/id/SmartMatrix-Dynamic-LED-Art-Display/).
+SmartMatrix started as an Open Source project and continues to be. You can find [hardware](https://github.com/pixelmatix/SmartMatrix/tree/master/extras/hardware) and [software](https://github.com/pixelmatix/aurora) details in our GitHub repos, and a tutorial on how to put together a SmartMatrix display using development boards and a bit of through-hole soldering on [Instructables](http://www.instructables.com/id/SmartMatrix-Dynamic-LED-Art-Display/).
 
 > ![SmartMatrix Hacking](photos/SmartMatrixDisplay/hacking.jpg)
 
@@ -183,7 +183,7 @@ This option will always be available, even when there is no microSD card inserte
 
 ### Connecting to other electronics
 
-The expansion port - based on Fadecandy's [Hacker Port][hackerport] layout - has connections for UART, I2C, and power.  Outputs are at 3.3V but inputs are 5V tolerant.  I2C pull-ups are not installed.  Full hardware details are in the [SmartMatrix GitHub Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware), see the files starting with "SmartMatrix_V1".
+The expansion port - based on Fadecandy's [Hacker Port][hackerport] layout - has connections for UART, I2C, and power.  Outputs are at 3.3V but inputs are 5V tolerant.  I2C pull-ups are not installed.  Full hardware details are in the [SmartMatrix GitHub Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/extras/hardware), see the files starting with "SmartMatrix_V1".
 
 | Name | Function | Teensy Pin # | Kinetis GPIO |
 |:----:|:--------:|:------------:|:------------:|

@@ -44,7 +44,7 @@ Note for I2S users: There wasn't a way to free up both the I2S IN1 and OUT1A Dat
 
 > ![Shield Top Closeup](photos/SmartLedShieldT4V5Assembly/sdt4v5closeup.jpg)
 
-The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) - files start with "SmartLEDShield_V4".
+The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/extras/hardware) - files start with "SmartLEDShield_V4".
 
 There are details on the HUB75 RGB Panels on the [main SmartMatrix Shield page](shieldref.html)
 

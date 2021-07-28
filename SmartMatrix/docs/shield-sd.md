@@ -23,7 +23,7 @@ Note that the 5V line may have significant ripple coming from the PWM driving of
 
 The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main difference is a MicroSD slot on the board connected to SPI with chip select on pin 15.  The expansion header uses the same pins (with the exception of pin 15), but the layout is changed to allow for making easier connections.
 
-The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) (files start with "SmartMatrixSD_V1").
+The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/extras/hardware) (files start with "SmartMatrixSD_V1").
 
 There are details on the RGB Panels on the [main SmartMatrix Shield page](shieldref.html)
 

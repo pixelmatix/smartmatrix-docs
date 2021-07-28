@@ -35,7 +35,7 @@ The SmartMatrix SD Shield is very similar to the SmartMatrix Shield.  The main d
 This section of the SmartMatrix Shield (V3) schematic shows the names printed on the board next to the Teensy pin number/alternate pin function.  Note that the three SPI pins and pin 15 (CS2) are connected to the microSD card slot.
 > ![SD pinout](photos/SdAssemblyV2/SmartMatrixSDpinout.png)
 
-The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) - files start with "SmartMatrixSD".
+The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/extras/hardware) - files start with "SmartMatrixSD".
 
 There are details on the RGB Panels on the [main SmartMatrix Shield page](shieldref.html)
 

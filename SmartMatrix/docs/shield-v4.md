@@ -54,7 +54,7 @@ The shield uses three pins to drive the APA102 LEDs.  See more details of how to
 > [View Large PDF](photos/SmartLEDShieldV4TeensyPinout.pdf)  
 > Original Source http://www.pjrc.com/teensy/pinout.html
 
-The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/hardware) - files start with "SmartLEDShield_V4".
+The Schematic, Board Layout and Gerber Files can be found in the [SmartMatrix Github Repo](https://github.com/pixelmatix/SmartMatrix/tree/master/extras/hardware) - files start with "SmartLEDShield_V4".
 
 There are details on the RGB Panels on the [main SmartMatrix Shield page](shieldref.html)
 
